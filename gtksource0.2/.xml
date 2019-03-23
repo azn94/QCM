@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<youssef>
+<>
   <Afrique-du-Sud>
     <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
@@ -75,6 +75,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -194,7 +195,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -277,6 +277,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -396,7 +397,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -479,6 +479,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -598,7 +599,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -681,6 +681,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -800,7 +801,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -883,6 +883,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -1002,7 +1003,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1085,6 +1085,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -1204,7 +1205,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1287,6 +1287,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -1406,7 +1407,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1489,6 +1489,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -1608,7 +1609,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1691,6 +1691,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -1810,7 +1811,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1893,6 +1893,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -2012,7 +2013,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2095,6 +2095,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -2214,7 +2215,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2297,6 +2297,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -2416,7 +2417,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2499,6 +2499,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -2618,7 +2619,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2701,6 +2701,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -2820,7 +2821,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2903,6 +2903,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -3022,7 +3023,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3105,6 +3105,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -3224,7 +3225,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3307,6 +3307,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -3426,7 +3427,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3509,6 +3509,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -3628,7 +3629,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3711,6 +3711,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -3830,7 +3831,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3913,6 +3913,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -4032,7 +4033,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4115,6 +4115,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -4234,7 +4235,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4317,6 +4317,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -4436,7 +4437,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4519,6 +4519,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -4638,7 +4639,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4721,6 +4721,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -4840,7 +4841,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4923,6 +4923,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -5042,7 +5043,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5125,6 +5125,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -5244,7 +5245,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5327,6 +5327,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -5446,7 +5447,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5529,6 +5529,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -5648,7 +5649,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5731,6 +5731,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -5850,7 +5851,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5933,6 +5933,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -6052,7 +6053,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6135,6 +6135,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -6254,7 +6255,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6337,6 +6337,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -6456,7 +6457,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6539,6 +6539,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -6658,7 +6659,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6741,6 +6741,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -6860,7 +6861,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6943,6 +6943,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -7062,7 +7063,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7145,6 +7145,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -7264,7 +7265,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7347,6 +7347,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -7466,7 +7467,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7549,6 +7549,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -7668,7 +7669,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7751,6 +7751,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -7870,7 +7871,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7953,6 +7953,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -8072,7 +8073,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8155,6 +8155,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -8274,7 +8275,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8357,6 +8357,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -8476,7 +8477,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8559,6 +8559,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -8678,7 +8679,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8761,6 +8761,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -8880,7 +8881,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8963,6 +8963,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -9082,7 +9083,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9165,6 +9165,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -9284,7 +9285,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9367,6 +9367,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -9486,7 +9487,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9569,6 +9569,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -9688,7 +9689,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9745,7 +9745,7 @@
     <Croatie>0</Croatie>
     <Cuba>0</Cuba>
     <Danemark>0</Danemark>
-    <Djibouti>1</Djibouti>
+    <Djibouti>0</Djibouti>
     <Dominique>0</Dominique>
     <Égypte>0</Égypte>
     <Émirats-arabes-unis>0</Émirats-arabes-unis>
@@ -9771,6 +9771,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -9890,7 +9891,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9973,6 +9973,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -10092,7 +10093,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10175,6 +10175,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -10294,7 +10295,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10377,6 +10377,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -10496,7 +10497,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10579,6 +10579,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -10698,7 +10699,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10781,6 +10781,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -10900,7 +10901,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10983,6 +10983,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -11102,7 +11103,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11185,6 +11185,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -11304,7 +11305,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11387,6 +11387,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -11506,7 +11507,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11589,6 +11589,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -11708,7 +11709,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11791,6 +11791,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -11910,7 +11911,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11993,6 +11993,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -12112,7 +12113,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -12195,6 +12195,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -12314,7 +12315,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -12397,6 +12397,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -12516,7 +12517,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -12599,6 +12599,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -12718,7 +12719,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -12801,6 +12801,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -12920,7 +12921,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13003,6 +13003,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -13122,7 +13123,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13196,7 +13196,7 @@
     <Gambie>0</Gambie>
     <Géorgie>0</Géorgie>
     <Ghana>0</Ghana>
-    <Grèce>1</Grèce>
+    <Grèce>0</Grèce>
     <Grenade>0</Grenade>
     <Guatemala>0</Guatemala>
     <Guinée>0</Guinée>
@@ -13205,6 +13205,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -13324,7 +13325,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13407,6 +13407,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -13526,7 +13527,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13609,6 +13609,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -13728,7 +13729,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13811,6 +13811,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -13930,7 +13931,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14013,6 +14013,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -14132,7 +14133,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14215,6 +14215,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -14334,7 +14335,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14417,6 +14417,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -14536,7 +14537,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14619,6 +14619,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -14738,7 +14739,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14821,6 +14821,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -14946,8 +14947,209 @@
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
   </Honduras>
+  <Hong-Kong>
+    <Afrique-du-Sud>0</Afrique-du-Sud>
+    <Afghanistan>0</Afghanistan>
+    <Albanie>0</Albanie>
+    <Algérie>0</Algérie>
+    <Allemagne>0</Allemagne>
+    <Andorre>0</Andorre>
+    <Angola>0</Angola>
+    <Antigua-et-Barbuda>0</Antigua-et-Barbuda>
+    <Arabie-Saoudite>0</Arabie-Saoudite>
+    <Argentine>0</Argentine>
+    <Arménie>0</Arménie>
+    <Australie>0</Australie>
+    <Autriche>0</Autriche>
+    <Azerbaïdjan>0</Azerbaïdjan>
+    <Bahamas>0</Bahamas>
+    <Bahreïn>0</Bahreïn>
+    <Bangladesh>0</Bangladesh>
+    <Barbade>0</Barbade>
+    <Belgique>0</Belgique>
+    <Belize>0</Belize>
+    <Bénin>0</Bénin>
+    <Bhoutan>0</Bhoutan>
+    <Biélorussie>0</Biélorussie>
+    <Birmanie>0</Birmanie>
+    <Bolivie>0</Bolivie>
+    <Bosnie-Herzégovine>0</Bosnie-Herzégovine>
+    <Botswana>0</Botswana>
+    <Brésil>0</Brésil>
+    <Brunei>0</Brunei>
+    <Bulgarie>0</Bulgarie>
+    <Burkina-Faso>0</Burkina-Faso>
+    <Burundi>0</Burundi>
+    <Cambodge>0</Cambodge>
+    <Cameroun>0</Cameroun>
+    <Canada>0</Canada>
+    <Cap-Vert>0</Cap-Vert>
+    <Chili>0</Chili>
+    <Chine>0</Chine>
+    <Chypre>0</Chypre>
+    <Colombie>0</Colombie>
+    <Comores>0</Comores>
+    <Corée-du-Nord>0</Corée-du-Nord>
+    <Corée-du-Sud>0</Corée-du-Sud>
+    <Costa-Rica>0</Costa-Rica>
+    <Côte-dIvoire>0</Côte-dIvoire>
+    <Croatie>0</Croatie>
+    <Cuba>0</Cuba>
+    <Danemark>0</Danemark>
+    <Djibouti>0</Djibouti>
+    <Dominique>0</Dominique>
+    <Égypte>0</Égypte>
+    <Émirats-arabes-unis>0</Émirats-arabes-unis>
+    <Équateur>0</Équateur>
+    <Érythrée>0</Érythrée>
+    <Espagne>0</Espagne>
+    <Estonie>0</Estonie>
+    <États-Unis>0</États-Unis>
+    <Éthiopie>0</Éthiopie>
+    <Fidji>0</Fidji>
+    <Finlande>0</Finlande>
+    <France>0</France>
+    <Gabon>0</Gabon>
+    <Gambie>0</Gambie>
+    <Géorgie>0</Géorgie>
+    <Ghana>0</Ghana>
+    <Grèce>0</Grèce>
+    <Grenade>0</Grenade>
+    <Guatemala>0</Guatemala>
+    <Guinée>0</Guinée>
+    <Guinée-équatoriale>0</Guinée-équatoriale>
+    <Guinée-Bissau>0</Guinée-Bissau>
+    <Guyana>0</Guyana>
+    <Haïti>0</Haïti>
+    <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
+    <Hongrie>0</Hongrie>
+    <Îles-Cook>0</Îles-Cook>
+    <Îles-Marshall>0</Îles-Marshall>
+    <Inde>0</Inde>
+    <Indonésie>0</Indonésie>
+    <Irak>0</Irak>
+    <Iran>0</Iran>
+    <Irlande>0</Irlande>
+    <Islande>0</Islande>
+    <Italie>0</Italie>
+    <Jamaïque>0</Jamaïque>
+    <Japon>0</Japon>
+    <Jordanie>0</Jordanie>
+    <Kazakhstan>0</Kazakhstan>
+    <Kenya>0</Kenya>
+    <Kirghizistan>0</Kirghizistan>
+    <Kiribati>0</Kiribati>
+    <Koweït>0</Koweït>
+    <Laos>0</Laos>
+    <Lesotho>0</Lesotho>
+    <Lettonie>0</Lettonie>
+    <Liban>0</Liban>
+    <Liberia>0</Liberia>
+    <Libye>0</Libye>
+    <Liechtenstein>0</Liechtenstein>
+    <Lituanie>0</Lituanie>
+    <Luxembourg>0</Luxembourg>
+    <Macédoine>0</Macédoine>
+    <Madagascar>0</Madagascar>
+    <Malaisie>0</Malaisie>
+    <Malawi>0</Malawi>
+    <Maldives>0</Maldives>
+    <Mali>0</Mali>
+    <Malte>0</Malte>
+    <Maroc>0</Maroc>
+    <Maurice>0</Maurice>
+    <Mauritanie>0</Mauritanie>
+    <Mexique>0</Mexique>
+    <Micronésie>0</Micronésie>
+    <Moldavie>0</Moldavie>
+    <Monaco>0</Monaco>
+    <Mongolie>0</Mongolie>
+    <Mozambique>0</Mozambique>
+    <Namibie>0</Namibie>
+    <Nauru>0</Nauru>
+    <Népal>0</Népal>
+    <Nicaragua>0</Nicaragua>
+    <Niger>0</Niger>
+    <Nigeria>0</Nigeria>
+    <Norvège>0</Norvège>
+    <Nouvelle-Zélande>0</Nouvelle-Zélande>
+    <Oman>0</Oman>
+    <Ouganda>0</Ouganda>
+    <Ouzbékistan>0</Ouzbékistan>
+    <Pakistan>0</Pakistan>
+    <Palaos>0</Palaos>
+    <Panama>0</Panama>
+    <Papouasie-Nouvelle-Guinée>0</Papouasie-Nouvelle-Guinée>
+    <Paraguay>0</Paraguay>
+    <Pays-Bas>0</Pays-Bas>
+    <Pérou>0</Pérou>
+    <Philippines>0</Philippines>
+    <Pologne>0</Pologne>
+    <Portugal>0</Portugal>
+    <Qatar>0</Qatar>
+    <République-centrafricaine>0</République-centrafricaine>
+    <République-démocratique-du-Congo>0</République-démocratique-du-Congo>
+    <République-Dominicaine>0</République-Dominicaine>
+    <République-du-Congo>0</République-du-Congo>
+    <République-tchèque>0</République-tchèque>
+    <Roumanie>0</Roumanie>
+    <Royaume-Uni>0</Royaume-Uni>
+    <Russie>0</Russie>
+    <Rwanda>0</Rwanda>
+    <Saint-Kitts-et-Nevis>0</Saint-Kitts-et-Nevis>
+    <Saint-Vincent-et-les-Grenadines>0</Saint-Vincent-et-les-Grenadines>
+    <Sainte-Lucie>0</Sainte-Lucie>
+    <Saint-Marin>0</Saint-Marin>
+    <Salomon>0</Salomon>
+    <Salvador>0</Salvador>
+    <Samoa>0</Samoa>
+    <São-Tomé-et-Principe>0</São-Tomé-et-Principe>
+    <Sénégal>0</Sénégal>
+    <Serbie>0</Serbie>
+    <Seychelles>0</Seychelles>
+    <Sierra-Leone>0</Sierra-Leone>
+    <Singapour>0</Singapour>
+    <Slovaquie>0</Slovaquie>
+    <Slovénie>0</Slovénie>
+    <Somalie>0</Somalie>
+    <Soudan>0</Soudan>
+    <Soudan-du-Sud>0</Soudan-du-Sud>
+    <Sri-Lanka>0</Sri-Lanka>
+    <Suède>0</Suède>
+    <Suisse>0</Suisse>
+    <Suriname>0</Suriname>
+    <Swaziland>0</Swaziland>
+    <Syrie>0</Syrie>
+    <Taïwan>0</Taïwan>
+    <Tadjikistan>0</Tadjikistan>
+    <Tanzanie>0</Tanzanie>
+    <Tchad>0</Tchad>
+    <Thaïlande>0</Thaïlande>
+    <Timor-oriental>0</Timor-oriental>
+    <Togo>0</Togo>
+    <Tonga>0</Tonga>
+    <Trinité-et-Tobago>0</Trinité-et-Tobago>
+    <Tunisie>0</Tunisie>
+    <Turkménistan>0</Turkménistan>
+    <Turquie>0</Turquie>
+    <Tuvalu>0</Tuvalu>
+    <Ukraine>0</Ukraine>
+    <Uruguay>0</Uruguay>
+    <Vanuatu>0</Vanuatu>
+    <Vatican>0</Vatican>
+    <Venezuela>0</Venezuela>
+    <Viêt-Nam>0</Viêt-Nam>
+    <Yémen>0</Yémen>
+    <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+  </Hong-Kong>
   <Hongrie>
     <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
@@ -15023,6 +15225,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -15142,7 +15345,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -15225,6 +15427,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -15344,7 +15547,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -15427,6 +15629,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -15546,7 +15749,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -15629,6 +15831,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -15748,7 +15951,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -15831,6 +16033,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -15950,7 +16153,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16033,6 +16235,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -16152,7 +16355,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16235,6 +16437,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -16354,7 +16557,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16437,6 +16639,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -16556,7 +16759,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16639,6 +16841,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -16758,7 +16961,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16841,6 +17043,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -16960,7 +17163,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17043,6 +17245,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -17162,7 +17365,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17245,6 +17447,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -17364,7 +17567,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17447,6 +17649,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -17566,7 +17769,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17649,6 +17851,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -17768,7 +17971,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17851,6 +18053,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -17970,7 +18173,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18053,6 +18255,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -18172,7 +18375,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18255,6 +18457,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -18374,7 +18577,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18457,6 +18659,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -18576,7 +18779,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18659,6 +18861,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -18778,7 +18981,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18861,6 +19063,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -18980,7 +19183,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19063,6 +19265,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -19182,7 +19385,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19265,6 +19467,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -19384,7 +19587,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19467,6 +19669,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -19586,7 +19789,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19669,6 +19871,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -19788,7 +19991,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19871,6 +20073,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -19990,7 +20193,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -20073,6 +20275,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -20192,7 +20395,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -20275,6 +20477,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -20394,7 +20597,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -20477,6 +20679,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -20596,7 +20799,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -20679,6 +20881,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -20798,7 +21001,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -20881,6 +21083,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -21000,7 +21203,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21083,6 +21285,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -21202,7 +21405,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21285,6 +21487,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -21404,7 +21607,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21487,6 +21689,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -21606,7 +21809,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21689,6 +21891,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -21808,7 +22011,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21891,6 +22093,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -22010,7 +22213,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22093,6 +22295,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -22212,7 +22415,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22295,6 +22497,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -22414,7 +22617,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22497,6 +22699,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -22616,7 +22819,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22699,6 +22901,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -22818,7 +23021,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22901,6 +23103,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -23020,7 +23223,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23103,6 +23305,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -23222,7 +23425,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23305,6 +23507,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -23424,7 +23627,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23507,6 +23709,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -23626,7 +23829,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23709,6 +23911,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -23828,7 +24031,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23911,6 +24113,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -24030,7 +24233,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24113,6 +24315,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -24232,7 +24435,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24315,6 +24517,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -24434,7 +24637,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24517,6 +24719,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -24636,7 +24839,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24719,6 +24921,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -24838,7 +25041,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24921,6 +25123,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -25040,7 +25243,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25123,6 +25325,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -25242,7 +25445,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25325,6 +25527,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -25444,7 +25647,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25527,6 +25729,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -25646,7 +25849,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25729,6 +25931,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -25848,7 +26051,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25931,6 +26133,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -26050,7 +26253,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26133,6 +26335,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -26252,7 +26455,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26335,6 +26537,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -26454,7 +26657,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26537,6 +26739,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -26656,7 +26859,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26739,6 +26941,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -26858,7 +27061,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26941,6 +27143,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -27060,7 +27263,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27143,6 +27345,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -27262,7 +27465,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27345,6 +27547,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -27464,7 +27667,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27547,6 +27749,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -27666,7 +27869,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27749,6 +27951,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -27868,7 +28071,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27951,6 +28153,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -28070,7 +28273,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28153,6 +28355,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -28272,7 +28475,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28355,6 +28557,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -28474,7 +28677,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28557,6 +28759,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -28676,7 +28879,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28759,6 +28961,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -28878,7 +29081,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28961,6 +29163,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -29080,7 +29283,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29163,6 +29365,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -29282,7 +29485,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29365,6 +29567,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -29484,7 +29687,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29567,6 +29769,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -29686,7 +29889,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29769,6 +29971,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -29888,7 +30091,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29971,6 +30173,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -30090,7 +30293,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30173,6 +30375,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -30292,7 +30495,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30375,6 +30577,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -30494,7 +30697,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30577,6 +30779,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -30696,7 +30899,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30779,6 +30981,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -30898,7 +31101,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30981,6 +31183,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -31100,7 +31303,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31183,6 +31385,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -31302,7 +31505,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31385,6 +31587,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -31504,7 +31707,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31587,6 +31789,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -31706,7 +31909,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31789,6 +31991,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -31908,7 +32111,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31991,6 +32193,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -32110,7 +32313,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -32193,6 +32395,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -32312,7 +32515,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -32395,6 +32597,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -32514,7 +32717,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -32597,6 +32799,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -32716,7 +32919,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -32799,6 +33001,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -32918,7 +33121,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33001,6 +33203,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -33120,7 +33323,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33203,6 +33405,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -33322,7 +33525,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33405,6 +33607,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -33524,7 +33727,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33607,6 +33809,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -33726,7 +33929,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33809,6 +34011,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -33928,7 +34131,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34011,6 +34213,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -34130,7 +34333,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34213,6 +34415,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -34332,7 +34535,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34415,6 +34617,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -34534,7 +34737,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34617,6 +34819,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -34736,7 +34939,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34819,6 +35021,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -34938,7 +35141,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35021,6 +35223,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -35140,7 +35343,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35223,6 +35425,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -35342,7 +35545,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35425,6 +35627,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -35544,7 +35747,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35627,6 +35829,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -35746,7 +35949,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35829,6 +36031,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -35948,7 +36151,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36031,6 +36233,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -36150,7 +36353,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36233,6 +36435,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -36338,7 +36541,7 @@
     <Thaïlande>0</Thaïlande>
     <Timor-oriental>0</Timor-oriental>
     <Togo>0</Togo>
-    <Tonga>1</Tonga>
+    <Tonga>0</Tonga>
     <Trinité-et-Tobago>0</Trinité-et-Tobago>
     <Tunisie>0</Tunisie>
     <Turkménistan>0</Turkménistan>
@@ -36352,7 +36555,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36435,6 +36637,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -36554,7 +36757,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36637,6 +36839,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -36756,7 +36959,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36839,6 +37041,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -36958,7 +37161,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37041,6 +37243,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -37160,7 +37363,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37243,6 +37445,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -37362,7 +37565,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37445,6 +37647,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -37564,7 +37767,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37647,6 +37849,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -37766,7 +37969,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37849,6 +38051,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -37968,7 +38171,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38051,6 +38253,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -38170,7 +38373,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38253,6 +38455,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -38372,7 +38575,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38455,6 +38657,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -38574,7 +38777,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38657,6 +38859,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -38776,7 +38979,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38859,6 +39061,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -38978,7 +39181,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -39061,6 +39263,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -39180,7 +39383,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -39263,6 +39465,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -39382,7 +39585,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -39465,6 +39667,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -39584,7 +39787,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -39667,6 +39869,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -39786,7 +39989,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -39869,6 +40071,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -39988,7 +40191,6 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -40071,6 +40273,7 @@
     <Guyana>0</Guyana>
     <Haïti>0</Haïti>
     <Honduras>0</Honduras>
+    <Hong-Kong>0</Hong-Kong>
     <Hongrie>0</Hongrie>
     <Îles-Cook>0</Îles-Cook>
     <Îles-Marshall>0</Îles-Marshall>
@@ -40196,208 +40399,5 @@
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
   </Zimbabwe>
-  <Zimbabwe>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
-    <Afghanistan>0</Afghanistan>
-    <Albanie>0</Albanie>
-    <Algérie>0</Algérie>
-    <Allemagne>0</Allemagne>
-    <Andorre>0</Andorre>
-    <Angola>0</Angola>
-    <Antigua-et-Barbuda>0</Antigua-et-Barbuda>
-    <Arabie-Saoudite>0</Arabie-Saoudite>
-    <Argentine>0</Argentine>
-    <Arménie>0</Arménie>
-    <Australie>0</Australie>
-    <Autriche>0</Autriche>
-    <Azerbaïdjan>0</Azerbaïdjan>
-    <Bahamas>0</Bahamas>
-    <Bahreïn>0</Bahreïn>
-    <Bangladesh>0</Bangladesh>
-    <Barbade>0</Barbade>
-    <Belgique>0</Belgique>
-    <Belize>0</Belize>
-    <Bénin>0</Bénin>
-    <Bhoutan>0</Bhoutan>
-    <Biélorussie>0</Biélorussie>
-    <Birmanie>0</Birmanie>
-    <Bolivie>0</Bolivie>
-    <Bosnie-Herzégovine>0</Bosnie-Herzégovine>
-    <Botswana>0</Botswana>
-    <Brésil>0</Brésil>
-    <Brunei>0</Brunei>
-    <Bulgarie>0</Bulgarie>
-    <Burkina-Faso>0</Burkina-Faso>
-    <Burundi>0</Burundi>
-    <Cambodge>0</Cambodge>
-    <Cameroun>0</Cameroun>
-    <Canada>0</Canada>
-    <Cap-Vert>0</Cap-Vert>
-    <Chili>0</Chili>
-    <Chine>0</Chine>
-    <Chypre>0</Chypre>
-    <Colombie>0</Colombie>
-    <Comores>0</Comores>
-    <Corée-du-Nord>0</Corée-du-Nord>
-    <Corée-du-Sud>0</Corée-du-Sud>
-    <Costa-Rica>0</Costa-Rica>
-    <Côte-dIvoire>0</Côte-dIvoire>
-    <Croatie>0</Croatie>
-    <Cuba>0</Cuba>
-    <Danemark>0</Danemark>
-    <Djibouti>0</Djibouti>
-    <Dominique>0</Dominique>
-    <Égypte>0</Égypte>
-    <Émirats-arabes-unis>0</Émirats-arabes-unis>
-    <Équateur>0</Équateur>
-    <Érythrée>0</Érythrée>
-    <Espagne>0</Espagne>
-    <Estonie>0</Estonie>
-    <États-Unis>0</États-Unis>
-    <Éthiopie>0</Éthiopie>
-    <Fidji>0</Fidji>
-    <Finlande>0</Finlande>
-    <France>0</France>
-    <Gabon>0</Gabon>
-    <Gambie>0</Gambie>
-    <Géorgie>0</Géorgie>
-    <Ghana>0</Ghana>
-    <Grèce>0</Grèce>
-    <Grenade>0</Grenade>
-    <Guatemala>0</Guatemala>
-    <Guinée>0</Guinée>
-    <Guinée-équatoriale>0</Guinée-équatoriale>
-    <Guinée-Bissau>0</Guinée-Bissau>
-    <Guyana>0</Guyana>
-    <Haïti>0</Haïti>
-    <Honduras>0</Honduras>
-    <Hongrie>0</Hongrie>
-    <Îles-Cook>0</Îles-Cook>
-    <Îles-Marshall>0</Îles-Marshall>
-    <Inde>0</Inde>
-    <Indonésie>0</Indonésie>
-    <Irak>0</Irak>
-    <Iran>0</Iran>
-    <Irlande>0</Irlande>
-    <Islande>0</Islande>
-    <Italie>0</Italie>
-    <Jamaïque>0</Jamaïque>
-    <Japon>0</Japon>
-    <Jordanie>0</Jordanie>
-    <Kazakhstan>0</Kazakhstan>
-    <Kenya>0</Kenya>
-    <Kirghizistan>0</Kirghizistan>
-    <Kiribati>0</Kiribati>
-    <Koweït>0</Koweït>
-    <Laos>0</Laos>
-    <Lesotho>0</Lesotho>
-    <Lettonie>0</Lettonie>
-    <Liban>0</Liban>
-    <Liberia>0</Liberia>
-    <Libye>0</Libye>
-    <Liechtenstein>0</Liechtenstein>
-    <Lituanie>0</Lituanie>
-    <Luxembourg>0</Luxembourg>
-    <Macédoine>0</Macédoine>
-    <Madagascar>0</Madagascar>
-    <Malaisie>0</Malaisie>
-    <Malawi>0</Malawi>
-    <Maldives>0</Maldives>
-    <Mali>0</Mali>
-    <Malte>0</Malte>
-    <Maroc>0</Maroc>
-    <Maurice>0</Maurice>
-    <Mauritanie>0</Mauritanie>
-    <Mexique>0</Mexique>
-    <Micronésie>0</Micronésie>
-    <Moldavie>0</Moldavie>
-    <Monaco>0</Monaco>
-    <Mongolie>0</Mongolie>
-    <Mozambique>0</Mozambique>
-    <Namibie>0</Namibie>
-    <Nauru>0</Nauru>
-    <Népal>0</Népal>
-    <Nicaragua>0</Nicaragua>
-    <Niger>0</Niger>
-    <Nigeria>0</Nigeria>
-    <Norvège>0</Norvège>
-    <Nouvelle-Zélande>0</Nouvelle-Zélande>
-    <Oman>0</Oman>
-    <Ouganda>0</Ouganda>
-    <Ouzbékistan>0</Ouzbékistan>
-    <Pakistan>0</Pakistan>
-    <Palaos>0</Palaos>
-    <Panama>0</Panama>
-    <Papouasie-Nouvelle-Guinée>0</Papouasie-Nouvelle-Guinée>
-    <Paraguay>0</Paraguay>
-    <Pays-Bas>0</Pays-Bas>
-    <Pérou>0</Pérou>
-    <Philippines>0</Philippines>
-    <Pologne>0</Pologne>
-    <Portugal>0</Portugal>
-    <Qatar>0</Qatar>
-    <République-centrafricaine>0</République-centrafricaine>
-    <République-démocratique-du-Congo>0</République-démocratique-du-Congo>
-    <République-Dominicaine>0</République-Dominicaine>
-    <République-du-Congo>0</République-du-Congo>
-    <République-tchèque>0</République-tchèque>
-    <Roumanie>0</Roumanie>
-    <Royaume-Uni>0</Royaume-Uni>
-    <Russie>0</Russie>
-    <Rwanda>0</Rwanda>
-    <Saint-Kitts-et-Nevis>0</Saint-Kitts-et-Nevis>
-    <Saint-Vincent-et-les-Grenadines>0</Saint-Vincent-et-les-Grenadines>
-    <Sainte-Lucie>0</Sainte-Lucie>
-    <Saint-Marin>0</Saint-Marin>
-    <Salomon>0</Salomon>
-    <Salvador>0</Salvador>
-    <Samoa>0</Samoa>
-    <São-Tomé-et-Principe>0</São-Tomé-et-Principe>
-    <Sénégal>0</Sénégal>
-    <Serbie>0</Serbie>
-    <Seychelles>0</Seychelles>
-    <Sierra-Leone>0</Sierra-Leone>
-    <Singapour>0</Singapour>
-    <Slovaquie>0</Slovaquie>
-    <Slovénie>0</Slovénie>
-    <Somalie>0</Somalie>
-    <Soudan>0</Soudan>
-    <Soudan-du-Sud>0</Soudan-du-Sud>
-    <Sri-Lanka>0</Sri-Lanka>
-    <Suède>0</Suède>
-    <Suisse>0</Suisse>
-    <Suriname>0</Suriname>
-    <Swaziland>0</Swaziland>
-    <Syrie>0</Syrie>
-    <Taïwan>0</Taïwan>
-    <Tadjikistan>0</Tadjikistan>
-    <Tanzanie>0</Tanzanie>
-    <Tchad>0</Tchad>
-    <Thaïlande>0</Thaïlande>
-    <Timor-oriental>0</Timor-oriental>
-    <Togo>0</Togo>
-    <Tonga>0</Tonga>
-    <Trinité-et-Tobago>0</Trinité-et-Tobago>
-    <Tunisie>0</Tunisie>
-    <Turkménistan>0</Turkménistan>
-    <Turquie>0</Turquie>
-    <Tuvalu>0</Tuvalu>
-    <Ukraine>0</Ukraine>
-    <Uruguay>0</Uruguay>
-    <Vanuatu>0</Vanuatu>
-    <Vatican>0</Vatican>
-    <Venezuela>0</Venezuela>
-    <Viêt-Nam>0</Viêt-Nam>
-    <Yémen>0</Yémen>
-    <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-  </Zimbabwe>
-</youssef>
+</>

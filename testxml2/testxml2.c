@@ -1,117 +1,190 @@
-/*
- * section:  Tree
- * synopsis: Creates a tree
- * purpose:  Shows how to create document, nodes and dump it to stdout or file.
- * usage:    tree2 <filename>  -Default output: stdout
- * test:     tree2 > tree2.tmp && diff tree2.tmp $(srcdir)/tree2.res
- * author:   Lucas Brasilino <brasilino@recife.pe.gov.br>
- * copy:     see Copyright for the status of this software
+/**
+ * section: 	XPath
+ * synopsis: 	Load a document, locate subelements with XPath, modify
+ *              said elements and save the resulting document.
+ * purpose: 	Shows how to make a full round-trip from a load/edit/save
+ * usage:	xpath2 <xml-file> <xpath-expr> <new-value>
+ * test:	xpath2 test3.xml '//discarded' discarded > xpath2.tmp && diff xpath2.tmp $(srcdir)/xpath2.res
+ * author: 	Aleksey Sanin and Daniel Veillard
+ * copy: 	see Copyright for the status of this software.
  */
-
+#include <stdlib.h>
 #include <stdio.h>
-#include <libxml/parser.h>
+#include <string.h>
+#include <assert.h>
+
 #include <libxml/tree.h>
+#include <libxml/parser.h>
+#include <libxml/xpath.h>
+#include <libxml/xpathInternals.h>
 
-#if defined(LIBXML_TREE_ENABLED) && defined(LIBXML_OUTPUT_ENABLED)
+#if defined(LIBXML_XPATH_ENABLED) && defined(LIBXML_SAX1_ENABLED) && \
+    defined(LIBXML_OUTPUT_ENABLED)
 
-/*
- *To compile this file using gcc you can type
- *gcc `xml2-config --cflags --libs` -o tree2 tree2.c
- */
 
-/* A simple example how to create DOM. Libxml2 automagically
- * allocates the necessary amount of memory to it.
-*/
+static void usage(const char *name);
+static int example4(const char *filename, const xmlChar * xpathExpr,
+                    const xmlChar * value);
+static void update_xpath_nodes(xmlNodeSetPtr nodes, const xmlChar * value);
+
+
 int
-main(int argc, char **argv)
-{
-    xmlDocPtr doc = NULL;       /* document pointer */
-    xmlNodePtr root_node = NULL, node = NULL, node1 = NULL;/* node pointers */
-    char buff[256];
-    int i, j;
-
-    LIBXML_TEST_VERSION;
-
-    /*
-     * Creates a new document, a node and set it as a root node
-     */
-    doc = xmlNewDoc(BAD_CAST "1.0");
-    root_node = xmlNewNode(NULL, BAD_CAST "root");
-    xmlDocSetRootElement(doc, root_node);
-
-    /*
-     * Creates a DTD declaration. Isn't mandatory.
-     */
-    xmlCreateIntSubset(doc, BAD_CAST "root", NULL, BAD_CAST "tree2.dtd");
-
-    /*
-     * xmlNewChild() creates a new node, which is "attached" as child node
-     * of root_node node.
-     */
-    xmlNewChild(root_node, NULL, BAD_CAST "node1",
-                BAD_CAST "content of node 1");
-    /*
-     * The same as above, but the new child node doesn't have a content
-     */
-    xmlNewChild(root_node, NULL, BAD_CAST "node2", NULL);
-
-    /*
-     * xmlNewProp() creates attributes, which is "attached" to an node.
-     * It returns xmlAttrPtr, which isn't used here.
-     */
-    node =
-        xmlNewChild(root_node, NULL, BAD_CAST "node3",
-                    BAD_CAST "this node has attributes");
-    xmlNewProp(node, BAD_CAST "attribute", BAD_CAST "yes");
-    xmlNewProp(node, BAD_CAST "foo", BAD_CAST "bar");
-
-    /*
-     * Here goes another way to create nodes. xmlNewNode() and xmlNewText
-     * creates a node and a text node separately. They are "attached"
-     * by xmlAddChild()
-     */
-    node = xmlNewNode(NULL, BAD_CAST "node4");
-    node1 = xmlNewText(BAD_CAST
-                   "other way to create content (which is also a node)");
-    xmlAddChild(node, node1);
-    xmlAddChild(root_node, node);
-
-    /*
-     * A simple loop that "automates" nodes creation
-     */
-    for (i = 5; i < 7; i++) {
-        sprintf(buff, "node%d", i);
-        node = xmlNewChild(root_node, NULL, BAD_CAST buff, NULL);
-        for (j = 1; j < 4; j++) {
-            sprintf(buff, "node%d%d", i, j);
-            node1 = xmlNewChild(node, NULL, BAD_CAST buff, NULL);
-            xmlNewProp(node1, BAD_CAST "odd", BAD_CAST((j % 2) ? "no" : "yes"));
-        }
+main(int argc, char **argv) {
+    /* Parse command line and process file */
+    if (argc != 4) {
+	fprintf(stderr, "Error: wrong number of arguments.\n");
+	usage(argv[0]);
+	return(-1);
     }
 
-    /*
-     * Dumping document to stdio or file
-     */
-    xmlSaveFormatFileEnc(argc > 1 ? argv[1] : "-", doc, "UTF-8", 1);
+    /* Init libxml */
+    xmlInitParser();
+    LIBXML_TEST_VERSION
 
-    /*free the document */
-    xmlFreeDoc(doc);
+    /* Do the main job */
+    if (example4(argv[1], BAD_CAST argv[2], BAD_CAST argv[3])) {
+	usage(argv[0]);
+	return(-1);
+    }
 
-    /*
-     *Free the global variables that may
-     *have been allocated by the parser.
-     */
+    /* Shutdown libxml */
     xmlCleanupParser();
 
     /*
      * this is to debug memory for regression tests
      */
     xmlMemoryDump();
+    return 0;
+}
+
+/**
+ * usage:
+ * @name:		the program name.
+ *
+ * Prints usage information.
+ */
+static void
+usage(const char *name) {
+    assert(name);
+
+    fprintf(stderr, "Usage: %s <xml-file> <xpath-expr> <value>\n", name);
+}
+
+/**
+ * example4:
+ * @filename:		the input XML filename.
+ * @xpathExpr:		the xpath expression for evaluation.
+ * @value:		the new node content.
+ *
+ * Parses input XML file, evaluates XPath expression and update the nodes
+ * then print the result.
+ *
+ * Returns 0 on success and a negative value otherwise.
+ */
+static int
+example4(const char* filename, const xmlChar* xpathExpr, const xmlChar* value) {
+    xmlDocPtr doc;
+    xmlXPathContextPtr xpathCtx;
+    xmlXPathObjectPtr xpathObj;
+
+    assert(filename);
+    assert(xpathExpr);
+    assert(value);
+
+    /* Load XML document */
+    doc = xmlParseFile(filename);
+    if (doc == NULL) {
+	fprintf(stderr, "Error: unable to parse file \"%s\"\n", filename);
+	return(-1);
+    }
+
+    /* Create xpath evaluation context */
+    xpathCtx = xmlXPathNewContext(doc);
+    if(xpathCtx == NULL) {
+        fprintf(stderr,"Error: unable to create new XPath context\n");
+        xmlFreeDoc(doc);
+        return(-1);
+    }
+
+    /* Evaluate xpath expression */
+    xpathObj = xmlXPathEvalExpression(xpathExpr, xpathCtx);
+    if(xpathObj == NULL) {
+        fprintf(stderr,"Error: unable to evaluate xpath expression \"%s\"\n", xpathExpr);
+        xmlXPathFreeContext(xpathCtx);
+        xmlFreeDoc(doc);
+        return(-1);
+    }
+
+    /* update selected nodes */
+    update_xpath_nodes(xpathObj->nodesetval, value);
+
+
+    /* Cleanup of XPath data */
+    xmlXPathFreeObject(xpathObj);
+    xmlXPathFreeContext(xpathCtx);
+
+    /* dump the resulting document */
+    xmlDocDump(stdout, doc);
+
+
+    /* free the document */
+    xmlFreeDoc(doc);
+
     return(0);
 }
+
+/**
+ * update_xpath_nodes:
+ * @nodes:		the nodes set.
+ * @value:		the new value for the node(s)
+ *
+ * Prints the @nodes content to @output.
+ */
+static void
+update_xpath_nodes(xmlNodeSetPtr nodes, const xmlChar* value) {
+    int size;
+    int i;
+
+    assert(value);
+    size = (nodes) ? nodes->nodeNr : 0;
+
+    /*
+     * NOTE: the nodes are processed in reverse order, i.e. reverse document
+     *       order because xmlNodeSetContent can actually free up descendant
+     *       of the node and such nodes may have been selected too ! Handling
+     *       in reverse order ensure that descendant are accessed first, before
+     *       they get removed. Mixing XPath and modifications on a tree must be
+     *       done carefully !
+     */
+    for(i = size - 1; i >= 0; i--) {
+	assert(nodes->nodeTab[i]);
+
+	xmlNodeSetContent(nodes->nodeTab[i], value);
+	/*
+	 * All the elements returned by an XPath query are pointers to
+	 * elements from the tree *except* namespace nodes where the XPath
+	 * semantic is different from the implementation in libxml2 tree.
+	 * As a result when a returned node set is freed when
+	 * xmlXPathFreeObject() is called, that routine must check the
+	 * element type. But node from the returned set may have been removed
+	 * by xmlNodeSetContent() resulting in access to freed data.
+	 * This can be exercised by running
+	 *       valgrind xpath2 test3.xml '//discarded' discarded
+	 * There is 2 ways around it:
+	 *   - make a copy of the pointers to the nodes from the result set
+	 *     then call xmlXPathFreeObject() and then modify the nodes
+	 * or
+	 *   - remove the reference to the modified nodes from the node set
+	 *     as they are processed, if they are not namespace nodes.
+	 */
+	if (nodes->nodeTab[i]->type != XML_NAMESPACE_DECL)
+	    nodes->nodeTab[i] = NULL;
+    }
+}
+
 #else
 int main(void) {
-    fprintf(stderr, "tree support not compiled in\n");
+    fprintf(stderr, "XPath support not compiled in\n");
     exit(1);
 }
 #endif

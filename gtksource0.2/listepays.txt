@@ -42,7 +42,7 @@ Comores
 Corée-du-Nord
 Corée-du-Sud
 Costa-Rica
-Côte-d’Ivoire
+Côte-dIvoire
 Croatie
 Cuba
 Danemark
@@ -72,7 +72,6 @@ Guinée-Bissau
 Guyana
 Haïti
 Honduras
-Hong-Kong
 Hongrie
 Îles-Cook
 Îles-Marshall
