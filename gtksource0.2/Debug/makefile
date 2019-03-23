@@ -23,19 +23,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: gtksource0.2
+all: gtksource
 
 # Tool invocations
-gtksource0.2: $(OBJS) $(USER_OBJS)
+gtksource: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc -L/usr/lib -o "gtksource0.2" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc -L/usr/lib -o "gtksource" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) gtksource0.2
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) gtksource
 	-@echo ' '
 
 .PHONY: all clean dependents
