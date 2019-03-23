@@ -5,12 +5,10 @@
 #include <unistd.h>
 #include <gmodule.h>
 #include <string.h>
-//CA MARCHE ? et la
 #include <libxml/parser.h>
 #include <libxml/tree.h>
 #include <libxml/xmlreader.h>
 
-//LALALALALALA  fefefsefseffesf
 #define NBR_LVL 3
 #define NBR_LVL_F 5
 #define NBR_LVL_M 4
@@ -111,7 +109,7 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 	int i=rand()%3,k;
 	char buffer[500]="";
 	char s1[50],s2[50];
-	char *tab_button[3]={NomPaysAleatoireAfrique(),strcpy(s1,NomPaysAleatoire()),strcpy(s2,NomPaysAleatoire())};
+	char *tab_button[3]={NomPaysAleatoire(),strcpy(s1,NomPaysAleatoire()),strcpy(s2,NomPaysAleatoire())};
 	g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
 
 	table = gtk_table_new (6, 3, TRUE);

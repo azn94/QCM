@@ -9,7 +9,6 @@ Antigua-et-Barbuda
 Arabie-Saoudite
 Argentine
 Arménie
-Aruba
 Australie
 Autriche
 Azerbaïdjan
@@ -101,7 +100,6 @@ Libye
 Liechtenstein
 Lituanie
 Luxembourg
-Macao
 Macédoine
 Madagascar
 Malaisie
@@ -124,7 +122,6 @@ Népal
 Nicaragua
 Niger
 Nigeria
-Niue
 Norvège
 Nouvelle-Zélande
 Oman
@@ -132,7 +129,6 @@ Ouganda
 Ouzbékistan
 Pakistan
 Palaos
-Palestine
 Panama
 Papouasie-Nouvelle-Guinée
 Paraguay
@@ -175,6 +171,7 @@ Suisse
 Suriname
 Swaziland
 Syrie
+Taïwan
 Tadjikistan
 Tanzanie
 Tchad
