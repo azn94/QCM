@@ -29,7 +29,7 @@ typedef struct {
   char *nom_mauvaise;
 
 } stru;
-
+//
 typedef struct {
   int nombre;
   char *nom;
