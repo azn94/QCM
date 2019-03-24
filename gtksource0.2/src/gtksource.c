@@ -25,25 +25,75 @@ static void update_xpath_nodes(xmlNodeSetPtr nodes, const xmlChar * value);
 typedef struct {
   GtkWidget *wid;
   char *yes;
+  char *nom_utilisateur;
+  char *nom_mauvaise;
+
 } stru;
 
 typedef struct {
   int nombre;
-  GtkWidget *nom;
+  char *nom;
+
 } nom_nombre;
 
-void bonne_reponse(GtkWidget *widget, gpointer window) {
+typedef struct {
+	GtkWidget *wid;
+  char *nom1;
+  char *nom2;
+} nom_nom_nombre;
+
+
+void bonne_reponse(GtkWidget *widget, gpointer haribo2) {
   GtkWidget *dialog;
-  dialog = gtk_message_dialog_new(GTK_WINDOW(window),GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_QUESTION,GTK_BUTTONS_OK,"Bonne réponse");
+
+  nom_nom_nombre *berlin=malloc(sizeof(*berlin));
+  berlin=haribo2;
+  xmlInitParser();
+  LIBXML_TEST_VERSION
+  xmlDoc *doc = xmlParseFile(berlin->nom1);
+  xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
+  xmlXPathObject * xpathObj =xmlXPathEvalExpression( (xmlChar*)berlin->nom2, xpathCtx );
+  xmlNode *node = xpathObj->nodesetval->nodeTab[0];
+		  //xmlSetProp( node, (xmlChar*)"age", (xmlChar*)"3" );
+  xmlNodeSetContent(node, "1");
+  xmlSaveFormatFileEnc( berlin->nom1, doc, "utf-8", 1 );
+  xmlXPathFreeObject( xpathObj );
+  xmlXPathFreeContext( xpathCtx );
+  xmlFreeDoc( doc );
+  xmlCleanupParser();
+
+  dialog = gtk_message_dialog_new(GTK_WINDOW(berlin->wid),GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_QUESTION,GTK_BUTTONS_OK,"Bonne réponse");
   //gtk_window_set_title(GTK_WINDOW(dialog), "Question");
   gtk_dialog_run(GTK_DIALOG(dialog));
   gtk_widget_destroy(dialog);
+  //free(haribo2);
 }
 
 void mauvaise_reponse(GtkWidget *widget, gpointer haribo) {
   GtkWidget *dialog;
   stru *london=malloc(sizeof(*london));
   london=haribo;
+  g_printf("---------\nmauvaise réponse %s \n%s \n%s\n",london->yes,london->nom_utilisateur,london->nom_mauvaise);
+  xmlInitParser();
+    LIBXML_TEST_VERSION
+
+
+    char buf1[50],buf2[50];
+    g_snprintf(buf2,50,"/%s/%s/%s",london->nom_utilisateur,london->yes,london->nom_mauvaise);
+    g_snprintf(buf1,50,"%s.xml",london->nom_utilisateur);
+
+    xmlDoc *doc = xmlParseFile(buf1);
+    xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
+    xmlXPathObject * xpathObj =xmlXPathEvalExpression( (xmlChar*)buf2, xpathCtx );
+    xmlNode *node = xpathObj->nodesetval->nodeTab[0];
+  		  //xmlSetProp( node, (xmlChar*)"age", (xmlChar*)"3" );
+    xmlNodeSetContent(node, "1");
+    xmlSaveFormatFileEnc( buf1, doc, "utf-8", 1 );
+    xmlXPathFreeObject( xpathObj );
+    xmlXPathFreeContext( xpathCtx );
+    xmlFreeDoc( doc );
+    xmlCleanupParser();
+
   char Madrid[100];
   g_snprintf(Madrid,100,"mauvaise réponse, c'était : '%s'",london->yes);
   dialog = gtk_message_dialog_new(GTK_WINDOW(london->wid),GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_QUESTION,GTK_BUTTONS_OK,Madrid);
@@ -114,46 +164,7 @@ const  char* getPays (int r){
 	return buffer2;
 }
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-update_xpath_nodes(xmlNodeSetPtr nodes, const xmlChar* value) {
-    int size;
-    int i;
 
-    assert(value);
-    size = (nodes) ? nodes->nodeNr : 0;
-
-    /*
-     * NOTE: the nodes are processed in reverse order, i.e. reverse document
-     *       order because xmlNodeSetContent can actually free up descendant
-     *       of the node and such nodes may have been selected too ! Handling
-     *       in reverse order ensure that descendant are accessed first, before
-     *       they get removed. Mixing XPath and modifications on a tree must be
-     *       done carefully !
-     */
-    for(i = size - 1; i >= 0; i--) {
-	assert(nodes->nodeTab[i]);
-
-	xmlNodeSetContent(nodes->nodeTab[i], value);
-	/*
-	 * All the elements returned by an XPath query are pointers to
-	 * elements from the tree *except* namespace nodes where the XPath
-	 * semantic is different from the implementation in libxml2 tree.
-	 * As a result when a returned node set is freed when
-	 * xmlXPathFreeObject() is called, that routine must check the
-	 * element type. But node from the returned set may have been removed
-	 * by xmlNodeSetContent() resulting in access to freed data.
-	 * This can be exercised by running
-	 *       valgrind xpath2 test3.xml '//discarded' discarded
-	 * There is 2 ways around it:
-	 *   - make a copy of the pointers to the nodes from the result set
-	 *     then call xmlXPathFreeObject() and then modify the nodes
-	 * or
-	 *   - remove the reference to the modified nodes from the node set
-	 *     as they are processed, if they are not namespace nodes.
-	 */
-	if (nodes->nodeTab[i]->type != XML_NAMESPACE_DECL)
-	    nodes->nodeTab[i] = NULL;
-    }
-}
 void fonction_facile(GtkWidget *table99, gpointer user_data){
 	GtkWidget *button,*window,*table;
 
@@ -163,9 +174,7 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 	char *tab_button[3]={strcpy(s0,NomPaysAleatoire()),strcpy(s1,NomPaysAleatoire()),strcpy(s2,NomPaysAleatoire())};
 	g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
 
-
 	g_printf("%s \n%s \n%s\n",tab_button[0],tab_button[1],tab_button[2]);
-
 
 	table = gtk_table_new (6, 3, TRUE);
 	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -176,25 +185,42 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 
 	gtk_table_set_col_spacings(GTK_TABLE(table), 20);
 
-	stru *haribo=malloc(sizeof(*haribo));
-	haribo->yes=malloc(sizeof(char*)*100);
-	strcpy(haribo->yes,tab_button[0]);
-	haribo->wid=window;
+
+
+
 
 	gtk_container_add (GTK_CONTAINER (window), table);
 	button = gtk_image_new_from_file(buffer);
 	gtk_table_attach_defaults (GTK_TABLE (table), button, 0, 3, 0, 3);
 
+
 	nom_nombre *london=malloc(sizeof(*london));
+	london->nom=malloc(sizeof(char*)*100);
 	london=user_data;
+	g_printf("test ici celui qui marche pas  %s \n",london->nom);
+
 
 	london->nombre++;
 	int aaa=london->nombre;
 
-	xmlInitParser();
-		  LIBXML_TEST_VERSION
-		  char buf1[50],buf2[50];
+	char buf1[50],buf2[50];
+	g_snprintf(buf2,50,"/%s/%s/%s",london->nom,tab_button[0],tab_button[0]);
+	g_snprintf(buf1,50,"%s.xml",london->nom);
 
+	stru *haribo=malloc(sizeof(*haribo));
+	haribo->yes=malloc(sizeof(char*)*100);
+	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
+	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	strcpy(haribo->yes,tab_button[0]);
+	strcpy(haribo->nom_utilisateur,london->nom);
+	haribo->wid=window;
+
+	nom_nom_nombre *haribo2=malloc(sizeof(*haribo));
+	haribo2->nom1=malloc(sizeof(char*)*100);
+	haribo2->nom2=malloc(sizeof(char*)*100);
+	strcpy(haribo2->nom1,buf1);
+	strcpy(haribo2->nom2,buf2);
+	haribo2->wid=window;
 
 	for(k=0;k<3;k++){
 		while(tab_button[i]==0){
@@ -204,10 +230,12 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 		//g_snprintf(buf2,50,"/youssef/%s/%s",tab_button[0],tab_button[i]);
 			gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 4, 5);
 			if(i==0){
-				g_snprintf(buf2,50,"/youssef/%s/%s",tab_button[0],tab_button[0]);
-				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(bonne_reponse),  window);
+
+				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(bonne_reponse),  haribo2);
 			}else{
-				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(mauvaise_reponse),  haribo);}
+				strcpy(haribo->nom_mauvaise,tab_button[i]);
+				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(mauvaise_reponse),  haribo);
+			}
 			tab_button[i]=0;
 			if (aaa<4)
 				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK( fonction_facile), london);
@@ -217,21 +245,6 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 			}
 			g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_destroy), window);
 	}
-
-
-	  g_snprintf(buf1,50,"%s.xml","youssef");
-	  xmlDoc *doc = xmlParseFile(buf1 );
-	  xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
-	  xmlXPathObject * xpathObj =
-	  	xmlXPathEvalExpression( (xmlChar*)buf2, xpathCtx );
-	  xmlNode *node = xpathObj->nodesetval->nodeTab[0];
-	  //xmlSetProp( node, (xmlChar*)"age", (xmlChar*)"3" );
-	  xmlNodeSetContent(node, "1");
-	  xmlSaveFormatFileEnc( "youssef.xml", doc, "utf-8", 1 );
-	  xmlXPathFreeObject( xpathObj );
-	  xmlXPathFreeContext( xpathCtx );
-	  xmlFreeDoc( doc );
-	  xmlCleanupParser();
 
 
 
@@ -362,8 +375,11 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 	g_printf("%s\n",gtk_entry_get_text(GTK_ENTRY(user_data)));
 
 	nom_nombre *tagada=malloc(sizeof(*tagada));
-	tagada->nom=GTK_ENTRY(user_data);
+	tagada->nom=malloc(sizeof(char*)*100);
+	strcpy(tagada->nom,gtk_entry_get_text(user_data));
+	//tagada->nom=gtk_entry_get_text(user_data);
 
+	g_printf("l'autre test %s\n",tagada->nom);
 
 	 window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 	 gtk_window_set_title (GTK_WINDOW (window0), "QCM drapeau-choix de la difficulté");
@@ -379,8 +395,6 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 		tagada->nombre=0;
 		g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(fonction_facile), tagada);
 
-		//g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(callback), tagada->nombre=0;);
-		tagada->nombre=0;
 
 	button = gtk_button_new_with_label ("niveau moyen");
 		gtk_table_attach_defaults (GTK_TABLE (table0), button,  1, 2, 2, 3);
@@ -459,3 +473,21 @@ int main (int argc,char *argv[]){
 
 // const gchar* cur_value =gtk_entry_get_text (GTK_ENTRY (entry));
 // g_snprintf(nom_dutilisatuer,50,"%s", gtk_entry_get_text(GTK_ENTRY(entry)));
+
+
+/*xmlInitParser();
+	LIBXML_TEST_VERSION*/
+
+/*
+	  xmlDoc *doc = xmlParseFile(buf1);
+
+	  xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
+	  xmlXPathObject * xpathObj =xmlXPathEvalExpression( (xmlChar*)buf2, xpathCtx );
+	  xmlNode *node = xpathObj->nodesetval->nodeTab[0];
+	  //xmlSetProp( node, (xmlChar*)"age", (xmlChar*)"3" );
+	  xmlNodeSetContent(node, "1");
+	  xmlSaveFormatFileEnc( buf1, doc, "utf-8", 1 );
+	  xmlXPathFreeObject( xpathObj );
+	  xmlXPathFreeContext( xpathCtx );
+	  xmlFreeDoc( doc );
+	  xmlCleanupParser();*/
