@@ -1,190 +1,541 @@
-/**
- * section: 	XPath
- * synopsis: 	Load a document, locate subelements with XPath, modify
- *              said elements and save the resulting document.
- * purpose: 	Shows how to make a full round-trip from a load/edit/save
- * usage:	xpath2 <xml-file> <xpath-expr> <new-value>
- * test:	xpath2 test3.xml '//discarded' discarded > xpath2.tmp && diff xpath2.tmp $(srcdir)/xpath2.res
- * author: 	Aleksey Sanin and Daniel Veillard
- * copy: 	see Copyright for the status of this software.
- */
-#include <stdlib.h>
+#include <gtk/gtk.h>
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
+
 #include <assert.h>
 
-#include <libxml/tree.h>
+#include <time.h>
+#include <unistd.h>
+#include <gmodule.h>
+#include <string.h>
 #include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/xmlreader.h>
+#include <libxml/xmlmemory.h>
 #include <libxml/xpath.h>
 #include <libxml/xpathInternals.h>
 
-#if defined(LIBXML_XPATH_ENABLED) && defined(LIBXML_SAX1_ENABLED) && \
-    defined(LIBXML_OUTPUT_ENABLED)
+#define NBR_LVL 3
+#define NBR_LVL_F 5
+#define NBR_LVL_M 4
+#define L_FENETRE 700
+#define H_FENETRE 450
 
 
-static void usage(const char *name);
-static int example4(const char *filename, const xmlChar * xpathExpr,
-                    const xmlChar * value);
-static void update_xpath_nodes(xmlNodeSetPtr nodes, const xmlChar * value);
+typedef struct {
+  GtkWidget *wid;
+  char *yes;
+  char *nom_utilisateur;
+  char *nom_mauvaise;
+
+} stru;
+//ab
+typedef struct {
+  int nombre;
+  char *nom;
+
+} nom_nombre;
+
+typedef struct {
+	GtkWidget *wid;
+  char *nom1;
+  char *nom2;
+} nom_nom_nombre;
 
 
-int
-main(int argc, char **argv) {
-    /* Parse command line and process file */
-    if (argc != 4) {
-	fprintf(stderr, "Error: wrong number of arguments.\n");
-	usage(argv[0]);
-	return(-1);
-    }
+void bonne_reponse(GtkWidget *widget, gpointer haribo2) {
+  GtkWidget *dialog;
 
-    /* Init libxml */
-    xmlInitParser();
+  nom_nom_nombre *berlin=malloc(sizeof(*berlin));
+  berlin=haribo2;
+  xmlInitParser();
+  LIBXML_TEST_VERSION
+  xmlDoc *doc = xmlParseFile(berlin->nom1);
+  xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
+  xmlXPathObject * xpathObj =xmlXPathEvalExpression( (xmlChar*)berlin->nom2, xpathCtx );
+  xmlNode *node = xpathObj->nodesetval->nodeTab[0];
+		  //xmlSetProp( node, (xmlChar*)"age", (xmlChar*)"3" );
+  xmlNodeSetContent(node, "1");
+  xmlSaveFormatFileEnc( berlin->nom1, doc, "utf-8", 1 );
+  xmlXPathFreeObject( xpathObj );
+  xmlXPathFreeContext( xpathCtx );
+  xmlFreeDoc( doc );
+  xmlCleanupParser();
+
+  dialog = gtk_message_dialog_new(GTK_WINDOW(berlin->wid),GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_QUESTION,GTK_BUTTONS_OK,"Bonne réponse");
+  //gtk_window_set_title(GTK_WINDOW(dialog), "Question");
+  gtk_dialog_run(GTK_DIALOG(dialog));
+  gtk_widget_destroy(dialog);
+  //free(haribo2);
+}
+
+void mauvaise_reponse(GtkWidget *widget, gpointer haribo) {
+  GtkWidget *dialog;
+  stru *london=malloc(sizeof(*london));
+  london=haribo;
+  g_printf("---------\nmauvaise réponse %s \n%s \n%s\n",london->yes,london->nom_utilisateur,london->nom_mauvaise);
+  xmlInitParser();
     LIBXML_TEST_VERSION
 
-    /* Do the main job */
-    if (example4(argv[1], BAD_CAST argv[2], BAD_CAST argv[3])) {
-	usage(argv[0]);
-	return(-1);
-    }
 
-    /* Shutdown libxml */
+    char buf1[50],buf2[50];
+    g_snprintf(buf2,50,"/%s/%s/%s",london->nom_utilisateur,london->yes,london->nom_mauvaise);
+    g_snprintf(buf1,50,"%s.xml",london->nom_utilisateur);
+
+    xmlDoc *doc = xmlParseFile(buf1);
+    xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
+    xmlXPathObject * xpathObj =xmlXPathEvalExpression( (xmlChar*)buf2, xpathCtx );
+    xmlNode *node = xpathObj->nodesetval->nodeTab[0];
+  		  //xmlSetProp( node, (xmlChar*)"age", (xmlChar*)"3" );
+    xmlNodeSetContent(node, "1");
+    xmlSaveFormatFileEnc( buf1, doc, "utf-8", 1 );
+    xmlXPathFreeObject( xpathObj );
+    xmlXPathFreeContext( xpathCtx );
+    xmlFreeDoc( doc );
     xmlCleanupParser();
 
-    /*
-     * this is to debug memory for regression tests
-     */
-    xmlMemoryDump();
-    return 0;
+  char Madrid[100];
+  g_snprintf(Madrid,100,"mauvaise réponse, c'était : '%s'",london->yes);
+  dialog = gtk_message_dialog_new(GTK_WINDOW(london->wid),GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_QUESTION,GTK_BUTTONS_OK,Madrid);
+  gtk_dialog_run(GTK_DIALOG(dialog));
+  gtk_widget_destroy(dialog);
+  free(haribo);
+}
+void Fin_du_jeu(GtkWidget *widget, gpointer window) {
+	GtkWidget *dialog;
+	dialog = gtk_message_dialog_new(GTK_WINDOW(window),GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_QUESTION,GTK_BUTTONS_OK,"\n\n\n\n\t\tFIN DU JEU\t\t\n\n\n\n");
+	  //gtk_window_set_title(GTK_WINDOW(dialog), "Question");
+	gtk_dialog_run(GTK_DIALOG(dialog));
+	gtk_widget_destroy(dialog);
 }
 
-/**
- * usage:
- * @name:		the program name.
- *
- * Prints usage information.
- */
-static void
-usage(const char *name) {
-    assert(name);
-
-    fprintf(stderr, "Usage: %s <xml-file> <xpath-expr> <value>\n", name);
+const  char* NomPaysAleatoire (){
+	FILE *f=fopen("listepays.txt","r");
+	static char buffer[100];
+	static char buffer2[40];
+	int i=rand()%195;
+	int j=0;
+	while(fgets(buffer,100,f)&& j<i){
+		j++;
+	}
+	sscanf(buffer,"%s",&buffer2);
+	fclose(f);
+	return buffer2;
+}
+const  char* NomPaysAleatoireEurope (){
+	FILE *f=fopen("listepaysEurope.txt","r");
+	if(f==NULL){
+		fprintf(stderr,"probleme d'ouverture\n ");
+		return NULL;}
+	static char buffer[100];
+	//static char buffer2[100];
+	int i=rand()%1;
+	int j=0;
+	if(fgets(buffer,100,f)==NULL)
+				return NULL;
+	while(fgets(buffer,sizeof(buffer),f)&& j<i){
+		j++;
+	}
+	sscanf(buffer,"%s",&buffer);
+	fclose(f);
+	return buffer;
 }
 
-/**
- * example4:
- * @filename:		the input XML filename.
- * @xpathExpr:		the xpath expression for evaluation.
- * @value:		the new node content.
- *
- * Parses input XML file, evaluates XPath expression and update the nodes
- * then print the result.
- *
- * Returns 0 on success and a negative value otherwise.
- */
-static int
-example4(const char* filename, const xmlChar* xpathExpr, const xmlChar* value) {
-    xmlDocPtr doc;
-    xmlXPathContextPtr xpathCtx;
-    xmlXPathObjectPtr xpathObj;
+const  char* NomPaysAleatoireAfrique (){
+	FILE *f=fopen("listepaysAfrique.txt","r");
+	if(f==NULL){
+		fprintf(stderr,"probleme d'ouverture \n ");
+		return NULL;}
+	static char buffer[100];
+	static char buffer2[100];
+	int i=rand()%27;
+	int j=0;
+	if(fgets(buffer,100,f)==NULL)
+				return NULL;
+	while(fgets(buffer,100,f)&& j<i){
+		j++;
+	}
+	sscanf(buffer,"%s",&buffer2);
+	fclose(f);
+	return buffer2;
+}
 
-    assert(filename);
-    assert(xpathExpr);
-    assert(value);
+////
+const  char* getPays (int r){
+	FILE *f=fopen("listepays.txt","r");
+	if(f==NULL){
+			fprintf(stderr,"probleme d'ouverture\n ");
+			return NULL;}
+	static char buffer[100];
+	static char buffer2[100];
+	int i=r;
+	int j=0;
+	if(fgets(buffer,100,f)==NULL)
+			return NULL;
+	while(fgets(buffer,100,f)&& j<i){
+		j++;
+	}
+	sscanf(buffer,"%s",&buffer2);
+	fclose(f);
+	return buffer2;
+}
 
-    /* Load XML document */
-    doc = xmlParseFile(filename);
-    if (doc == NULL) {
-	fprintf(stderr, "Error: unable to parse file \"%s\"\n", filename);
-	return(-1);
-    }
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
-    /* Create xpath evaluation context */
-    xpathCtx = xmlXPathNewContext(doc);
-    if(xpathCtx == NULL) {
-        fprintf(stderr,"Error: unable to create new XPath context\n");
-        xmlFreeDoc(doc);
-        return(-1);
-    }
+void fonction_facile(GtkWidget *table99, gpointer user_data){
+	GtkWidget *button,*window,*table;
+	GtkWidget *layout,*image;
 
-    /* Evaluate xpath expression */
-    xpathObj = xmlXPathEvalExpression(xpathExpr, xpathCtx);
-    if(xpathObj == NULL) {
-        fprintf(stderr,"Error: unable to evaluate xpath expression \"%s\"\n", xpathExpr);
-        xmlXPathFreeContext(xpathCtx);
-        xmlFreeDoc(doc);
-        return(-1);
-    }
+	int i=rand()%3,k;
+	char buffer[500]="";
+	char s0[50],s1[50],s2[50];
+	char *tab_button[3]={strcpy(s0,NomPaysAleatoire()),strcpy(s1,NomPaysAleatoire()),strcpy(s2,NomPaysAleatoire())};
+	g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
 
-    /* update selected nodes */
-    update_xpath_nodes(xpathObj->nodesetval, value);
+	//g_printf("%s \n%s \n%s\n",tab_button[0],tab_button[1],tab_button[2]);
 
+	table = gtk_table_new (6, 3, TRUE);
+	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-facile");
+	gtk_window_set_default_size (GTK_WINDOW (window), L_FENETRE, H_FENETRE);
+	gtk_container_set_border_width (GTK_CONTAINER (window), 100);
+	gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER_ALWAYS);
 
-    /* Cleanup of XPath data */
-    xmlXPathFreeObject(xpathObj);
-    xmlXPathFreeContext(xpathCtx);
+	layout = gtk_layout_new(NULL, NULL);
+		  gtk_container_add(GTK_CONTAINER (window), layout);
+		    // gtk_widget_show(layout);
 
-    /* dump the resulting document */
-    xmlDocDump(stdout, doc);
+		  image = gtk_image_new_from_file("onu resize.png");
+		  gtk_layout_put(layout, image, 0, 0);
 
 
-    /* free the document */
+	gtk_table_set_col_spacings(GTK_TABLE(table), 20);
+
+
+	gtk_container_add (GTK_CONTAINER (layout), table);
+
+
+	button = gtk_image_new_from_file(buffer);
+	gtk_table_attach_defaults (GTK_TABLE (table), button, 0, 3, 0, 3);
+
+
+	nom_nombre *london=malloc(sizeof(*london));
+	london->nom=malloc(sizeof(char*)*100);
+	london=user_data;
+	//g_printf("test ici celui qui marche pas  %s \n",london->nom);
+
+
+	london->nombre++;
+	int aaa=london->nombre;
+
+	char buf1[50],buf2[50];
+	g_snprintf(buf2,50,"/%s/%s/%s",london->nom,tab_button[0],tab_button[0]);
+	g_snprintf(buf1,50,"%s.xml",london->nom);
+
+	stru *haribo=malloc(sizeof(*haribo));
+	haribo->yes=malloc(sizeof(char*)*100);
+	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
+	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	strcpy(haribo->yes,tab_button[0]);
+	strcpy(haribo->nom_utilisateur,london->nom);
+	haribo->wid=window;
+
+	nom_nom_nombre *haribo2=malloc(sizeof(*haribo));
+	haribo2->nom1=malloc(sizeof(char*)*100);
+	haribo2->nom2=malloc(sizeof(char*)*100);
+	strcpy(haribo2->nom1,buf1);
+	strcpy(haribo2->nom2,buf2);
+	haribo2->wid=window;
+
+	for(k=0;k<3;k++){
+		while(tab_button[i]==0){
+				i=rand()%3;
+		}
+		button = gtk_button_new_with_label (tab_button[i]);
+		//g_snprintf(buf2,50,"/youssef/%s/%s",tab_button[0],tab_button[i]);
+			gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 4, 5);
+			if(i==0){
+
+				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(bonne_reponse),  haribo2);
+			}else{
+				strcpy(haribo->nom_mauvaise,tab_button[i]);
+				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(mauvaise_reponse),  haribo);
+			}
+			tab_button[i]=0;
+			if (aaa<4)
+				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK( fonction_facile), london);
+			else{
+				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK( Fin_du_jeu), window);
+				london->nombre=0;
+			}
+			g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_destroy), window);
+	}
+
+
+
+	gtk_widget_show_all(GTK_WIDGET(window));
+
+}
+
+void fonction_moyen2(GtkWidget *table99,gpointer user_data){
+	GtkWidget *button,*button2,*window,*table;
+	int i=rand()%6,j=rand()%18,k,l;
+	char buffer[500]="";
+	char s1[50],s2[50],s3[50],s4[50],s5[50];
+	char *tab_button[6]={NomPaysAleatoire(),strcpy(s1,NomPaysAleatoire()),strcpy(s2,NomPaysAleatoire()),strcpy(s3,NomPaysAleatoire()),strcpy(s4,NomPaysAleatoire()),strcpy(s5,NomPaysAleatoire())};
+	g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
+
+	table = gtk_table_new (6, 3, TRUE);
+	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-medium");
+	gtk_window_set_default_size (GTK_WINDOW (window), L_FENETRE, H_FENETRE);
+	gtk_container_set_border_width (GTK_CONTAINER (window), 100);
+	gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER_ALWAYS);
+
+	gtk_table_set_col_spacings(GTK_TABLE(table), 20);
+	gtk_table_set_row_spacings(GTK_TABLE(table), 20);
+	stru *haribo=malloc(sizeof(*haribo));
+	haribo->yes=malloc(sizeof(char*));
+	strcpy(haribo->yes,tab_button[0]);
+	haribo->wid=window;
+
+	gtk_container_add (GTK_CONTAINER (window), table);
+
+	button = gtk_image_new_from_file(buffer);
+	gtk_table_attach_defaults (GTK_TABLE (table), button, 0, 3, 0, 3);
+
+	int aaa=user_data;
+	aaa--;
+
+	for(k=0;k<3;k++){
+		while(tab_button[i]==0){
+				i=rand()%6;}
+			button = gtk_button_new_with_label (tab_button[i]);
+				gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 4, 5);
+				if(i==0){
+					g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(bonne_reponse),  window);
+				}else{
+					g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(mauvaise_reponse),  haribo);}
+				tab_button[i]=0;
+				if (user_data>0)
+					g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK( fonction_moyen2), aaa);
+				else g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK( Fin_du_jeu), window);
+
+				g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_destroy), window);
+		}
+	for(k=0;k<3;k++){
+		while(tab_button[i]==0){
+				i=rand()%6;}
+			button = gtk_button_new_with_label (tab_button[i]);
+				gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 5, 6);
+				if(i==0){
+					g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(bonne_reponse),  window);
+				}else{
+					g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(mauvaise_reponse),  haribo);}
+				tab_button[i]=0;
+				if (user_data>0)
+					g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK( fonction_moyen2), aaa);
+				else g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK( Fin_du_jeu), window);
+
+				g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_destroy), window);
+		}
+	gtk_widget_show_all(GTK_WIDGET(window));
+}
+
+void xml(char nom[]){
+	gchar buff[1024];
+	xmlTextReaderPtr reader;
+	char buff2[4000];
+	g_snprintf(buff,1024,"%s.xml",nom);
+
+	reader = xmlReaderForFile(buff, NULL, 0);
+	if(reader != NULL){
+		fprintf(stderr, "le fichier existe deja ");
+		return;}
+
+    xmlDocPtr doc = NULL;       /* document pointer */
+    xmlNodePtr root_node = NULL, node = NULL, node1 = NULL;/* node pointers */
+    xmlNodePtr root_node2 = NULL;
+    xmlDtdPtr dtd = NULL;       /* DTD pointer */
+  //  char buff[256];
+    int i, j;
+
+    LIBXML_TEST_VERSION;
+
+    doc = xmlNewDoc(BAD_CAST "1.0");
+    root_node = xmlNewNode(NULL, BAD_CAST nom);
+    xmlDocSetRootElement(doc, root_node);
+
+    /*node = xmlNewNode(NULL, BAD_CAST "node4");
+     node1 = xmlNewText(BAD_CAST"other way to create content (which is also a node)");
+     xmlAddChild(node, node1);
+     xmlAddChild(root_node, node);*/
+
+     /*
+      * A simple loop that "automates" nodes creation
+      */
+     for (i = 0; i < 200; i++) {
+         sprintf(buff2, getPays(i), i);
+         node = xmlNewChild(root_node, NULL, BAD_CAST buff2, NULL);
+         for (j = 0; j < 200; j++) {
+             sprintf(buff2, getPays(j), j);
+             node1 = xmlNewChild(node, NULL, BAD_CAST buff2, "0");
+             xmlNewProp(node1, NULL, 0);
+         }
+     }
+    /* Dumping document to stdio or file*/
+    //xmlSaveFormatFileEnc(argc > 1 ? argv[1] : "-", doc, "UTF-8", 1);
+    xmlSaveFormatFileEnc( buff, doc, "utf-8", 1 );
     xmlFreeDoc(doc);
-
-    return(0);
+    xmlCleanupParser();
+    return;
 }
 
-/**
- * update_xpath_nodes:
- * @nodes:		the nodes set.
- * @value:		the new value for the node(s)
- *
- * Prints the @nodes content to @output.
- */
-static void
-update_xpath_nodes(xmlNodeSetPtr nodes, const xmlChar* value) {
-    int size;
-    int i;
 
-    assert(value);
-    size = (nodes) ? nodes->nodeNr : 0;
+void Choix_niveaux(GtkWidget *table,gpointer user_data){
+	GtkWidget *button,*window0,*table0,*layout,*image;
 
-    /*
-     * NOTE: the nodes are processed in reverse order, i.e. reverse document
-     *       order because xmlNodeSetContent can actually free up descendant
-     *       of the node and such nodes may have been selected too ! Handling
-     *       in reverse order ensure that descendant are accessed first, before
-     *       they get removed. Mixing XPath and modifications on a tree must be
-     *       done carefully !
-     */
-    for(i = size - 1; i >= 0; i--) {
-	assert(nodes->nodeTab[i]);
+	xml(gtk_entry_get_text(GTK_ENTRY(user_data)));
 
-	xmlNodeSetContent(nodes->nodeTab[i], value);
-	/*
-	 * All the elements returned by an XPath query are pointers to
-	 * elements from the tree *except* namespace nodes where the XPath
-	 * semantic is different from the implementation in libxml2 tree.
-	 * As a result when a returned node set is freed when
-	 * xmlXPathFreeObject() is called, that routine must check the
-	 * element type. But node from the returned set may have been removed
-	 * by xmlNodeSetContent() resulting in access to freed data.
-	 * This can be exercised by running
-	 *       valgrind xpath2 test3.xml '//discarded' discarded
-	 * There is 2 ways around it:
-	 *   - make a copy of the pointers to the nodes from the result set
-	 *     then call xmlXPathFreeObject() and then modify the nodes
-	 * or
-	 *   - remove the reference to the modified nodes from the node set
-	 *     as they are processed, if they are not namespace nodes.
-	 */
-	if (nodes->nodeTab[i]->type != XML_NAMESPACE_DECL)
-	    nodes->nodeTab[i] = NULL;
-    }
+	g_printf("%s\n",gtk_entry_get_text(GTK_ENTRY(user_data)));
+
+	nom_nombre *tagada=malloc(sizeof(*tagada));
+	tagada->nom=malloc(sizeof(char*)*100);
+	strcpy(tagada->nom,gtk_entry_get_text(user_data));
+	//tagada->nom=gtk_entry_get_text(user_data);
+
+	//g_printf("l'autre test %s\n",tagada->nom);
+
+	 window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+	 gtk_window_set_title (GTK_WINDOW (window0), "QCM drapeau-choix de la difficulté");
+	 gtk_window_set_default_size (GTK_WINDOW (window0), L_FENETRE, H_FENETRE);
+	 gtk_container_set_border_width (GTK_CONTAINER (window0), 5);
+	 gtk_window_set_position(GTK_WINDOW(window0), GTK_WIN_POS_CENTER_ALWAYS);
+
+
+	 layout = gtk_layout_new(NULL, NULL);
+	  gtk_container_add(GTK_CONTAINER (window0), layout);
+	    // gtk_widget_show(layout);
+
+	  image = gtk_image_new_from_file("onu resize.png");
+	  gtk_layout_put(layout, image, 0, 0);
+
+
+	 table0 = gtk_table_new (7, 5, TRUE);
+	 gtk_table_set_row_spacings(GTK_TABLE(table0), 50);
+	 gtk_table_set_col_spacings(GTK_TABLE(table0), 20);
+
+	button = gtk_button_new_with_label ("niveau facile");
+		gtk_table_attach_defaults (GTK_TABLE (table0), button,2, 3, 1, 2);
+		tagada->nombre=0;
+		g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(fonction_facile), tagada);
+
+
+	button = gtk_button_new_with_label ("niveau moyen");
+		gtk_table_attach_defaults (GTK_TABLE (table0), button,  2, 3, 2, 3);
+		g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(fonction_moyen2), NBR_LVL_M);
+
+	button = gtk_button_new_with_label ("niveau difficile");
+		gtk_table_attach_defaults (GTK_TABLE (table0), button,  2, 3, 3, 4);
+
+	gtk_container_add (GTK_CONTAINER (layout), table0);
+	gtk_widget_show_all(GTK_WIDGET(window0));
 }
+int main (int argc,char *argv[]){
+  GtkWidget *window0,*entry,*button,*table;
+  GtkWidget *label1;
+  GtkWidget *image,*layout;
 
-#else
-int main(void) {
-    fprintf(stderr, "XPath support not compiled in\n");
-    exit(1);
+  srand(time(NULL));
+  gtk_init (&argc, &argv);
+
+
+  window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+  gtk_window_set_title (GTK_WINDOW (window0), "QCM drapeau-choix de la difficulté");
+  gtk_window_set_default_size (GTK_WINDOW (window0), L_FENETRE, H_FENETRE);
+  gtk_container_set_border_width (GTK_CONTAINER (window0), 5);
+  gtk_window_set_position(GTK_WINDOW(window0), GTK_WIN_POS_CENTER_ALWAYS);
+
+
+
+  layout = gtk_layout_new(NULL, NULL);
+  gtk_container_add(GTK_CONTAINER (window0), layout);
+    // gtk_widget_show(layout);
+
+  image = gtk_image_new_from_file("onu resize.png");
+  gtk_layout_put(layout, image, 0, 0);
+
+
+  table = gtk_table_new(5, 5, FALSE);
+  gtk_container_add(GTK_CONTAINER(layout), table);
+
+
+  label1 = gtk_label_new("Entrez votre nom:");
+  gtk_table_attach_defaults(GTK_TABLE(table), label1, 1, 2, 0, 1);
+
+  entry=gtk_entry_new();
+  gtk_table_attach_defaults(GTK_TABLE(table), entry, 0, 3,2, 3);
+
+  button=gtk_button_new_with_label("Valider");
+  gtk_table_attach_defaults (GTK_TABLE (table), button, 1, 2,4, 5);
+
+  g_signal_connect(G_OBJECT(button),"clicked",G_CALLBACK(Choix_niveaux),entry);
+  g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_destroy), window0);
+
+
+  gtk_widget_show_all (window0);
+  gtk_main ();
+
+  return 0;
 }
-#endif
+/*
+int main (int argc,char *argv[]){
+  GtkWidget *window0,*hbox,*entry,*button,*table;
+
+  srand(time(NULL));
+  gtk_init (&argc, &argv);
+
+  window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+  gtk_window_set_title (GTK_WINDOW (window0), "QCM drapeau-choix de la difficulté");
+  gtk_window_set_default_size (GTK_WINDOW (window0), L_FENETRE, H_FENETRE);
+  gtk_container_set_border_width (GTK_CONTAINER (window0), 5);
+  gtk_window_set_position(GTK_WINDOW(window0), GTK_WIN_POS_CENTER_ALWAYS);
+
+ hbox=gtk_box_new(GTK_ORIENTATION_HORIZONTAL,5);
+  gtk_container_add(GTK_CONTAINER(window0),hbox);
+
+  entry=gtk_entry_new();
+  gtk_box_pack_start(GTK_BOX(hbox),entry,TRUE,TRUE,5);
+  button=gtk_button_new_with_label("Valider");
+
+  gtk_box_pack_start(GTK_BOX(hbox),button,FALSE,FALSE,0);
+
+  g_signal_connect(G_OBJECT(button),"clicked",G_CALLBACK(Choix_niveaux),entry);
+  g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_destroy), window0);
+
+  gtk_widget_show_all (window0);
+  gtk_main ();
+
+  return 0;
+}*/
+
+// const gchar* cur_value =gtk_entry_get_text (GTK_ENTRY (entry));
+// g_snprintf(nom_dutilisatuer,50,"%s", gtk_entry_get_text(GTK_ENTRY(entry)));
+
+
+/*xmlInitParser();
+	LIBXML_TEST_VERSION*/
+
+/*
+	  xmlDoc *doc = xmlParseFile(buf1);
+
+	  xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
+	  xmlXPathObject * xpathObj =xmlXPathEvalExpression( (xmlChar*)buf2, xpathCtx );
+	  xmlNode *node = xpathObj->nodesetval->nodeTab[0];
+	  //xmlSetProp( node, (xmlChar*)"age", (xmlChar*)"3" );
+	  xmlNodeSetContent(node, "1");
+	  xmlSaveFormatFileEnc( buf1, doc, "utf-8", 1 );
+	  xmlXPathFreeObject( xpathObj );
+	  xmlXPathFreeContext( xpathCtx );
+	  xmlFreeDoc( doc );
+	  xmlCleanupParser();*/

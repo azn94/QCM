@@ -1,209 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pseudo>
-  <Afrique-du-Sud>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
-    <Afghanistan>0</Afghanistan>
-    <Albanie>0</Albanie>
-    <Algérie>0</Algérie>
-    <Allemagne>0</Allemagne>
-    <Andorre>0</Andorre>
-    <Angola>0</Angola>
-    <Antigua-et-Barbuda>0</Antigua-et-Barbuda>
-    <Arabie-Saoudite>0</Arabie-Saoudite>
-    <Argentine>0</Argentine>
-    <Arménie>0</Arménie>
-    <Australie>0</Australie>
-    <Autriche>0</Autriche>
-    <Azerbaïdjan>0</Azerbaïdjan>
-    <Bahamas>0</Bahamas>
-    <Bahreïn>0</Bahreïn>
-    <Bangladesh>0</Bangladesh>
-    <Barbade>0</Barbade>
-    <Belgique>0</Belgique>
-    <Belize>0</Belize>
-    <Bénin>0</Bénin>
-    <Bhoutan>0</Bhoutan>
-    <Biélorussie>0</Biélorussie>
-    <Birmanie>0</Birmanie>
-    <Bolivie>0</Bolivie>
-    <Bosnie-Herzégovine>0</Bosnie-Herzégovine>
-    <Botswana>0</Botswana>
-    <Brésil>0</Brésil>
-    <Brunei>0</Brunei>
-    <Bulgarie>0</Bulgarie>
-    <Burkina-Faso>0</Burkina-Faso>
-    <Burundi>0</Burundi>
-    <Cambodge>0</Cambodge>
-    <Cameroun>0</Cameroun>
-    <Canada>0</Canada>
-    <Cap-Vert>0</Cap-Vert>
-    <Chili>0</Chili>
-    <Chine>0</Chine>
-    <Chypre>0</Chypre>
-    <Colombie>0</Colombie>
-    <Comores>0</Comores>
-    <Corée-du-Nord>0</Corée-du-Nord>
-    <Corée-du-Sud>0</Corée-du-Sud>
-    <Costa-Rica>0</Costa-Rica>
-    <Côte-dIvoire>0</Côte-dIvoire>
-    <Croatie>0</Croatie>
-    <Cuba>0</Cuba>
-    <Danemark>0</Danemark>
-    <Djibouti>0</Djibouti>
-    <Dominique>0</Dominique>
-    <Égypte>0</Égypte>
-    <Émirats-arabes-unis>0</Émirats-arabes-unis>
-    <Équateur>0</Équateur>
-    <Érythrée>0</Érythrée>
-    <Espagne>0</Espagne>
-    <Estonie>0</Estonie>
-    <États-Unis>0</États-Unis>
-    <Éthiopie>0</Éthiopie>
-    <Fidji>0</Fidji>
-    <Finlande>0</Finlande>
-    <France>0</France>
-    <Gabon>0</Gabon>
-    <Gambie>0</Gambie>
-    <Géorgie>0</Géorgie>
-    <Ghana>0</Ghana>
-    <Grèce>0</Grèce>
-    <Grenade>0</Grenade>
-    <Guatemala>0</Guatemala>
-    <Guinée>0</Guinée>
-    <Guinée-équatoriale>0</Guinée-équatoriale>
-    <Guinée-Bissau>0</Guinée-Bissau>
-    <Guyana>0</Guyana>
-    <Haïti>0</Haïti>
-    <Honduras>0</Honduras>
-    <Hongrie>0</Hongrie>
-    <Îles-Cook>0</Îles-Cook>
-    <Îles-Marshall>0</Îles-Marshall>
-    <Inde>0</Inde>
-    <Indonésie>0</Indonésie>
-    <Irak>0</Irak>
-    <Iran>0</Iran>
-    <Irlande>0</Irlande>
-    <Islande>0</Islande>
-    <Italie>0</Italie>
-    <Jamaïque>0</Jamaïque>
-    <Japon>0</Japon>
-    <Jordanie>0</Jordanie>
-    <Kazakhstan>0</Kazakhstan>
-    <Kenya>0</Kenya>
-    <Kirghizistan>0</Kirghizistan>
-    <Kiribati>0</Kiribati>
-    <Koweït>0</Koweït>
-    <Laos>0</Laos>
-    <Lesotho>0</Lesotho>
-    <Lettonie>0</Lettonie>
-    <Liban>0</Liban>
-    <Liberia>0</Liberia>
-    <Libye>0</Libye>
-    <Liechtenstein>0</Liechtenstein>
-    <Lituanie>0</Lituanie>
-    <Luxembourg>0</Luxembourg>
-    <Macédoine>0</Macédoine>
-    <Madagascar>0</Madagascar>
-    <Malaisie>0</Malaisie>
-    <Malawi>0</Malawi>
-    <Maldives>0</Maldives>
-    <Mali>0</Mali>
-    <Malte>0</Malte>
-    <Maroc>0</Maroc>
-    <Maurice>0</Maurice>
-    <Mauritanie>0</Mauritanie>
-    <Mexique>0</Mexique>
-    <Micronésie>0</Micronésie>
-    <Moldavie>0</Moldavie>
-    <Monaco>0</Monaco>
-    <Mongolie>0</Mongolie>
-    <Mozambique>0</Mozambique>
-    <Namibie>0</Namibie>
-    <Nauru>0</Nauru>
-    <Népal>0</Népal>
-    <Nicaragua>0</Nicaragua>
-    <Niger>0</Niger>
-    <Nigeria>0</Nigeria>
-    <Norvège>0</Norvège>
-    <Nouvelle-Zélande>0</Nouvelle-Zélande>
-    <Oman>0</Oman>
-    <Ouganda>0</Ouganda>
-    <Ouzbékistan>0</Ouzbékistan>
-    <Pakistan>0</Pakistan>
-    <Palaos>0</Palaos>
-    <Panama>0</Panama>
-    <Papouasie-Nouvelle-Guinée>0</Papouasie-Nouvelle-Guinée>
-    <Paraguay>0</Paraguay>
-    <Pays-Bas>0</Pays-Bas>
-    <Pérou>0</Pérou>
-    <Philippines>0</Philippines>
-    <Pologne>0</Pologne>
-    <Portugal>0</Portugal>
-    <Qatar>0</Qatar>
-    <République-centrafricaine>0</République-centrafricaine>
-    <République-démocratique-du-Congo>0</République-démocratique-du-Congo>
-    <République-Dominicaine>0</République-Dominicaine>
-    <République-du-Congo>0</République-du-Congo>
-    <République-tchèque>0</République-tchèque>
-    <Roumanie>0</Roumanie>
-    <Royaume-Uni>0</Royaume-Uni>
-    <Russie>0</Russie>
-    <Rwanda>0</Rwanda>
-    <Saint-Kitts-et-Nevis>0</Saint-Kitts-et-Nevis>
-    <Saint-Vincent-et-les-Grenadines>0</Saint-Vincent-et-les-Grenadines>
-    <Sainte-Lucie>0</Sainte-Lucie>
-    <Saint-Marin>0</Saint-Marin>
-    <Salomon>0</Salomon>
-    <Salvador>0</Salvador>
-    <Samoa>0</Samoa>
-    <São-Tomé-et-Principe>0</São-Tomé-et-Principe>
-    <Sénégal>0</Sénégal>
-    <Serbie>0</Serbie>
-    <Seychelles>0</Seychelles>
-    <Sierra-Leone>0</Sierra-Leone>
-    <Singapour>0</Singapour>
-    <Slovaquie>0</Slovaquie>
-    <Slovénie>0</Slovénie>
-    <Somalie>0</Somalie>
-    <Soudan>0</Soudan>
-    <Soudan-du-Sud>0</Soudan-du-Sud>
-    <Sri-Lanka>0</Sri-Lanka>
-    <Suède>0</Suède>
-    <Suisse>0</Suisse>
-    <Suriname>0</Suriname>
-    <Swaziland>0</Swaziland>
-    <Syrie>0</Syrie>
-    <Taïwan>0</Taïwan>
-    <Tadjikistan>0</Tadjikistan>
-    <Tanzanie>0</Tanzanie>
-    <Tchad>0</Tchad>
-    <Thaïlande>0</Thaïlande>
-    <Timor-oriental>0</Timor-oriental>
-    <Togo>0</Togo>
-    <Tonga>0</Tonga>
-    <Trinité-et-Tobago>0</Trinité-et-Tobago>
-    <Tunisie>0</Tunisie>
-    <Turkménistan>0</Turkménistan>
-    <Turquie>0</Turquie>
-    <Tuvalu>0</Tuvalu>
-    <Ukraine>0</Ukraine>
-    <Uruguay>0</Uruguay>
-    <Vanuatu>0</Vanuatu>
-    <Vatican>0</Vatican>
-    <Venezuela>0</Venezuela>
-    <Viêt-Nam>0</Viêt-Nam>
-    <Yémen>0</Yémen>
-    <Zambie>0</Zambie>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-  </Afrique-du-Sud>
+<fvdvf>
   <Afghanistan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -396,6 +193,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -405,7 +203,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Afghanistan>
   <Albanie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -598,6 +395,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -607,7 +405,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Albanie>
   <Algérie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -800,6 +597,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -809,7 +607,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Algérie>
   <Allemagne>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -1002,6 +799,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1011,7 +809,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Allemagne>
   <Andorre>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -1204,6 +1001,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1213,7 +1011,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Andorre>
   <Angola>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -1406,6 +1203,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1415,7 +1213,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Angola>
   <Antigua-et-Barbuda>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -1608,6 +1405,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1617,7 +1415,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Antigua-et-Barbuda>
   <Arabie-Saoudite>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -1810,6 +1607,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -1819,7 +1617,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Arabie-Saoudite>
   <Argentine>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -2012,6 +1809,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2021,7 +1819,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Argentine>
   <Arménie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -2214,6 +2011,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2223,7 +2021,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Arménie>
   <Australie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -2416,6 +2213,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2425,7 +2223,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Australie>
   <Autriche>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -2618,6 +2415,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2627,7 +2425,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Autriche>
   <Azerbaïdjan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -2820,6 +2617,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -2829,7 +2627,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Azerbaïdjan>
   <Bahamas>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -3022,6 +2819,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3031,7 +2829,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Bahamas>
   <Bahreïn>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -3224,6 +3021,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3233,7 +3031,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Bahreïn>
   <Bangladesh>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -3426,6 +3223,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3435,7 +3233,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Bangladesh>
   <Barbade>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -3628,6 +3425,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3637,7 +3435,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Barbade>
   <Belgique>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -3830,6 +3627,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -3839,7 +3637,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Belgique>
   <Belize>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -4032,6 +3829,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4041,7 +3839,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Belize>
   <Bénin>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -4234,6 +4031,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4243,7 +4041,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Bénin>
   <Bhoutan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -4436,6 +4233,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4445,7 +4243,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Bhoutan>
   <Biélorussie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -4638,6 +4435,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4647,7 +4445,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Biélorussie>
   <Birmanie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -4840,6 +4637,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -4849,7 +4647,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Birmanie>
   <Bolivie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -4873,7 +4670,7 @@
     <Bhoutan>0</Bhoutan>
     <Biélorussie>0</Biélorussie>
     <Birmanie>0</Birmanie>
-    <Bolivie>0</Bolivie>
+    <Bolivie>1</Bolivie>
     <Bosnie-Herzégovine>0</Bosnie-Herzégovine>
     <Botswana>0</Botswana>
     <Brésil>0</Brésil>
@@ -5042,6 +4839,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5051,7 +4849,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Bolivie>
   <Bosnie-Herzégovine>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -5244,6 +5041,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5253,7 +5051,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Bosnie-Herzégovine>
   <Botswana>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -5446,6 +5243,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5455,7 +5253,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Botswana>
   <Brésil>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -5648,6 +5445,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5657,7 +5455,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Brésil>
   <Brunei>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -5850,6 +5647,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -5859,7 +5657,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Brunei>
   <Bulgarie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -6052,6 +5849,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6061,7 +5859,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Bulgarie>
   <Burkina-Faso>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -6254,6 +6051,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6263,7 +6061,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Burkina-Faso>
   <Burundi>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -6456,6 +6253,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6465,7 +6263,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Burundi>
   <Cambodge>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -6658,6 +6455,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6667,7 +6465,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Cambodge>
   <Cameroun>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -6860,6 +6657,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -6869,7 +6667,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Cameroun>
   <Canada>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -7062,6 +6859,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7071,7 +6869,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Canada>
   <Cap-Vert>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -7264,6 +7061,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7273,7 +7071,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Cap-Vert>
   <Chili>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -7466,6 +7263,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7475,7 +7273,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Chili>
   <Chine>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -7668,6 +7465,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7677,7 +7475,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Chine>
   <Chypre>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -7870,6 +7667,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -7879,7 +7677,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Chypre>
   <Colombie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -8072,6 +7869,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8081,7 +7879,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Colombie>
   <Comores>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -8132,7 +7929,7 @@
     <Djibouti>0</Djibouti>
     <Dominique>0</Dominique>
     <Égypte>0</Égypte>
-    <Émirats-arabes-unis>1</Émirats-arabes-unis>
+    <Émirats-arabes-unis>0</Émirats-arabes-unis>
     <Équateur>0</Équateur>
     <Érythrée>0</Érythrée>
     <Espagne>0</Espagne>
@@ -8274,6 +8071,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8283,7 +8081,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Comores>
   <Corée-du-Nord>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -8476,6 +8273,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8485,7 +8283,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Corée-du-Nord>
   <Corée-du-Sud>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -8678,6 +8475,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8687,7 +8485,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Corée-du-Sud>
   <Costa-Rica>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -8880,6 +8677,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -8889,7 +8687,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Costa-Rica>
   <Côte-dIvoire>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -9082,6 +8879,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9091,7 +8889,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Côte-dIvoire>
   <Croatie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -9284,6 +9081,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9293,7 +9091,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Croatie>
   <Cuba>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -9486,6 +9283,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9495,7 +9293,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Cuba>
   <Danemark>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -9688,6 +9485,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9697,7 +9495,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Danemark>
   <Djibouti>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -9890,6 +9687,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -9899,7 +9697,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Djibouti>
   <Dominique>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -10092,6 +9889,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10101,7 +9899,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Dominique>
   <Égypte>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -10294,6 +10091,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10303,7 +10101,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Égypte>
   <Émirats-arabes-unis>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -10496,6 +10293,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10505,7 +10303,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Émirats-arabes-unis>
   <Équateur>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -10698,6 +10495,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10707,7 +10505,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Équateur>
   <Érythrée>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -10900,6 +10697,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -10909,7 +10707,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Érythrée>
   <Espagne>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -11102,6 +10899,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11111,7 +10909,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Espagne>
   <Estonie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -11304,6 +11101,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11313,7 +11111,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Estonie>
   <États-Unis>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -11506,6 +11303,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11515,7 +11313,6 @@
     <Zimbabwe>0</Zimbabwe>
   </États-Unis>
   <Éthiopie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -11708,6 +11505,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11717,7 +11515,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Éthiopie>
   <Fidji>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -11910,6 +11707,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -11919,7 +11717,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Fidji>
   <Finlande>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -12112,6 +11909,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -12121,7 +11919,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Finlande>
   <France>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -12314,6 +12111,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -12323,7 +12121,6 @@
     <Zimbabwe>0</Zimbabwe>
   </France>
   <Gabon>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -12516,6 +12313,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -12525,7 +12323,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Gabon>
   <Gambie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -12718,6 +12515,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -12727,7 +12525,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Gambie>
   <Géorgie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -12920,6 +12717,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -12929,7 +12727,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Géorgie>
   <Ghana>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -13122,6 +12919,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13131,7 +12929,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Ghana>
   <Grèce>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -13324,6 +13121,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13333,7 +13131,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Grèce>
   <Grenade>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -13526,6 +13323,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13535,7 +13333,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Grenade>
   <Guatemala>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -13728,6 +13525,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13737,7 +13535,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Guatemala>
   <Guinée>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -13930,6 +13727,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -13939,7 +13737,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Guinée>
   <Guinée-équatoriale>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -14132,6 +13929,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14141,7 +13939,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Guinée-équatoriale>
   <Guinée-Bissau>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -14334,6 +14131,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14343,7 +14141,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Guinée-Bissau>
   <Guyana>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -14536,6 +14333,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14545,7 +14343,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Guyana>
   <Haïti>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -14738,6 +14535,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14747,7 +14545,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Haïti>
   <Honduras>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -14940,6 +14737,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -14949,7 +14747,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Honduras>
   <Hongrie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -15142,6 +14939,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -15151,7 +14949,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Hongrie>
   <Îles-Cook>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -15344,6 +15141,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -15353,7 +15151,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Îles-Cook>
   <Îles-Marshall>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -15546,6 +15343,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -15555,7 +15353,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Îles-Marshall>
   <Inde>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -15748,6 +15545,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -15757,7 +15555,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Inde>
   <Indonésie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -15950,6 +15747,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -15959,7 +15757,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Indonésie>
   <Irak>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -16152,6 +15949,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16161,7 +15959,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Irak>
   <Iran>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -16241,7 +16038,7 @@
     <Inde>0</Inde>
     <Indonésie>0</Indonésie>
     <Irak>0</Irak>
-    <Iran>1</Iran>
+    <Iran>0</Iran>
     <Irlande>0</Irlande>
     <Islande>0</Islande>
     <Italie>0</Italie>
@@ -16354,6 +16151,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16363,7 +16161,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Iran>
   <Irlande>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -16556,6 +16353,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16565,7 +16363,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Irlande>
   <Islande>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -16758,6 +16555,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16767,7 +16565,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Islande>
   <Italie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -16960,6 +16757,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -16969,7 +16767,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Italie>
   <Jamaïque>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -17162,6 +16959,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17171,7 +16969,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Jamaïque>
   <Japon>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -17364,6 +17161,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17373,7 +17171,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Japon>
   <Jordanie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -17566,6 +17363,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17575,7 +17373,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Jordanie>
   <Kazakhstan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -17768,6 +17565,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17777,7 +17575,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Kazakhstan>
   <Kenya>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -17970,6 +17767,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -17979,7 +17777,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Kenya>
   <Kirghizistan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -18172,6 +17969,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18181,7 +17979,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Kirghizistan>
   <Kiribati>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -18374,6 +18171,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18383,7 +18181,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Kiribati>
   <Koweït>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -18576,6 +18373,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18585,7 +18383,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Koweït>
   <Laos>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -18778,6 +18575,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18787,7 +18585,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Laos>
   <Lesotho>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -18980,6 +18777,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -18989,7 +18787,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Lesotho>
   <Lettonie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -19182,6 +18979,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19191,7 +18989,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Lettonie>
   <Liban>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -19384,6 +19181,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19393,7 +19191,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Liban>
   <Liberia>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -19586,6 +19383,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19595,7 +19393,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Liberia>
   <Libye>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -19788,6 +19585,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19797,7 +19595,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Libye>
   <Liechtenstein>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -19990,6 +19787,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -19999,7 +19797,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Liechtenstein>
   <Lituanie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -20192,6 +19989,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -20201,7 +19999,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Lituanie>
   <Luxembourg>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -20394,6 +20191,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -20403,7 +20201,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Luxembourg>
   <Macédoine>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -20596,6 +20393,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -20605,7 +20403,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Macédoine>
   <Madagascar>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -20798,6 +20595,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -20807,7 +20605,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Madagascar>
   <Malaisie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -21000,6 +20797,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21009,7 +20807,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Malaisie>
   <Malawi>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -21202,6 +20999,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21211,7 +21009,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Malawi>
   <Maldives>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -21404,6 +21201,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21413,7 +21211,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Maldives>
   <Mali>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -21606,6 +21403,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21615,7 +21413,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Mali>
   <Malte>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -21808,6 +21605,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -21817,7 +21615,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Malte>
   <Maroc>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -22010,6 +21807,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22019,7 +21817,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Maroc>
   <Maurice>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -22212,6 +22009,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22221,7 +22019,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Maurice>
   <Mauritanie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -22414,6 +22211,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22423,7 +22221,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Mauritanie>
   <Mexique>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -22616,6 +22413,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22625,7 +22423,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Mexique>
   <Micronésie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -22818,6 +22615,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -22827,7 +22625,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Micronésie>
   <Moldavie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -23020,6 +22817,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23029,7 +22827,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Moldavie>
   <Monaco>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -23222,6 +23019,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23231,7 +23029,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Monaco>
   <Mongolie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -23424,6 +23221,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23433,7 +23231,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Mongolie>
   <Mozambique>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -23626,6 +23423,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23635,7 +23433,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Mozambique>
   <Namibie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -23828,6 +23625,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -23837,7 +23635,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Namibie>
   <Nauru>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -24030,6 +23827,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24039,7 +23837,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Nauru>
   <Népal>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -24232,6 +24029,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24241,7 +24039,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Népal>
   <Nicaragua>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -24434,6 +24231,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24443,7 +24241,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Nicaragua>
   <Niger>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -24636,6 +24433,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24645,7 +24443,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Niger>
   <Nigeria>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -24838,6 +24635,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -24847,7 +24645,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Nigeria>
   <Norvège>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -25040,6 +24837,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25049,7 +24847,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Norvège>
   <Nouvelle-Zélande>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -25242,6 +25039,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25251,7 +25049,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Nouvelle-Zélande>
   <Oman>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -25444,6 +25241,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25453,7 +25251,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Oman>
   <Ouganda>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -25646,6 +25443,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25655,7 +25453,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Ouganda>
   <Ouzbékistan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -25848,6 +25645,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -25857,7 +25655,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Ouzbékistan>
   <Pakistan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -26050,6 +25847,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26059,7 +25857,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Pakistan>
   <Palaos>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -26252,6 +26049,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26261,7 +26059,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Palaos>
   <Panama>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -26454,6 +26251,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26463,7 +26261,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Panama>
   <Papouasie-Nouvelle-Guinée>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -26656,6 +26453,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26665,7 +26463,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Papouasie-Nouvelle-Guinée>
   <Paraguay>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -26858,6 +26655,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -26867,7 +26665,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Paraguay>
   <Pays-Bas>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -27060,6 +26857,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27069,7 +26867,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Pays-Bas>
   <Pérou>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -27262,6 +27059,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27271,7 +27069,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Pérou>
   <Philippines>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -27464,6 +27261,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27473,7 +27271,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Philippines>
   <Pologne>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -27666,6 +27463,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27675,7 +27473,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Pologne>
   <Portugal>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -27868,6 +27665,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -27877,7 +27675,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Portugal>
   <Qatar>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -28070,6 +27867,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28079,7 +27877,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Qatar>
   <République-centrafricaine>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -28272,6 +28069,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28281,7 +28079,6 @@
     <Zimbabwe>0</Zimbabwe>
   </République-centrafricaine>
   <République-démocratique-du-Congo>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -28474,6 +28271,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28483,7 +28281,6 @@
     <Zimbabwe>0</Zimbabwe>
   </République-démocratique-du-Congo>
   <République-Dominicaine>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -28676,6 +28473,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28685,7 +28483,6 @@
     <Zimbabwe>0</Zimbabwe>
   </République-Dominicaine>
   <République-du-Congo>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -28878,6 +28675,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -28887,7 +28685,6 @@
     <Zimbabwe>0</Zimbabwe>
   </République-du-Congo>
   <République-tchèque>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -29080,6 +28877,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29089,7 +28887,6 @@
     <Zimbabwe>0</Zimbabwe>
   </République-tchèque>
   <Roumanie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -29282,6 +29079,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29291,7 +29089,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Roumanie>
   <Royaume-Uni>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -29484,6 +29281,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29493,7 +29291,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Royaume-Uni>
   <Russie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -29686,6 +29483,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29695,7 +29493,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Russie>
   <Rwanda>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -29888,6 +29685,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -29897,7 +29695,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Rwanda>
   <Saint-Kitts-et-Nevis>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -30090,6 +29887,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30099,7 +29897,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Saint-Kitts-et-Nevis>
   <Saint-Vincent-et-les-Grenadines>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -30292,6 +30089,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30301,7 +30099,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Saint-Vincent-et-les-Grenadines>
   <Sainte-Lucie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -30494,6 +30291,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30503,7 +30301,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Sainte-Lucie>
   <Saint-Marin>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -30696,6 +30493,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30705,7 +30503,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Saint-Marin>
   <Salomon>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -30898,6 +30695,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -30907,7 +30705,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Salomon>
   <Salvador>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -31100,6 +30897,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31109,7 +30907,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Salvador>
   <Samoa>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -31302,6 +31099,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31311,7 +31109,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Samoa>
   <São-Tomé-et-Principe>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -31504,6 +31301,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31513,7 +31311,6 @@
     <Zimbabwe>0</Zimbabwe>
   </São-Tomé-et-Principe>
   <Sénégal>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -31706,6 +31503,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31715,7 +31513,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Sénégal>
   <Serbie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -31908,6 +31705,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -31917,7 +31715,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Serbie>
   <Seychelles>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -32110,6 +31907,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -32119,7 +31917,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Seychelles>
   <Sierra-Leone>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -32312,6 +32109,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -32321,7 +32119,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Sierra-Leone>
   <Singapour>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -32514,6 +32311,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -32523,7 +32321,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Singapour>
   <Slovaquie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -32716,6 +32513,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -32725,7 +32523,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Slovaquie>
   <Slovénie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -32918,6 +32715,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -32927,7 +32725,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Slovénie>
   <Somalie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -33120,6 +32917,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33129,7 +32927,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Somalie>
   <Soudan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -33322,6 +33119,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33331,7 +33129,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Soudan>
   <Soudan-du-Sud>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -33524,6 +33321,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33533,7 +33331,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Soudan-du-Sud>
   <Sri-Lanka>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -33726,6 +33523,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33735,7 +33533,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Sri-Lanka>
   <Suède>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -33928,6 +33725,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -33937,7 +33735,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Suède>
   <Suisse>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -34130,6 +33927,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34139,7 +33937,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Suisse>
   <Suriname>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -34332,6 +34129,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34341,7 +34139,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Suriname>
   <Swaziland>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -34534,6 +34331,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34543,14 +34341,13 @@
     <Zimbabwe>0</Zimbabwe>
   </Swaziland>
   <Syrie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
     <Allemagne>0</Allemagne>
     <Andorre>0</Andorre>
     <Angola>0</Angola>
-    <Antigua-et-Barbuda>1</Antigua-et-Barbuda>
+    <Antigua-et-Barbuda>0</Antigua-et-Barbuda>
     <Arabie-Saoudite>0</Arabie-Saoudite>
     <Argentine>0</Argentine>
     <Arménie>0</Arménie>
@@ -34736,6 +34533,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34745,7 +34543,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Syrie>
   <Taïwan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -34938,6 +34735,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -34947,7 +34745,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Taïwan>
   <Tadjikistan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -35140,6 +34937,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35149,7 +34947,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Tadjikistan>
   <Tanzanie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -35342,6 +35139,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35351,7 +35149,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Tanzanie>
   <Tchad>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -35544,6 +35341,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35553,7 +35351,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Tchad>
   <Thaïlande>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -35746,6 +35543,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35755,7 +35553,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Thaïlande>
   <Timor-oriental>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -35948,6 +35745,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -35957,7 +35755,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Timor-oriental>
   <Togo>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -36150,6 +35947,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36159,7 +35957,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Togo>
   <Tonga>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -36352,6 +36149,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36361,7 +36159,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Tonga>
   <Trinité-et-Tobago>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -36554,6 +36351,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36563,7 +36361,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Trinité-et-Tobago>
   <Tunisie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -36756,6 +36553,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36765,7 +36563,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Tunisie>
   <Turkménistan>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -36958,6 +36755,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -36967,7 +36765,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Turkménistan>
   <Turquie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -37160,6 +36957,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37169,7 +36967,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Turquie>
   <Tuvalu>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -37362,6 +37159,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37371,7 +37169,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Tuvalu>
   <Ukraine>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -37564,6 +37361,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37573,7 +37371,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Ukraine>
   <Uruguay>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -37766,6 +37563,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37775,7 +37573,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Uruguay>
   <Vanuatu>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -37968,6 +37765,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -37977,7 +37775,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Vanuatu>
   <Vatican>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -38170,6 +37967,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38179,7 +37977,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Vatican>
   <Venezuela>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -38372,6 +38169,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38381,7 +38179,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Venezuela>
   <Viêt-Nam>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -38574,6 +38371,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38583,7 +38381,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Viêt-Nam>
   <Yémen>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -38776,6 +38573,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38785,7 +38583,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Yémen>
   <Zambie>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -38978,6 +38775,7 @@
     <Viêt-Nam>0</Viêt-Nam>
     <Yémen>0</Yémen>
     <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
@@ -38987,209 +38785,6 @@
     <Zimbabwe>0</Zimbabwe>
   </Zambie>
   <Zimbabwe>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
-    <Afghanistan>0</Afghanistan>
-    <Albanie>0</Albanie>
-    <Algérie>0</Algérie>
-    <Allemagne>0</Allemagne>
-    <Andorre>0</Andorre>
-    <Angola>0</Angola>
-    <Antigua-et-Barbuda>0</Antigua-et-Barbuda>
-    <Arabie-Saoudite>0</Arabie-Saoudite>
-    <Argentine>0</Argentine>
-    <Arménie>0</Arménie>
-    <Australie>0</Australie>
-    <Autriche>0</Autriche>
-    <Azerbaïdjan>0</Azerbaïdjan>
-    <Bahamas>0</Bahamas>
-    <Bahreïn>0</Bahreïn>
-    <Bangladesh>0</Bangladesh>
-    <Barbade>0</Barbade>
-    <Belgique>0</Belgique>
-    <Belize>0</Belize>
-    <Bénin>0</Bénin>
-    <Bhoutan>0</Bhoutan>
-    <Biélorussie>0</Biélorussie>
-    <Birmanie>0</Birmanie>
-    <Bolivie>0</Bolivie>
-    <Bosnie-Herzégovine>0</Bosnie-Herzégovine>
-    <Botswana>0</Botswana>
-    <Brésil>0</Brésil>
-    <Brunei>0</Brunei>
-    <Bulgarie>0</Bulgarie>
-    <Burkina-Faso>0</Burkina-Faso>
-    <Burundi>0</Burundi>
-    <Cambodge>0</Cambodge>
-    <Cameroun>0</Cameroun>
-    <Canada>0</Canada>
-    <Cap-Vert>0</Cap-Vert>
-    <Chili>0</Chili>
-    <Chine>0</Chine>
-    <Chypre>0</Chypre>
-    <Colombie>0</Colombie>
-    <Comores>0</Comores>
-    <Corée-du-Nord>0</Corée-du-Nord>
-    <Corée-du-Sud>0</Corée-du-Sud>
-    <Costa-Rica>0</Costa-Rica>
-    <Côte-dIvoire>0</Côte-dIvoire>
-    <Croatie>0</Croatie>
-    <Cuba>0</Cuba>
-    <Danemark>0</Danemark>
-    <Djibouti>0</Djibouti>
-    <Dominique>0</Dominique>
-    <Égypte>0</Égypte>
-    <Émirats-arabes-unis>0</Émirats-arabes-unis>
-    <Équateur>0</Équateur>
-    <Érythrée>0</Érythrée>
-    <Espagne>0</Espagne>
-    <Estonie>0</Estonie>
-    <États-Unis>0</États-Unis>
-    <Éthiopie>0</Éthiopie>
-    <Fidji>0</Fidji>
-    <Finlande>0</Finlande>
-    <France>0</France>
-    <Gabon>0</Gabon>
-    <Gambie>0</Gambie>
-    <Géorgie>0</Géorgie>
-    <Ghana>0</Ghana>
-    <Grèce>0</Grèce>
-    <Grenade>0</Grenade>
-    <Guatemala>0</Guatemala>
-    <Guinée>0</Guinée>
-    <Guinée-équatoriale>0</Guinée-équatoriale>
-    <Guinée-Bissau>0</Guinée-Bissau>
-    <Guyana>0</Guyana>
-    <Haïti>0</Haïti>
-    <Honduras>0</Honduras>
-    <Hongrie>0</Hongrie>
-    <Îles-Cook>0</Îles-Cook>
-    <Îles-Marshall>0</Îles-Marshall>
-    <Inde>0</Inde>
-    <Indonésie>0</Indonésie>
-    <Irak>0</Irak>
-    <Iran>0</Iran>
-    <Irlande>0</Irlande>
-    <Islande>0</Islande>
-    <Italie>0</Italie>
-    <Jamaïque>0</Jamaïque>
-    <Japon>0</Japon>
-    <Jordanie>0</Jordanie>
-    <Kazakhstan>0</Kazakhstan>
-    <Kenya>0</Kenya>
-    <Kirghizistan>0</Kirghizistan>
-    <Kiribati>0</Kiribati>
-    <Koweït>0</Koweït>
-    <Laos>0</Laos>
-    <Lesotho>0</Lesotho>
-    <Lettonie>0</Lettonie>
-    <Liban>0</Liban>
-    <Liberia>0</Liberia>
-    <Libye>0</Libye>
-    <Liechtenstein>0</Liechtenstein>
-    <Lituanie>0</Lituanie>
-    <Luxembourg>0</Luxembourg>
-    <Macédoine>0</Macédoine>
-    <Madagascar>0</Madagascar>
-    <Malaisie>0</Malaisie>
-    <Malawi>0</Malawi>
-    <Maldives>0</Maldives>
-    <Mali>0</Mali>
-    <Malte>0</Malte>
-    <Maroc>0</Maroc>
-    <Maurice>0</Maurice>
-    <Mauritanie>0</Mauritanie>
-    <Mexique>0</Mexique>
-    <Micronésie>0</Micronésie>
-    <Moldavie>0</Moldavie>
-    <Monaco>0</Monaco>
-    <Mongolie>0</Mongolie>
-    <Mozambique>0</Mozambique>
-    <Namibie>0</Namibie>
-    <Nauru>0</Nauru>
-    <Népal>0</Népal>
-    <Nicaragua>0</Nicaragua>
-    <Niger>0</Niger>
-    <Nigeria>0</Nigeria>
-    <Norvège>0</Norvège>
-    <Nouvelle-Zélande>0</Nouvelle-Zélande>
-    <Oman>0</Oman>
-    <Ouganda>0</Ouganda>
-    <Ouzbékistan>0</Ouzbékistan>
-    <Pakistan>0</Pakistan>
-    <Palaos>0</Palaos>
-    <Panama>0</Panama>
-    <Papouasie-Nouvelle-Guinée>0</Papouasie-Nouvelle-Guinée>
-    <Paraguay>0</Paraguay>
-    <Pays-Bas>0</Pays-Bas>
-    <Pérou>0</Pérou>
-    <Philippines>0</Philippines>
-    <Pologne>0</Pologne>
-    <Portugal>0</Portugal>
-    <Qatar>0</Qatar>
-    <République-centrafricaine>0</République-centrafricaine>
-    <République-démocratique-du-Congo>0</République-démocratique-du-Congo>
-    <République-Dominicaine>0</République-Dominicaine>
-    <République-du-Congo>0</République-du-Congo>
-    <République-tchèque>0</République-tchèque>
-    <Roumanie>0</Roumanie>
-    <Royaume-Uni>0</Royaume-Uni>
-    <Russie>0</Russie>
-    <Rwanda>0</Rwanda>
-    <Saint-Kitts-et-Nevis>0</Saint-Kitts-et-Nevis>
-    <Saint-Vincent-et-les-Grenadines>0</Saint-Vincent-et-les-Grenadines>
-    <Sainte-Lucie>0</Sainte-Lucie>
-    <Saint-Marin>0</Saint-Marin>
-    <Salomon>0</Salomon>
-    <Salvador>0</Salvador>
-    <Samoa>0</Samoa>
-    <São-Tomé-et-Principe>0</São-Tomé-et-Principe>
-    <Sénégal>0</Sénégal>
-    <Serbie>0</Serbie>
-    <Seychelles>0</Seychelles>
-    <Sierra-Leone>0</Sierra-Leone>
-    <Singapour>0</Singapour>
-    <Slovaquie>0</Slovaquie>
-    <Slovénie>0</Slovénie>
-    <Somalie>0</Somalie>
-    <Soudan>0</Soudan>
-    <Soudan-du-Sud>0</Soudan-du-Sud>
-    <Sri-Lanka>0</Sri-Lanka>
-    <Suède>0</Suède>
-    <Suisse>0</Suisse>
-    <Suriname>0</Suriname>
-    <Swaziland>0</Swaziland>
-    <Syrie>0</Syrie>
-    <Taïwan>0</Taïwan>
-    <Tadjikistan>0</Tadjikistan>
-    <Tanzanie>0</Tanzanie>
-    <Tchad>0</Tchad>
-    <Thaïlande>0</Thaïlande>
-    <Timor-oriental>0</Timor-oriental>
-    <Togo>0</Togo>
-    <Tonga>0</Tonga>
-    <Trinité-et-Tobago>0</Trinité-et-Tobago>
-    <Tunisie>0</Tunisie>
-    <Turkménistan>0</Turkménistan>
-    <Turquie>0</Turquie>
-    <Tuvalu>0</Tuvalu>
-    <Ukraine>0</Ukraine>
-    <Uruguay>0</Uruguay>
-    <Vanuatu>0</Vanuatu>
-    <Vatican>0</Vatican>
-    <Venezuela>0</Venezuela>
-    <Viêt-Nam>0</Viêt-Nam>
-    <Yémen>0</Yémen>
-    <Zambie>1</Zambie>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-    <Zimbabwe>0</Zimbabwe>
-  </Zimbabwe>
-  <Zimbabwe>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -39389,9 +38984,9 @@
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
   </Zimbabwe>
   <Zimbabwe>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -39591,9 +39186,9 @@
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
   </Zimbabwe>
   <Zimbabwe>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -39793,9 +39388,9 @@
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
   </Zimbabwe>
   <Zimbabwe>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -39995,9 +39590,9 @@
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
   </Zimbabwe>
   <Zimbabwe>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -40197,9 +39792,9 @@
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
   </Zimbabwe>
   <Zimbabwe>
-    <Afrique-du-Sud>0</Afrique-du-Sud>
     <Afghanistan>0</Afghanistan>
     <Albanie>0</Albanie>
     <Algérie>0</Algérie>
@@ -40399,5 +39994,410 @@
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
     <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
   </Zimbabwe>
-</pseudo>
+  <Zimbabwe>
+    <Afghanistan>0</Afghanistan>
+    <Albanie>0</Albanie>
+    <Algérie>0</Algérie>
+    <Allemagne>0</Allemagne>
+    <Andorre>0</Andorre>
+    <Angola>0</Angola>
+    <Antigua-et-Barbuda>0</Antigua-et-Barbuda>
+    <Arabie-Saoudite>0</Arabie-Saoudite>
+    <Argentine>0</Argentine>
+    <Arménie>0</Arménie>
+    <Australie>0</Australie>
+    <Autriche>0</Autriche>
+    <Azerbaïdjan>0</Azerbaïdjan>
+    <Bahamas>0</Bahamas>
+    <Bahreïn>0</Bahreïn>
+    <Bangladesh>0</Bangladesh>
+    <Barbade>0</Barbade>
+    <Belgique>0</Belgique>
+    <Belize>0</Belize>
+    <Bénin>0</Bénin>
+    <Bhoutan>0</Bhoutan>
+    <Biélorussie>0</Biélorussie>
+    <Birmanie>0</Birmanie>
+    <Bolivie>0</Bolivie>
+    <Bosnie-Herzégovine>0</Bosnie-Herzégovine>
+    <Botswana>0</Botswana>
+    <Brésil>0</Brésil>
+    <Brunei>0</Brunei>
+    <Bulgarie>0</Bulgarie>
+    <Burkina-Faso>0</Burkina-Faso>
+    <Burundi>0</Burundi>
+    <Cambodge>0</Cambodge>
+    <Cameroun>0</Cameroun>
+    <Canada>0</Canada>
+    <Cap-Vert>0</Cap-Vert>
+    <Chili>0</Chili>
+    <Chine>0</Chine>
+    <Chypre>0</Chypre>
+    <Colombie>0</Colombie>
+    <Comores>0</Comores>
+    <Corée-du-Nord>0</Corée-du-Nord>
+    <Corée-du-Sud>0</Corée-du-Sud>
+    <Costa-Rica>0</Costa-Rica>
+    <Côte-dIvoire>0</Côte-dIvoire>
+    <Croatie>0</Croatie>
+    <Cuba>0</Cuba>
+    <Danemark>0</Danemark>
+    <Djibouti>0</Djibouti>
+    <Dominique>0</Dominique>
+    <Égypte>0</Égypte>
+    <Émirats-arabes-unis>0</Émirats-arabes-unis>
+    <Équateur>0</Équateur>
+    <Érythrée>0</Érythrée>
+    <Espagne>0</Espagne>
+    <Estonie>0</Estonie>
+    <États-Unis>0</États-Unis>
+    <Éthiopie>0</Éthiopie>
+    <Fidji>0</Fidji>
+    <Finlande>0</Finlande>
+    <France>0</France>
+    <Gabon>0</Gabon>
+    <Gambie>0</Gambie>
+    <Géorgie>0</Géorgie>
+    <Ghana>0</Ghana>
+    <Grèce>0</Grèce>
+    <Grenade>0</Grenade>
+    <Guatemala>0</Guatemala>
+    <Guinée>0</Guinée>
+    <Guinée-équatoriale>0</Guinée-équatoriale>
+    <Guinée-Bissau>0</Guinée-Bissau>
+    <Guyana>0</Guyana>
+    <Haïti>0</Haïti>
+    <Honduras>0</Honduras>
+    <Hongrie>0</Hongrie>
+    <Îles-Cook>0</Îles-Cook>
+    <Îles-Marshall>0</Îles-Marshall>
+    <Inde>0</Inde>
+    <Indonésie>0</Indonésie>
+    <Irak>0</Irak>
+    <Iran>0</Iran>
+    <Irlande>0</Irlande>
+    <Islande>0</Islande>
+    <Italie>0</Italie>
+    <Jamaïque>0</Jamaïque>
+    <Japon>0</Japon>
+    <Jordanie>0</Jordanie>
+    <Kazakhstan>0</Kazakhstan>
+    <Kenya>0</Kenya>
+    <Kirghizistan>0</Kirghizistan>
+    <Kiribati>0</Kiribati>
+    <Koweït>0</Koweït>
+    <Laos>0</Laos>
+    <Lesotho>0</Lesotho>
+    <Lettonie>0</Lettonie>
+    <Liban>0</Liban>
+    <Liberia>0</Liberia>
+    <Libye>0</Libye>
+    <Liechtenstein>0</Liechtenstein>
+    <Lituanie>0</Lituanie>
+    <Luxembourg>0</Luxembourg>
+    <Macédoine>0</Macédoine>
+    <Madagascar>0</Madagascar>
+    <Malaisie>0</Malaisie>
+    <Malawi>0</Malawi>
+    <Maldives>0</Maldives>
+    <Mali>0</Mali>
+    <Malte>0</Malte>
+    <Maroc>0</Maroc>
+    <Maurice>0</Maurice>
+    <Mauritanie>0</Mauritanie>
+    <Mexique>0</Mexique>
+    <Micronésie>0</Micronésie>
+    <Moldavie>0</Moldavie>
+    <Monaco>0</Monaco>
+    <Mongolie>0</Mongolie>
+    <Mozambique>0</Mozambique>
+    <Namibie>0</Namibie>
+    <Nauru>0</Nauru>
+    <Népal>0</Népal>
+    <Nicaragua>0</Nicaragua>
+    <Niger>0</Niger>
+    <Nigeria>0</Nigeria>
+    <Norvège>0</Norvège>
+    <Nouvelle-Zélande>0</Nouvelle-Zélande>
+    <Oman>0</Oman>
+    <Ouganda>0</Ouganda>
+    <Ouzbékistan>0</Ouzbékistan>
+    <Pakistan>0</Pakistan>
+    <Palaos>0</Palaos>
+    <Panama>0</Panama>
+    <Papouasie-Nouvelle-Guinée>0</Papouasie-Nouvelle-Guinée>
+    <Paraguay>0</Paraguay>
+    <Pays-Bas>0</Pays-Bas>
+    <Pérou>0</Pérou>
+    <Philippines>0</Philippines>
+    <Pologne>0</Pologne>
+    <Portugal>0</Portugal>
+    <Qatar>0</Qatar>
+    <République-centrafricaine>0</République-centrafricaine>
+    <République-démocratique-du-Congo>0</République-démocratique-du-Congo>
+    <République-Dominicaine>0</République-Dominicaine>
+    <République-du-Congo>0</République-du-Congo>
+    <République-tchèque>0</République-tchèque>
+    <Roumanie>0</Roumanie>
+    <Royaume-Uni>0</Royaume-Uni>
+    <Russie>0</Russie>
+    <Rwanda>0</Rwanda>
+    <Saint-Kitts-et-Nevis>0</Saint-Kitts-et-Nevis>
+    <Saint-Vincent-et-les-Grenadines>0</Saint-Vincent-et-les-Grenadines>
+    <Sainte-Lucie>0</Sainte-Lucie>
+    <Saint-Marin>0</Saint-Marin>
+    <Salomon>0</Salomon>
+    <Salvador>0</Salvador>
+    <Samoa>0</Samoa>
+    <São-Tomé-et-Principe>0</São-Tomé-et-Principe>
+    <Sénégal>0</Sénégal>
+    <Serbie>0</Serbie>
+    <Seychelles>0</Seychelles>
+    <Sierra-Leone>0</Sierra-Leone>
+    <Singapour>0</Singapour>
+    <Slovaquie>0</Slovaquie>
+    <Slovénie>0</Slovénie>
+    <Somalie>0</Somalie>
+    <Soudan>0</Soudan>
+    <Soudan-du-Sud>0</Soudan-du-Sud>
+    <Sri-Lanka>0</Sri-Lanka>
+    <Suède>0</Suède>
+    <Suisse>0</Suisse>
+    <Suriname>0</Suriname>
+    <Swaziland>0</Swaziland>
+    <Syrie>0</Syrie>
+    <Taïwan>0</Taïwan>
+    <Tadjikistan>0</Tadjikistan>
+    <Tanzanie>0</Tanzanie>
+    <Tchad>0</Tchad>
+    <Thaïlande>0</Thaïlande>
+    <Timor-oriental>0</Timor-oriental>
+    <Togo>0</Togo>
+    <Tonga>0</Tonga>
+    <Trinité-et-Tobago>0</Trinité-et-Tobago>
+    <Tunisie>0</Tunisie>
+    <Turkménistan>0</Turkménistan>
+    <Turquie>0</Turquie>
+    <Tuvalu>0</Tuvalu>
+    <Ukraine>0</Ukraine>
+    <Uruguay>0</Uruguay>
+    <Vanuatu>0</Vanuatu>
+    <Vatican>0</Vatican>
+    <Venezuela>0</Venezuela>
+    <Viêt-Nam>0</Viêt-Nam>
+    <Yémen>0</Yémen>
+    <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+  </Zimbabwe>
+  <Zimbabwe>
+    <Afghanistan>0</Afghanistan>
+    <Albanie>0</Albanie>
+    <Algérie>0</Algérie>
+    <Allemagne>0</Allemagne>
+    <Andorre>0</Andorre>
+    <Angola>0</Angola>
+    <Antigua-et-Barbuda>0</Antigua-et-Barbuda>
+    <Arabie-Saoudite>0</Arabie-Saoudite>
+    <Argentine>0</Argentine>
+    <Arménie>0</Arménie>
+    <Australie>0</Australie>
+    <Autriche>0</Autriche>
+    <Azerbaïdjan>0</Azerbaïdjan>
+    <Bahamas>0</Bahamas>
+    <Bahreïn>0</Bahreïn>
+    <Bangladesh>0</Bangladesh>
+    <Barbade>0</Barbade>
+    <Belgique>0</Belgique>
+    <Belize>0</Belize>
+    <Bénin>0</Bénin>
+    <Bhoutan>0</Bhoutan>
+    <Biélorussie>0</Biélorussie>
+    <Birmanie>0</Birmanie>
+    <Bolivie>0</Bolivie>
+    <Bosnie-Herzégovine>0</Bosnie-Herzégovine>
+    <Botswana>0</Botswana>
+    <Brésil>0</Brésil>
+    <Brunei>0</Brunei>
+    <Bulgarie>0</Bulgarie>
+    <Burkina-Faso>0</Burkina-Faso>
+    <Burundi>0</Burundi>
+    <Cambodge>0</Cambodge>
+    <Cameroun>0</Cameroun>
+    <Canada>0</Canada>
+    <Cap-Vert>0</Cap-Vert>
+    <Chili>0</Chili>
+    <Chine>0</Chine>
+    <Chypre>0</Chypre>
+    <Colombie>0</Colombie>
+    <Comores>0</Comores>
+    <Corée-du-Nord>0</Corée-du-Nord>
+    <Corée-du-Sud>0</Corée-du-Sud>
+    <Costa-Rica>0</Costa-Rica>
+    <Côte-dIvoire>0</Côte-dIvoire>
+    <Croatie>0</Croatie>
+    <Cuba>0</Cuba>
+    <Danemark>0</Danemark>
+    <Djibouti>0</Djibouti>
+    <Dominique>0</Dominique>
+    <Égypte>0</Égypte>
+    <Émirats-arabes-unis>0</Émirats-arabes-unis>
+    <Équateur>0</Équateur>
+    <Érythrée>0</Érythrée>
+    <Espagne>0</Espagne>
+    <Estonie>0</Estonie>
+    <États-Unis>0</États-Unis>
+    <Éthiopie>0</Éthiopie>
+    <Fidji>0</Fidji>
+    <Finlande>0</Finlande>
+    <France>0</France>
+    <Gabon>0</Gabon>
+    <Gambie>0</Gambie>
+    <Géorgie>0</Géorgie>
+    <Ghana>0</Ghana>
+    <Grèce>0</Grèce>
+    <Grenade>0</Grenade>
+    <Guatemala>0</Guatemala>
+    <Guinée>0</Guinée>
+    <Guinée-équatoriale>0</Guinée-équatoriale>
+    <Guinée-Bissau>0</Guinée-Bissau>
+    <Guyana>0</Guyana>
+    <Haïti>0</Haïti>
+    <Honduras>0</Honduras>
+    <Hongrie>0</Hongrie>
+    <Îles-Cook>0</Îles-Cook>
+    <Îles-Marshall>0</Îles-Marshall>
+    <Inde>0</Inde>
+    <Indonésie>0</Indonésie>
+    <Irak>0</Irak>
+    <Iran>0</Iran>
+    <Irlande>0</Irlande>
+    <Islande>0</Islande>
+    <Italie>0</Italie>
+    <Jamaïque>0</Jamaïque>
+    <Japon>0</Japon>
+    <Jordanie>0</Jordanie>
+    <Kazakhstan>0</Kazakhstan>
+    <Kenya>0</Kenya>
+    <Kirghizistan>0</Kirghizistan>
+    <Kiribati>0</Kiribati>
+    <Koweït>0</Koweït>
+    <Laos>0</Laos>
+    <Lesotho>0</Lesotho>
+    <Lettonie>0</Lettonie>
+    <Liban>0</Liban>
+    <Liberia>0</Liberia>
+    <Libye>0</Libye>
+    <Liechtenstein>0</Liechtenstein>
+    <Lituanie>0</Lituanie>
+    <Luxembourg>0</Luxembourg>
+    <Macédoine>0</Macédoine>
+    <Madagascar>0</Madagascar>
+    <Malaisie>0</Malaisie>
+    <Malawi>0</Malawi>
+    <Maldives>0</Maldives>
+    <Mali>0</Mali>
+    <Malte>0</Malte>
+    <Maroc>0</Maroc>
+    <Maurice>0</Maurice>
+    <Mauritanie>0</Mauritanie>
+    <Mexique>0</Mexique>
+    <Micronésie>0</Micronésie>
+    <Moldavie>0</Moldavie>
+    <Monaco>0</Monaco>
+    <Mongolie>0</Mongolie>
+    <Mozambique>0</Mozambique>
+    <Namibie>0</Namibie>
+    <Nauru>0</Nauru>
+    <Népal>0</Népal>
+    <Nicaragua>0</Nicaragua>
+    <Niger>0</Niger>
+    <Nigeria>0</Nigeria>
+    <Norvège>0</Norvège>
+    <Nouvelle-Zélande>0</Nouvelle-Zélande>
+    <Oman>0</Oman>
+    <Ouganda>0</Ouganda>
+    <Ouzbékistan>0</Ouzbékistan>
+    <Pakistan>0</Pakistan>
+    <Palaos>0</Palaos>
+    <Panama>0</Panama>
+    <Papouasie-Nouvelle-Guinée>0</Papouasie-Nouvelle-Guinée>
+    <Paraguay>0</Paraguay>
+    <Pays-Bas>0</Pays-Bas>
+    <Pérou>0</Pérou>
+    <Philippines>0</Philippines>
+    <Pologne>0</Pologne>
+    <Portugal>0</Portugal>
+    <Qatar>0</Qatar>
+    <République-centrafricaine>0</République-centrafricaine>
+    <République-démocratique-du-Congo>0</République-démocratique-du-Congo>
+    <République-Dominicaine>0</République-Dominicaine>
+    <République-du-Congo>0</République-du-Congo>
+    <République-tchèque>0</République-tchèque>
+    <Roumanie>0</Roumanie>
+    <Royaume-Uni>0</Royaume-Uni>
+    <Russie>0</Russie>
+    <Rwanda>0</Rwanda>
+    <Saint-Kitts-et-Nevis>0</Saint-Kitts-et-Nevis>
+    <Saint-Vincent-et-les-Grenadines>0</Saint-Vincent-et-les-Grenadines>
+    <Sainte-Lucie>0</Sainte-Lucie>
+    <Saint-Marin>0</Saint-Marin>
+    <Salomon>0</Salomon>
+    <Salvador>0</Salvador>
+    <Samoa>0</Samoa>
+    <São-Tomé-et-Principe>0</São-Tomé-et-Principe>
+    <Sénégal>0</Sénégal>
+    <Serbie>0</Serbie>
+    <Seychelles>0</Seychelles>
+    <Sierra-Leone>0</Sierra-Leone>
+    <Singapour>0</Singapour>
+    <Slovaquie>0</Slovaquie>
+    <Slovénie>0</Slovénie>
+    <Somalie>0</Somalie>
+    <Soudan>0</Soudan>
+    <Soudan-du-Sud>0</Soudan-du-Sud>
+    <Sri-Lanka>0</Sri-Lanka>
+    <Suède>0</Suède>
+    <Suisse>0</Suisse>
+    <Suriname>0</Suriname>
+    <Swaziland>0</Swaziland>
+    <Syrie>0</Syrie>
+    <Taïwan>0</Taïwan>
+    <Tadjikistan>0</Tadjikistan>
+    <Tanzanie>0</Tanzanie>
+    <Tchad>0</Tchad>
+    <Thaïlande>0</Thaïlande>
+    <Timor-oriental>0</Timor-oriental>
+    <Togo>0</Togo>
+    <Tonga>0</Tonga>
+    <Trinité-et-Tobago>0</Trinité-et-Tobago>
+    <Tunisie>0</Tunisie>
+    <Turkménistan>0</Turkménistan>
+    <Turquie>0</Turquie>
+    <Tuvalu>0</Tuvalu>
+    <Ukraine>0</Ukraine>
+    <Uruguay>0</Uruguay>
+    <Vanuatu>0</Vanuatu>
+    <Vatican>0</Vatican>
+    <Venezuela>0</Venezuela>
+    <Viêt-Nam>0</Viêt-Nam>
+    <Yémen>0</Yémen>
+    <Zambie>0</Zambie>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+    <Zimbabwe>0</Zimbabwe>
+  </Zimbabwe>
+</fvdvf>
