@@ -521,7 +521,8 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/libxml2/libxml/relaxng.h \
  /usr/include/libxml2/libxml/xmlschemas.h \
  /usr/include/libxml2/libxml/xpath.h \
- /usr/include/libxml2/libxml/xpathInternals.h
+ /usr/include/libxml2/libxml/xpathInternals.h \
+ /usr/include/libxml2/libxml/xmlwriter.h
 
 /usr/include/gtk-2.0/gtk/gtk.h:
 
@@ -1674,3 +1675,5 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 /usr/include/libxml2/libxml/xpath.h:
 
 /usr/include/libxml2/libxml/xpathInternals.h:
+
+/usr/include/libxml2/libxml/xmlwriter.h:
