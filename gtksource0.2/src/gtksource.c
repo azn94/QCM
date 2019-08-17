@@ -23,6 +23,8 @@
 #define NBR_PAYS 30
 #define NBR_IA 5
 
+
+
 typedef struct {
   GtkWidget *wid;
   char *nom_bonne;
