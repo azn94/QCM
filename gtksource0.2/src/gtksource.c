@@ -8,6 +8,7 @@
 #include <gmodule.h>
 #include <string.h>
 
+
 #include <libxml/parser.h>
 #include <libxml/tree.h>
 #include <libxml/xmlreader.h>
@@ -20,7 +21,7 @@
 #define NBR_LVL_M 10
 #define L_FENETRE 700
 #define H_FENETRE 450
-#define NBR_PAYS 30
+#define NBR_PAYS 193
 #define NBR_IA 5
 
 
@@ -411,6 +412,23 @@ const  char* getPays (int r){
 	return buffer2;
 }
 
+char* liretext(int i){
+	static char message[10000];
+	char buffer1[1000];
+	char buffer2[1000];
+	FILE *file_in;
+	if(i==0)
+		file_in=fopen("out.txt", "r");
+	if(i==1)
+		file_in=fopen("out2.txt", "r");
+	if(i==2)
+		file_in=fopen("out3.txt", "r");
+	fgets(buffer1,1000,file_in);
+	fgets(buffer2,1000,file_in);
+	sprintf(message,"%s\n%s",buffer1,buffer2);
+	return message;
+}
+
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
 void xml(GtkWidget *table99, gpointer user_data){
@@ -496,7 +514,7 @@ void PasDeDoublon(int nb,int *num_array){
 		}
 	printf("bloque ici\n");
 	while (count < nb) {
-		num = rand()%12 ;
+		num = rand()%NBR_PAYS ;
 		printf("num %d\n  ",num);
 		printf("\nvisited num:%d\n",visited[num]);
 		if ( visited[num] != 1 ) {
@@ -523,20 +541,24 @@ void PasDeDoublon(int nb,int *num_array){
 }
 
 void fonction_facile(GtkWidget *table99, gpointer user_data){
-	GtkWidget *button,*window,*table;
+	GtkWidget *button;
 
 	int i=rand()%3,k;
 	int  tab_intier[3];
 	PasDeDoublon(3,tab_intier);
 	char buffer[500];
 	char s0[500],s1[500],s2[500];
+	char wikipython[500];
 	char *tab_button[3]={strcpy(s0,getPays(tab_intier[0])),strcpy(s1,getPays(tab_intier[1])),strcpy(s2,getPays(tab_intier[2]))};
 
 	sprintf(buffer,"drapeau/%s.png",tab_button[0]);
 	printf("\nfonction facile tableau de bouton :%s-%s-%s\n",tab_button[0],tab_button[1],tab_button[2]);
+	system(wikipython);
+	while (gtk_events_pending ())
+		gtk_main_iteration ();
 
-	table = gtk_table_new (6, 3, TRUE);
-	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+	GtkWidget *table = gtk_table_new (6, 3, TRUE);
+	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-facile");
 	gtk_window_set_default_size (GTK_WINDOW (window), L_FENETRE, H_FENETRE);
 	gtk_container_set_border_width (GTK_CONTAINER (window), 100);
@@ -566,12 +588,24 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 	stru *haribo2=copie(haribo);
 	stru *haribo3=copie(haribo);
 
+		sprintf(wikipython,"python wiki.py %s %s %s",tab_button[0],tab_button[1],tab_button[2]);
+
+		//execl("./wiki.py", "./wiki.py",tab_button[0],tab_button[1],tab_button[2],NULL);
+	/*if(fork()==0){
+	 char *pythonIntrepreter="python"; // resolved using your PATH environment variable
+	    char *calledPython="./wiki.py"; // explicit path necessary, not resolved using your PATH environment variable
+	    char *pythonArgs[]={pythonIntrepreter,calledPython,tab_button[0],tab_button[1],tab_button[2],NULL};
+	    execvp(pythonIntrepreter,pythonArgs);
+	}
+	wait(NULL);*/
+		printf("\nfonction facile tableau de bouton :%s-%s-%s\n",tab_button[0],tab_button[1],tab_button[2]);
+
 	for(k=0;k<3;k++){
 		while(tab_button[i]==0){
 				i=rand()%3;
 			}
 		button = gtk_button_new_with_label(tab_button[i]);
-
+		//gtk_widget_set_tooltip_markup(button, liretext(2));
 		gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 4, 5);
 		if(i==0){
 				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(bonne_reponse),  haribo);
@@ -597,9 +631,17 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 			london->nombre=0;
 			}
 		g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_destroy), window);
-	}
+
+	}gtk_widget_show_all(GTK_WIDGET(window));
 
 	gtk_widget_show_all(GTK_WIDGET(window));
+
+
+	gtk_widget_set_tooltip_markup(button, liretext(2));
+
+	//system(wikipython);
+
+
 	/*free(haribo2->nom_bonne);free(haribo2->nom_utilisateur);free(haribo2->nom_mauvaise);free(haribo2);
 	free(haribo3->nom_bonne);free(haribo3->nom_utilisateur);free(haribo3->nom_mauvaise);free(haribo3);
 	free(haribo->nom_bonne);free(haribo->nom_utilisateur);free(haribo->nom_mauvaise);free(haribo);*/
@@ -611,6 +653,7 @@ void fonction_facile2(GtkWidget *table99, gpointer user_data){
 
 	int i=rand()%3,k;
 	char buffer[500];
+	char wikipython[50];
 	char s0[500],s1[500],s2[500];
 	char *tab_button[3]={strcpy(s0,NomPaysAleatoire()),strcpy(s1,NomPaysAleatoire()),strcpy(s2,NomPaysAleatoire())};
 
@@ -654,6 +697,7 @@ void fonction_facile2(GtkWidget *table99, gpointer user_data){
 		sprintf(buffer,"drapeau/%s.png",tab_button[i]);
 		image = gtk_image_new_from_file (buffer);
 		button = gtk_button_new ();
+
 		gtk_button_set_image (GTK_BUTTON (button), image);
 		gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 1, 2);
 		if(i==0){
@@ -690,6 +734,7 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 	GtkWidget *button;
 	int i=rand()%6,k;
 	char buffer[500]="";
+	char wikipython[50];
 	char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
 	char *tab_button[6]={strcpy(s0,NomPaysAleatoire()),strcpy(s1,NomPaysAleatoire()),strcpy(s2,NomPaysAleatoire()),strcpy(s3,NomPaysAleatoire()),strcpy(s4,NomPaysAleatoire()),strcpy(s5,NomPaysAleatoire())};
 	g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
@@ -731,11 +776,27 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 	stru *haribo5=copie(haribo);
 	stru *haribo6=copie(haribo);
 
+	sprintf(wikipython,"python wiki.py %s %s %s",tab_button[0],tab_button[1],tab_button[2]);
+	system(wikipython);
+	system(wikipython);
+	/*system(wikipython);
+	system(wikipython);
+	system(wikipython);
+	system(wikipython);
+	system(wikipython);
+	system(wikipython);
+	system(wikipython);*/
+
+
 	for(k=0;k<3;k++){
 		while(tab_button[i]==0){
 			i=rand()%6;
 		}
 		button = gtk_button_new_with_label(tab_button[i]);
+
+
+		gtk_widget_set_tooltip_markup(button, liretext(k));
+
 		gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 4, 5);
 		if(i==0){
 			if(k==0)
@@ -773,6 +834,11 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 				i=rand()%6;
 			}
 		button = gtk_button_new_with_label(tab_button[i]);
+
+		//sprintf(wikipython,"python wiki.py %s",tab_button[i]);
+		//system(wikipython);
+		//gtk_widget_set_tooltip_markup(button, liretext());
+
 		gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 5, 6);
 		if(i==0){
 			if(k==0)
@@ -812,6 +878,7 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 	GtkWidget *button;
 	int i = rand() % 6, k;
 	char buffer[500] = "";
+	char wikipython[50];
 	char s0[500], s1[500], s2[500], s3[500], s4[500], s5[500];
 	char *tab_button[6] = { strcpy(s0, NomPaysAleatoire()), strcpy(s1,
 			NomPaysAleatoire()), strcpy(s2, NomPaysAleatoire()), strcpy(s3,
@@ -862,6 +929,7 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 			i = rand() % 6;
 		}
 		button = gtk_button_new_with_label(tab_button[i]);
+
 		gtk_table_attach_defaults(GTK_TABLE(table), button, k, k + 1, 4, 5);
 		if (i == 0) {
 			if (k == 0)
@@ -893,7 +961,7 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 		tab_button[i] = 0;
 		if (nbr_niveau_restant < NBR_LVL_M)
 			g_signal_connect(G_OBJECT(button), "clicked",
-					G_CALLBACK( fonction_moyen), london);
+					G_CALLBACK( fonction_moyenIA), london);
 		else {
 			g_signal_connect(G_OBJECT(button), "clicked",
 					G_CALLBACK( Fin_du_jeu), window);
@@ -938,7 +1006,7 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 		tab_button[i] = 0;
 		if (nbr_niveau_restant < NBR_LVL_M)
 			g_signal_connect(G_OBJECT(button), "clicked",
-					G_CALLBACK( fonction_moyen), london);
+					G_CALLBACK( fonction_moyenIA), london);
 		else {
 			g_signal_connect(G_OBJECT(button), "clicked",
 					G_CALLBACK( Fin_du_jeu), window);
@@ -956,6 +1024,7 @@ void fonction_moyen2(GtkWidget *table99,gpointer user_data){
 	GtkWidget *button;
 	GtkWidget *image;
 	int i=rand()%6,k;
+	char wikipython[50];
 	char buffer[500]="";
 	char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
 	char *tab_button[6]={strcpy(s0,NomPaysAleatoire()),strcpy(s1,NomPaysAleatoire()),strcpy(s2,NomPaysAleatoire()),strcpy(s3,NomPaysAleatoire()),strcpy(s4,NomPaysAleatoire()),strcpy(s5,NomPaysAleatoire())};
@@ -1005,6 +1074,8 @@ void fonction_moyen2(GtkWidget *table99,gpointer user_data){
 		g_snprintf(buffer,500,"drapeau/%s.png",tab_button[i]);
 		image = gtk_image_new_from_file (buffer);
 		button = gtk_button_new ();
+
+
 		gtk_button_set_image (GTK_BUTTON (button), image);
 
 		gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 1, 2);
@@ -1143,6 +1214,7 @@ void fonction_difficile(GtkWidget *table99,gpointer user_data){
 	int i=rand()%6,k;
 	int j;
 	char buffer[500]="";
+	char wikipython[50];
 	char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
 
 	nom_nombre *london=malloc(sizeof(*london));
@@ -1224,6 +1296,9 @@ void fonction_difficile(GtkWidget *table99,gpointer user_data){
 			i=rand()%6;
 		}
 		button = gtk_button_new_with_label(tab_button[i]);
+
+
+
 		gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 4, 5);
 		if(i==0){
 			if(k==0)
@@ -1260,6 +1335,7 @@ void fonction_difficile(GtkWidget *table99,gpointer user_data){
 			i=rand()%6;
 		}
 		button = gtk_button_new_with_label(tab_button[i]);
+
 		gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 5, 6);
 		if(i==0){
 			if(k==0)

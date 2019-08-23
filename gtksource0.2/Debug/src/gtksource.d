@@ -12,7 +12,7 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/glib-2.0/glib/gasyncqueue.h \
  /usr/include/glib-2.0/glib/gthread.h \
  /usr/include/glib-2.0/glib/gatomic.h /usr/include/glib-2.0/glib/gerror.h \
- /usr/include/glib-2.0/glib/gquark.h \
+ /usr/include/glib-2.0/glib/gquark.h /usr/include/glib-2.0/glib/gutils.h \
  /usr/include/glib-2.0/glib/gbacktrace.h \
  /usr/include/glib-2.0/glib/gbase64.h \
  /usr/include/glib-2.0/glib/gbitlock.h \
@@ -36,11 +36,12 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/glib-2.0/glib/gmain.h /usr/include/glib-2.0/glib/gpoll.h \
  /usr/include/glib-2.0/glib/gslist.h /usr/include/glib-2.0/glib/gstring.h \
  /usr/include/glib-2.0/glib/gunicode.h \
- /usr/include/glib-2.0/glib/gutils.h \
  /usr/include/glib-2.0/glib/gkeyfile.h \
  /usr/include/glib-2.0/glib/gmappedfile.h \
  /usr/include/glib-2.0/glib/gmarkup.h \
  /usr/include/glib-2.0/glib/gmessages.h \
+ /usr/include/glib-2.0/glib/gvariant.h \
+ /usr/include/glib-2.0/glib/gvarianttype.h \
  /usr/include/glib-2.0/glib/goption.h \
  /usr/include/glib-2.0/glib/gpattern.h \
  /usr/include/glib-2.0/glib/gprimes.h /usr/include/glib-2.0/glib/gqsort.h \
@@ -58,8 +59,6 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/glib-2.0/glib/gtrashstack.h \
  /usr/include/glib-2.0/glib/gtree.h \
  /usr/include/glib-2.0/glib/gurifuncs.h \
- /usr/include/glib-2.0/glib/gvarianttype.h \
- /usr/include/glib-2.0/glib/gvariant.h \
  /usr/include/glib-2.0/glib/gversion.h \
  /usr/include/glib-2.0/glib/deprecated/gallocator.h \
  /usr/include/glib-2.0/glib/deprecated/gcache.h \
@@ -67,6 +66,7 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/glib-2.0/glib/deprecated/gmain.h \
  /usr/include/glib-2.0/glib/deprecated/grel.h \
  /usr/include/glib-2.0/glib/deprecated/gthread.h \
+ /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/gobject/gobject.h \
  /usr/include/glib-2.0/gobject/gtype.h \
  /usr/include/glib-2.0/gobject/gvalue.h \
@@ -83,6 +83,7 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/glib-2.0/gobject/gtypeplugin.h \
  /usr/include/glib-2.0/gobject/gvaluearray.h \
  /usr/include/glib-2.0/gobject/gvaluetypes.h \
+ /usr/include/glib-2.0/gobject/gobject-autocleanups.h \
  /usr/include/glib-2.0/gio/gaction.h \
  /usr/include/glib-2.0/gio/gactiongroup.h \
  /usr/include/glib-2.0/gio/gactiongroupexporter.h \
@@ -107,6 +108,7 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/glib-2.0/gio/gconverterinputstream.h \
  /usr/include/glib-2.0/gio/gconverteroutputstream.h \
  /usr/include/glib-2.0/gio/gcredentials.h \
+ /usr/include/glib-2.0/gio/gdatagrambased.h \
  /usr/include/glib-2.0/gio/gdatainputstream.h \
  /usr/include/glib-2.0/gio/gdataoutputstream.h \
  /usr/include/glib-2.0/gio/gdbusaddress.h \
@@ -122,6 +124,9 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/glib-2.0/gio/gdbusserver.h \
  /usr/include/glib-2.0/gio/gdbusutils.h \
  /usr/include/glib-2.0/gio/gdrive.h \
+ /usr/include/glib-2.0/gio/gdtlsclientconnection.h \
+ /usr/include/glib-2.0/gio/gdtlsconnection.h \
+ /usr/include/glib-2.0/gio/gdtlsserverconnection.h \
  /usr/include/glib-2.0/gio/gemblemedicon.h \
  /usr/include/glib-2.0/gio/gicon.h /usr/include/glib-2.0/gio/gemblem.h \
  /usr/include/glib-2.0/gio/gfileattribute.h \
@@ -172,6 +177,7 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/glib-2.0/gio/gactiongroup.h \
  /usr/include/glib-2.0/gio/gactionmap.h \
  /usr/include/glib-2.0/gio/gsimpleasyncresult.h \
+ /usr/include/glib-2.0/gio/gsimpleiostream.h \
  /usr/include/glib-2.0/gio/gsimplepermission.h \
  /usr/include/glib-2.0/gio/gsocketclient.h \
  /usr/include/glib-2.0/gio/gsocketconnectable.h \
@@ -217,6 +223,9 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/glib-2.0/gio/gmenuexporter.h \
  /usr/include/glib-2.0/gio/gdbusmenumodel.h \
  /usr/include/glib-2.0/gio/gnotification.h \
+ /usr/include/glib-2.0/gio/glistmodel.h \
+ /usr/include/glib-2.0/gio/gliststore.h \
+ /usr/include/glib-2.0/gio/gio-autocleanups.h \
  /usr/include/gtk-2.0/gdk/gdkscreen.h /usr/include/cairo/cairo.h \
  /usr/include/cairo/cairo-version.h /usr/include/cairo/cairo-features.h \
  /usr/include/cairo/cairo-deprecated.h \
@@ -224,6 +233,8 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/pango-1.0/pango/pango-attributes.h \
  /usr/include/pango-1.0/pango/pango-font.h \
  /usr/include/pango-1.0/pango/pango-coverage.h \
+ /usr/include/pango-1.0/pango/pango-version-macros.h \
+ /usr/include/pango-1.0/pango/pango-features.h \
  /usr/include/pango-1.0/pango/pango-types.h \
  /usr/include/pango-1.0/pango/pango-gravity.h \
  /usr/include/pango-1.0/pango/pango-matrix.h \
@@ -238,7 +249,6 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/pango-1.0/pango/pango-engine.h \
  /usr/include/pango-1.0/pango/pango-glyph.h \
  /usr/include/pango-1.0/pango/pango-enum-types.h \
- /usr/include/pango-1.0/pango/pango-features.h \
  /usr/include/pango-1.0/pango/pango-glyph-item.h \
  /usr/include/pango-1.0/pango/pango-layout.h \
  /usr/include/pango-1.0/pango/pango-tabs.h \
@@ -251,6 +261,7 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/gtk-2.0/gdk/gdkcairo.h /usr/include/gtk-2.0/gdk/gdkpixbuf.h \
  /usr/include/gtk-2.0/gdk/gdkrgb.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h \
+ /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h \
@@ -259,6 +270,7 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h \
+ /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h \
  /usr/include/pango-1.0/pango/pangocairo.h \
  /usr/include/gtk-2.0/gdk/gdkcursor.h \
  /usr/include/gtk-2.0/gdk/gdkdisplaymanager.h \
@@ -564,6 +576,8 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 
 /usr/include/glib-2.0/glib/gquark.h:
 
+/usr/include/glib-2.0/glib/gutils.h:
+
 /usr/include/glib-2.0/glib/gbacktrace.h:
 
 /usr/include/glib-2.0/glib/gbase64.h:
@@ -624,8 +638,6 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 
 /usr/include/glib-2.0/glib/gunicode.h:
 
-/usr/include/glib-2.0/glib/gutils.h:
-
 /usr/include/glib-2.0/glib/gkeyfile.h:
 
 /usr/include/glib-2.0/glib/gmappedfile.h:
@@ -633,6 +645,10 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 /usr/include/glib-2.0/glib/gmarkup.h:
 
 /usr/include/glib-2.0/glib/gmessages.h:
+
+/usr/include/glib-2.0/glib/gvariant.h:
+
+/usr/include/glib-2.0/glib/gvarianttype.h:
 
 /usr/include/glib-2.0/glib/goption.h:
 
@@ -674,10 +690,6 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 
 /usr/include/glib-2.0/glib/gurifuncs.h:
 
-/usr/include/glib-2.0/glib/gvarianttype.h:
-
-/usr/include/glib-2.0/glib/gvariant.h:
-
 /usr/include/glib-2.0/glib/gversion.h:
 
 /usr/include/glib-2.0/glib/deprecated/gallocator.h:
@@ -691,6 +703,8 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 /usr/include/glib-2.0/glib/deprecated/grel.h:
 
 /usr/include/glib-2.0/glib/deprecated/gthread.h:
+
+/usr/include/glib-2.0/glib/glib-autocleanups.h:
 
 /usr/include/glib-2.0/gobject/gobject.h:
 
@@ -723,6 +737,8 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 /usr/include/glib-2.0/gobject/gvaluearray.h:
 
 /usr/include/glib-2.0/gobject/gvaluetypes.h:
+
+/usr/include/glib-2.0/gobject/gobject-autocleanups.h:
 
 /usr/include/glib-2.0/gio/gaction.h:
 
@@ -772,6 +788,8 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 
 /usr/include/glib-2.0/gio/gcredentials.h:
 
+/usr/include/glib-2.0/gio/gdatagrambased.h:
+
 /usr/include/glib-2.0/gio/gdatainputstream.h:
 
 /usr/include/glib-2.0/gio/gdataoutputstream.h:
@@ -801,6 +819,12 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 /usr/include/glib-2.0/gio/gdbusutils.h:
 
 /usr/include/glib-2.0/gio/gdrive.h:
+
+/usr/include/glib-2.0/gio/gdtlsclientconnection.h:
+
+/usr/include/glib-2.0/gio/gdtlsconnection.h:
+
+/usr/include/glib-2.0/gio/gdtlsserverconnection.h:
 
 /usr/include/glib-2.0/gio/gemblemedicon.h:
 
@@ -908,6 +932,8 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 
 /usr/include/glib-2.0/gio/gsimpleasyncresult.h:
 
+/usr/include/glib-2.0/gio/gsimpleiostream.h:
+
 /usr/include/glib-2.0/gio/gsimplepermission.h:
 
 /usr/include/glib-2.0/gio/gsocketclient.h:
@@ -1002,6 +1028,12 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 
 /usr/include/glib-2.0/gio/gnotification.h:
 
+/usr/include/glib-2.0/gio/glistmodel.h:
+
+/usr/include/glib-2.0/gio/gliststore.h:
+
+/usr/include/glib-2.0/gio/gio-autocleanups.h:
+
 /usr/include/gtk-2.0/gdk/gdkscreen.h:
 
 /usr/include/cairo/cairo.h:
@@ -1021,6 +1053,10 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 /usr/include/pango-1.0/pango/pango-font.h:
 
 /usr/include/pango-1.0/pango/pango-coverage.h:
+
+/usr/include/pango-1.0/pango/pango-version-macros.h:
+
+/usr/include/pango-1.0/pango/pango-features.h:
 
 /usr/include/pango-1.0/pango/pango-types.h:
 
@@ -1049,8 +1085,6 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 /usr/include/pango-1.0/pango/pango-glyph.h:
 
 /usr/include/pango-1.0/pango/pango-enum-types.h:
-
-/usr/include/pango-1.0/pango/pango-features.h:
 
 /usr/include/pango-1.0/pango/pango-glyph-item.h:
 
@@ -1082,6 +1116,8 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h:
 
+/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h:
+
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h:
 
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h:
@@ -1097,6 +1133,8 @@ src/gtksource.o: ../src/gtksource.c /usr/include/gtk-2.0/gtk/gtk.h \
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h:
 
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h:
+
+/usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h:
 
 /usr/include/pango-1.0/pango/pangocairo.h:
 
