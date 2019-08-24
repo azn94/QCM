@@ -412,20 +412,15 @@ const  char* getPays (int r){
 	return buffer2;
 }
 
-char* liretext(int i){
+ char* liretext(int i){
 	static char message[10000];
 	char buffer1[1000];
 	char buffer2[1000];
-	FILE *file_in;
-	if(i==0)
-		file_in=fopen("out.txt", "r");
-	if(i==1)
-		file_in=fopen("out2.txt", "r");
-	if(i==2)
-		file_in=fopen("out3.txt", "r");
+	FILE *file_in=fopen("out.txt", "r");
 	fgets(buffer1,1000,file_in);
 	fgets(buffer2,1000,file_in);
 	sprintf(message,"%s\n%s",buffer1,buffer2);
+	//printf("liretexte\n%s",message);
 	return message;
 }
 
@@ -539,6 +534,28 @@ void PasDeDoublon(int nb,int *num_array){
 
 
 }
+static gboolean
+update_text (gpointer tokyo)
+{
+	nom_nombre *seoul=malloc(sizeof(*seoul));
+	seoul=tokyo;
+
+	gchar *text;
+	static int i = 0;
+	char wikipython[500];
+	sprintf(wikipython,"python wiki.py %s ",seoul->nom);
+
+	system(wikipython);
+	i++;
+	gtk_widget_set_tooltip_markup(seoul->wid, liretext(0));
+	if(i==1){
+		return FALSE;
+		free(seoul);
+	}
+
+	return TRUE;
+
+}
 
 void fonction_facile(GtkWidget *table99, gpointer user_data){
 	GtkWidget *button;
@@ -553,7 +570,7 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 
 	sprintf(buffer,"drapeau/%s.png",tab_button[0]);
 	printf("\nfonction facile tableau de bouton :%s-%s-%s\n",tab_button[0],tab_button[1],tab_button[2]);
-	system(wikipython);
+
 	while (gtk_events_pending ())
 		gtk_main_iteration ();
 
@@ -588,7 +605,8 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 	stru *haribo2=copie(haribo);
 	stru *haribo3=copie(haribo);
 
-		sprintf(wikipython,"python wiki.py %s %s %s",tab_button[0],tab_button[1],tab_button[2]);
+		//sprintf(wikipython,"python wiki.py %s %s %s",tab_button[0],tab_button[1],tab_button[2]);
+		//system(wikipython);
 
 		//execl("./wiki.py", "./wiki.py",tab_button[0],tab_button[1],tab_button[2],NULL);
 	/*if(fork()==0){
@@ -598,14 +616,18 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 	    execvp(pythonIntrepreter,pythonArgs);
 	}
 	wait(NULL);*/
-		printf("\nfonction facile tableau de bouton :%s-%s-%s\n",tab_button[0],tab_button[1],tab_button[2]);
+		nom_nombre *tokyo=malloc(sizeof(*tokyo));
+		tokyo->nom=malloc(sizeof(char*)*100);
+
+
 
 	for(k=0;k<3;k++){
 		while(tab_button[i]==0){
 				i=rand()%3;
 			}
+		strcpy(tokyo->nom,tab_button[i]);
 		button = gtk_button_new_with_label(tab_button[i]);
-		//gtk_widget_set_tooltip_markup(button, liretext(2));
+
 		gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 4, 5);
 		if(i==0){
 				g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(bonne_reponse),  haribo);
@@ -632,19 +654,11 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 			}
 		g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_destroy), window);
 
-	}gtk_widget_show_all(GTK_WIDGET(window));
+	}
 
+	tokyo->wid=button;
+	g_timeout_add (800, (GSourceFunc)update_text, tokyo);
 	gtk_widget_show_all(GTK_WIDGET(window));
-
-
-	gtk_widget_set_tooltip_markup(button, liretext(2));
-
-	//system(wikipython);
-
-
-	/*free(haribo2->nom_bonne);free(haribo2->nom_utilisateur);free(haribo2->nom_mauvaise);free(haribo2);
-	free(haribo3->nom_bonne);free(haribo3->nom_utilisateur);free(haribo3->nom_mauvaise);free(haribo3);
-	free(haribo->nom_bonne);free(haribo->nom_utilisateur);free(haribo->nom_mauvaise);free(haribo);*/
 
 }
 
@@ -793,9 +807,6 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 			i=rand()%6;
 		}
 		button = gtk_button_new_with_label(tab_button[i]);
-
-
-		gtk_widget_set_tooltip_markup(button, liretext(k));
 
 		gtk_table_attach_defaults (GTK_TABLE (table), button, k,k+1, 4, 5);
 		if(i==0){
@@ -1729,10 +1740,16 @@ void Menu_principal(GtkWidget *table,gpointer user_data){
 
 }
 
+
+
 int main (int argc,char *argv[]){
 	srand(time(NULL));
 	gtk_init (&argc, &argv);
 	int i;
+	while (gtk_events_pending ()) {
+		                gtk_main_iteration ();
+		            }
+	printf("%s",liretext(0));
 
 	GtkWidget *window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 		gtk_window_set_title (GTK_WINDOW (window0), "QCM entrez votre nom");
@@ -1744,8 +1761,8 @@ int main (int argc,char *argv[]){
 		gtk_container_add(GTK_CONTAINER (window0), layout);
 		gtk_widget_show(layout);
 
-	GtkWidget *image = gtk_image_new_from_file("onu resize.png");
-		gtk_layout_put(GTK_LAYOUT(layout), image, 0, 0);
+	/*GtkWidget *image = gtk_image_new_from_file("onu resize.png");
+		gtk_layout_put(GTK_LAYOUT(layout), image, 0, 0);*/
 
 	GtkWidget *label1 = gtk_label_new(" Entrez votre nom svp :");
 		gtk_layout_put(GTK_LAYOUT(layout), label1, 270, 50);
@@ -1756,17 +1773,20 @@ int main (int argc,char *argv[]){
 		gtk_widget_set_size_request(entry, 80, 35);
 
 	GtkWidget *button=gtk_toggle_button_new_with_label("Valider");
-	if (GTK_TOGGLE_BUTTON (button)->active){
-		printf("YEEEEEEEESSS");}
+	const gchar*texte=liretext(0);
+
+	gtk_widget_set_tooltip_text(button,texte);
+
 
 		gtk_layout_put(GTK_LAYOUT(layout), button, 270, 250);
 		gtk_widget_set_size_request(button, 160, 35);
-		gtk_widget_set_tooltip_text(button, "Simple tip");
 		//g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(show_dialog),  window0);
 		g_signal_connect(G_OBJECT(button),"clicked",G_CALLBACK(Menu_principal),entry);
 		g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 
 	g_signal_connect(window0, "destroy",G_CALLBACK(gtk_main_quit), NULL);
+
+
 	gtk_widget_show_all (window0);
 	gtk_window_set_resizable (GTK_WINDOW(window0), FALSE);
 	gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
