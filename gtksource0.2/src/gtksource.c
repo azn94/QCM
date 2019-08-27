@@ -710,18 +710,8 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 	tokyo->wid3=bouton[2];
 
 	char wikipython[500];
-		sprintf(wikipython,"python wiki.py %s %s %s",tokyo->nom1,tokyo->nom2,tokyo->nom3);
-	/*char *pythonIntrepreter="python"; // resolved using your PATH environment variable
-			    char *calledPython="./wiki.py"; // explicit path necessary, not resolved using your PATH environment variable
-			    char *pythonArgs[]={pythonIntrepreter,calledPython,tokyo->nom1,tokyo->nom2,tokyo->nom3,NULL};
-			    execvp(pythonIntrepreter,pythonArgs);
-		//
-		//*/
-		system(wikipython);
-		//usleep(800000);
-		/*gtk_widget_set_tooltip_markup(tokyo->wid, liretext(0));
-		gtk_widget_set_tooltip_markup(tokyo->wid2, liretext(1));
-		gtk_widget_set_tooltip_markup(tokyo->wid3, liretext(2));*/
+	sprintf(wikipython,"python wiki.py %s %s %s",tokyo->nom1,tokyo->nom2,tokyo->nom3);
+	system(wikipython);
 
 	g_timeout_add (800, (GSourceFunc)update_text, tokyo);
 
