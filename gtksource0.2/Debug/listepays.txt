@@ -64,7 +64,7 @@ Gambie
 Géorgie
 Ghana
 Grèce
-Grenade
+Grenade-pays
 Guatemala
 Guinée
 Guinée-équatoriale
@@ -75,6 +75,7 @@ Honduras
 Hongrie
 Îles-Cook
 Îles-Marshall
+Îles-Salomon
 Inde
 Indonésie
 Irak
@@ -150,7 +151,6 @@ Saint-Kitts-et-Nevis
 Saint-Vincent-et-les-Grenadines
 Sainte-Lucie
 Saint-Marin
-Salomon
 Salvador
 Samoa
 São-Tomé-et-Principe
