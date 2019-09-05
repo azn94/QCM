@@ -12,11 +12,21 @@ start = time.time()
 S = requests.Session()
 URL = "https://fr.wikipedia.org/w/api.php"
 L=["wikipedia/out.txt","wikipedia/out2.txt","wikipedia/out3.txt","wikipedia/out4.txt","wikipedia/out5.txt","wikipedia/out6.txt"]
+L2=["Chypre","Dominique"]
 
 
 for k in range(len(sys.argv)-1):
 	if(os.fork()==0):
-		PARAMS = {
+		if sys.argv[k+1] in L2:
+			PARAMS = {
+				"action": "opensearch",
+				"namespace": "0",
+				"search": sys.argv[k+1]+"(pays)",
+				"limit": "1",
+				"format": "json"
+			}
+		else:
+			PARAMS = {
 			"action": "opensearch",
 			"namespace": "0",
 			"search": sys.argv[k+1],

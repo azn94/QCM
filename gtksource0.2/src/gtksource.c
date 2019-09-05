@@ -90,8 +90,30 @@ void affiche(float mat[NBR_PAYS][NBR_PAYS]){
                         printf("\n");
         }
 }
+void affiche_int(int mat[NBR_PAYS][NBR_PAYS]){
+	int i,j;
+	for(i=0;i<NBR_PAYS;i++){
+                        for(j=0;j<NBR_PAYS;j++){
+                                printf("%d ",mat[i][j]);
+                        }
+                        printf("\n");
+        }
+}
 
+void affiche_ligne_int(int tab[6]){
+	int i;
+	for(i=0;i<6;i++)
+		printf("%d ",tab[i]);
+	printf("\n");
+}
 
+void copie_matrice(float ancien[NBR_PAYS][NBR_PAYS], float new[NBR_PAYS][NBR_PAYS]){
+	int i,j;
+	for(i=0;i<NBR_PAYS;i++){
+		for(j=0;j<NBR_PAYS;j++)
+			new[i][j]= ancien[i][j];
+	}
+}
 liste_matrice* lirematrice(char* User_name){
         xmlDocPtr doc;
         xmlNodePtr cur,save;
@@ -150,22 +172,38 @@ liste_matrice* lirematrice(char* User_name){
                 cur=cur->next;
                 //printf("\n");
 		liste_matrice *tmp2= malloc (sizeof(liste_matrice));
-                tmp1->id =liste_debut->id;;
+		tmp2->suivant=NULL;
+		(liste_debut->id)+=1;
+        tmp1->id =liste_debut->id;;
 		tmp1->suivant= tmp2;
 		tmp1=tmp2;
-		(liste_debut->id)+=1;
         }
+        cpt=liste_debut->id;
         printf("%d\n",cpt);
         return liste_debut;
 }
-void moyen(float similarite[NBR_PAYS],int drapeau, int indice[5]){ // similarité : matrice de similarité, drapeau : numéro du drapeau, indice: tableau vide dans lequel on va strocker les indices
+
+int no_doublons(int tab[6]){
+	printf("ENTREE DANS NO DOUBLONS \n");
+	int i,j;
+	for(i=0;i<6;i++){
+		for(j=0;j<6;j++){
+			if(tab[i]== tab[j] && i!=j)
+				return 1;
+		}
+	}
+	return 0;
+}
+
+void moyen(float similarite[NBR_PAYS][NBR_PAYS],int drapeau, int indice[6]){ // similarité : matrice de similarité, drapeau : numéro du drapeau, indice: tableau vide dans lequel on va strocker les indices
   int nb_dif_zero = 0 ;
   int i;
+  printf("ENTREE DANS MOYEN \n");
   // On stock la bonne réponse
-  indice[i]=drapeau-1;
+  indice[0]=drapeau;
   // On compte le nombre de pays qui n'ont pas de 0
   for(i=0;i<NBR_PAYS;i++){
-    if(similarite[i]!=0 && i!=drapeau)
+    if(similarite[drapeau][i]>0.0 && i!=drapeau)
       nb_dif_zero++;
   }
   float tmp[nb_dif_zero];
@@ -174,16 +212,16 @@ void moyen(float similarite[NBR_PAYS],int drapeau, int indice[5]){ // similarit�
   int k=0;
   // On stock les indices des drapeaux ayant un indice différent de 0
   for(i=0;i<NBR_PAYS;i++){
-    if(similarite[i]!=0 && i!=drapeau){
+    if(similarite[drapeau][i]>0.0 && i!=drapeau){
       // Cas du premier non 0 rencontré
       if(val == 0){
-	tmp[0]=similarite[i];
-	val+=similarite[i];
+	tmp[0]=similarite[drapeau][i];
+	val+=similarite[drapeau][i];
 	tmp_indice[k]=i;
 	k++;
       }
       else{
-	val+=similarite[i];
+	val+=similarite[drapeau][i];
 	tmp[k]=val;
 	tmp_indice[k]=i;
 	k++;
@@ -195,34 +233,36 @@ void moyen(float similarite[NBR_PAYS],int drapeau, int indice[5]){ // similarit�
   int j,t;
   int  verif=0;
   j=1;
-  i=0;
-  while(i<2 && i<nb_dif_zero){ // On choisit un nombres de drapeaux entre le minimum du nombres de drapeaux voulu et celui de drapeaux ayant une similarité différentes de 0
+  while(j<6 && j<nb_dif_zero){ // On choisit un nombres de drapeaux entre le minimum du nombres de drapeaux voulu et celui de drapeaux ayant une similarité différentes de 0
     // On tire un nombre aléatoire entre 0 et la somme des valeurs
     alea=(float)rand()/(((float)(RAND_MAX))/tmp[nb_dif_zero-1]);
-    printf("%.2f \n",alea);
+    //printf("%.2f \n",alea);
     t=0;
     verif=1;
     // On cherche où se trouve le drapeau correspondant au numéro aléatoire tiré
     do{
       if(alea<tmp[t]){
-	indice[j]=tmp_indice[t];
-	j++;
-	verif=0;
+    	  	 indice[j]=tmp_indice[t];
+    	  	 j++;
+    	  	 verif=0;
       }
       t++;
     }while(verif);
-    i++;
   }
   int last;
   // Si on a moins de drapeaux avec une similarité de 0 que de drapeaux nécessaires pour le qcm, on choisit aléatoirement parmi la liste
   while(j<6){
-      last=rand()%(NBR_PAYS+1);
-      printf("%d \n",last);
+      last=rand()%(NBR_PAYS);
+      //printf("%d \n",last);
       indice[j]=last;
       j++;
   }
+  if(no_doublons(indice)){
+	  for(i=0;i<6;i++)
+		  indice[i]=0;
+	  moyen(similarite, drapeau, indice);
+  }
 }
-
 
 void affichage(liste_matrice *liste){
         int i,j,k;
@@ -241,38 +281,44 @@ void affichage(liste_matrice *liste){
 }
 
 void  matrice_moyenne(liste_matrice* liste, float matrice[NBR_PAYS][NBR_PAYS]){
-	int coeff =1;
-	int i,j,k;
+	float coeff =1.0;
+	int i,j,k,cpt;
 	liste_matrice *tmp=liste;
 	float nb_matrice = liste->id;
 	for(i=0;i<NBR_PAYS;i++){
 		for(j=0;j<NBR_PAYS;j++)
 			matrice[i][j]= 0.;
 	}
-	if((nb_matrice)<=10){
+	printf("%f\n",nb_matrice);
+	if((nb_matrice)<=10.0){
 		float denom = (nb_matrice)*(nb_matrice+1)/2.0;
-		while(tmp){
+		for(cpt=0;cpt<nb_matrice;cpt++){
 			for(i=0;i<NBR_PAYS;i++){
 				for(j=0;j<NBR_PAYS;j++)
 					matrice[i][j]=((tmp->matrice[i][j])*coeff/denom)+matrice[i][j];
 			}
 			coeff+=1.0;
 			tmp=tmp->suivant;
+			affiche(matrice);
+			printf("\n");
 		}
 	}
 	else{
-		float denom=55;
-		for(k=0;(k<liste->id)-10;k++){
-			tmp=tmp->suivant;
-		}
-		for(i=0;i<NBR_PAYS;i++){
-			for(j=0;j<NBR_PAYS;j++)
-				matrice[i][j]=((tmp->matrice[i][j])*coeff/denom)+matrice[i][j];
-		coeff+=1.0;
-		tmp=tmp->suivant;
-		}
+			float denom=55;
+			for(k=0;k<((liste->id)-10);k++){
+				tmp=tmp->suivant;
+			}
+			for(cpt=0;cpt<10;cpt++){
+				for(i=0;i<NBR_PAYS;i++){
+					for(j=0;j<NBR_PAYS;j++)
+						matrice[i][j]=((tmp->matrice[i][j])*coeff/denom)+matrice[i][j];
+				}
+				coeff+=1.0;
+				tmp=tmp->suivant;
+			}
 	}
 }
+
 
 
 float norme(float tab1[]){
@@ -336,6 +382,7 @@ void changer_matrice(char* nom_fichier,char* adresse){
 	xmlFreeDoc( doc );
 	xmlCleanupParser();
 }
+
 
 void bonne_reponse(GtkWidget *widget, gpointer haribo) {
 	GtkWidget *dialog;
@@ -461,15 +508,16 @@ const  char* getPaysContinant(int c,int r){
 		return NULL;
 	}
 	static char buffer[100];
+	static char buffer2[100];
 	int j=0;
-	while(fscanf(f,"%s",buffer)&& j<r){
+	while(fgets(buffer,100,f)&& j<r){
 		j++;
 	}
 	fclose(f);
-	return buffer;
+	sscanf(buffer,"%s",&buffer2);
+	return buffer2		;
 
 }
-
 
 
 const  char* getPays (int r){
@@ -490,6 +538,20 @@ const  char* getPays (int r){
 	sscanf(buffer,"%s",&buffer2);
 	fclose(f);
 	return buffer2;
+}
+int strtoint(char* nom){
+	int cpt=0;
+	FILE *f=fopen("listepays.txt","r");
+	if(f==NULL){
+		fprintf(stderr,"problème d'ouverture du fichier listepays \n ");
+		return NULL;
+	}
+	char buffer[100];char buffer2[100];
+	while(fgets(buffer,100,f) &&sscanf(buffer,"%s",&buffer2)&& strcmp(nom,buffer2)!=0){
+		cpt++;
+	}
+	return cpt;
+
 }
 
 char* liretext(int i){
@@ -516,7 +578,6 @@ char* liretext(int i){
 		case 5:
 			fp=fopen("wikipedia/out6.txt", "r");
 			break;
-
 		}
 
 	fseek( fp , 0L , SEEK_END);
@@ -535,11 +596,12 @@ char* liretext(int i){
 void DoubleClick (GtkTreeView *treeview,GtkTreePath *path,GtkTreeViewColumn  *col,gpointer userdata){
 	GtkTreeIter   iter;
 	GtkTreeModel *model = gtk_tree_view_get_model(treeview);
+	printf("double\nle pseudo entré est: %s\n-------\n",userdata);
 
 	if (gtk_tree_model_get_iter(model, &iter, path)){
 		char *name;
 		gtk_tree_model_get(model, &iter, 0, &name, -1);
-		Afficher_Statistique(name);
+		Afficher_Statistique(name,userdata);
 		g_free(name);
 	}
 }
@@ -586,11 +648,13 @@ GtkTreeModel *create_and_fill_model(void) {
 	return GTK_TREE_MODEL(treestore);
 }
 
-GtkWidget *create_view_and_model() {
+GtkWidget *create_view_and_model(char* user_data) {
 	GtkWidget *view = gtk_tree_view_new();
 	GtkTreeViewColumn *col = gtk_tree_view_column_new();
 	gtk_tree_view_column_set_title(col, "Pays");
 	gtk_tree_view_append_column(GTK_TREE_VIEW(view), col);
+
+	printf("create view\nle pseudo entré est: %s\n-------\n",user_data);
 
 	GtkTreeViewColumn *col2 = gtk_tree_view_column_new();
 	gtk_tree_view_column_set_title(col2, "taux");
@@ -605,7 +669,7 @@ GtkWidget *create_view_and_model() {
 	gtk_tree_view_set_model(GTK_TREE_VIEW(view), model);
 	g_object_unref(model);
 
-	g_signal_connect(view, "row-activated", (GCallback) DoubleClick, NULL);
+	g_signal_connect(view, "row-activated", (GCallback) DoubleClick, user_data);
 	return view;
 
 }
@@ -696,9 +760,9 @@ void xml(GtkWidget *table99, gpointer user_data){
     return;
 }
 stru* copie(stru *haribo){
-	stru *haribo2=malloc(sizeof(*haribo2));
-			haribo2->nom_bonne=malloc(sizeof(char*)*100);
-			haribo2->nom_utilisateur=malloc(sizeof(char*)*100);
+	stru *haribo2=malloc(sizeof(stru));
+			haribo2->nom_bonne=malloc(sizeof(char)*100);
+			haribo2->nom_utilisateur=malloc(sizeof(char)*100);
 			haribo2->nom_mauvaise=malloc(sizeof(char*)*100);
 			strcpy(haribo2->nom_bonne,haribo->nom_bonne);
 			strcpy(haribo2->nom_utilisateur,haribo->nom_utilisateur);
@@ -713,31 +777,23 @@ void PasDeDoublon(int nb,int *num_array){
 	for ( i = 0; i < NBR_PAYS; i++) {
 		visited[i]=0;
 		}
-	printf("bloque ici\n");
 	while (count < nb) {
 		num = rand()%NBR_PAYS ;
-		printf("num %d\n  ",num);
-		printf("\nvisited num:%d\n",visited[num]);
+		printf("numero tiré aléatoirement: %d\n  ",num);
 		if ( visited[num] != 1 ) {
 			visited[num] = 1;
-
 			num_array[count] = num;
 			count++;
-			printf("count %d  ",count);
+			printf("ok %d/%d tiré aleatoirement correctement\n",count,nb);
 		}
 		else{
-			printf("nn\n");
+			printf("non ce nombre a deja été tiré\n");
 		}
 	}
 	for ( i = 0; i < nb; i++) {
 		printf("\n%d :",num_array[i]);
-		printf(" %s\n ",getPays(num_array[i]));
+		printf(" %s ",getPays(num_array[i]));
 	}
-	char*tab_button[nb];
-	for ( i = 0; i < nb; i++) {
-		tab_button[i]=getPays(num_array[i]);
-	}
-
 
 }
 static gboolean
@@ -779,22 +835,30 @@ static gboolean update_text2 (gpointer tokyo){
 
 	return FALSE;
 }
+static gboolean
+update_textsolo (gpointer tokyo)
+{
+	struc *seoul=malloc(sizeof(*seoul));
+	seoul=tokyo;
+	gtk_widget_set_tooltip_markup(seoul->wid, liretext(0));
+
+	return FALSE;
+
+}
 
 void fonction_facile(GtkWidget *table99, gpointer user_data){
-
 	int i=rand()%3,k;
 	int  tab_intier[3];
-	PasDeDoublon(3,tab_intier);
-	char buffer[500];
+	char drapeau_png[500];
 	char s0[500],s1[500],s2[500];
 	char niveau[50];
 	GtkWidget* bouton[3];
+	PasDeDoublon(3,tab_intier);
 	char *tab_button[3]={strcpy(s0,getPays(tab_intier[0])),strcpy(s1,getPays(tab_intier[1])),strcpy(s2,getPays(tab_intier[2]))};
 	char nom_dans_lordre[3][500];
+	sprintf(drapeau_png,"drapeau/%s.png",tab_button[0]);
 
-	sprintf(buffer,"drapeau/%s.png",tab_button[0]);
 	printf("\nfonction facile tableau de bouton :%s-%s-%s\n",tab_button[0],tab_button[1],tab_button[2]);
-
 
 	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 		gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-facile");
@@ -806,9 +870,8 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 		gtk_table_set_col_spacings(GTK_TABLE(table), 20);
 		gtk_container_add (GTK_CONTAINER (window), table);
 
-	bouton[1]= gtk_image_new_from_file(buffer);
+	bouton[1]= gtk_image_new_from_file(drapeau_png);
 		gtk_table_attach_defaults (GTK_TABLE (table), bouton[1], 0, 3, 0, 3);
-
 
 	nom_nombre *london=malloc(sizeof(*london));
 		london->nom=malloc(sizeof(char*)*100);
@@ -821,10 +884,10 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 		gtk_table_attach_defaults (GTK_TABLE (table), label1, 1, 2, 5, 6);
 
 
-	stru *haribo=malloc(sizeof(*haribo));
-		haribo->nom_bonne=malloc(sizeof(char*)*100);
-		haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-		haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+		haribo->nom_utilisateur=malloc(sizeof(char)*100);
+		haribo->nom_bonne=malloc(sizeof(char)*100);
+		haribo->nom_mauvaise=malloc(sizeof(char)*100);
 		strcpy(haribo->nom_bonne,tab_button[0]);
 		strcpy(haribo->nom_utilisateur,london->nom);
 		haribo->wid=window;
@@ -832,7 +895,7 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 	stru *haribo2=copie(haribo);
 	stru *haribo3=copie(haribo);
 
-	struc *tokyo=malloc(sizeof(*tokyo));
+	struc *tokyo=malloc(sizeof(struc));
 
 	for(k=0;k<3;k++){
 		while(tab_button[i]==0){
@@ -842,7 +905,6 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 		bouton[k] = gtk_button_new_with_label(tab_button[i]);
 		gtk_table_attach_defaults (GTK_TABLE (table), bouton[k], k,k+1, 4, 5);
 		strcpy(nom_dans_lordre[k],tab_button[i]);
-		printf(" %s ", nom_dans_lordre[k]);
 		if(i==0){
 				g_signal_connect(G_OBJECT(bouton[k]), "clicked",G_CALLBACK(bonne_reponse),  haribo);
 		}else{
@@ -865,48 +927,40 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 		}else{
 			g_signal_connect(G_OBJECT(bouton[k]), "clicked",G_CALLBACK( Fin_du_jeu), window);
 			london->nombre=0;
-			}
+		}
 		g_signal_connect_swapped(G_OBJECT(bouton[k]), "clicked",G_CALLBACK( gtk_widget_destroy), window);
 
 	}
-	printf("\nfonction facile2 tableau de bouton :%s-%s-%s\n",nom_dans_lordre[0],nom_dans_lordre[1],nom_dans_lordre[2]);
-	tokyo->wid=bouton[0];
-	tokyo->wid2=bouton[1];
-	tokyo->wid3=bouton[2];
-
+	printf("fonction facile tableau de bouton dans l'ordre :%s-%s-%s\n",nom_dans_lordre[0],nom_dans_lordre[1],nom_dans_lordre[2]);
+	tokyo->wid=bouton[0];tokyo->wid2=bouton[1];tokyo->wid3=bouton[2];
 	char wikipython[500];
 	sprintf(wikipython,"python wiki.py %s %s %s",nom_dans_lordre[0],nom_dans_lordre[1],nom_dans_lordre[2]);
 
-	FILE *output;
-
-	output = popen("/sbin/route -n | grep -c '^0\\.0\\.0\\.0'","r");
-
-	unsigned int m;
-	fscanf(output,"%u",&m);
-
 	if (!system("ping -c 1 8.8.8.8 > /dev/null")){
 		system(wikipython);
-		g_timeout_add (1, (GSourceFunc)update_text, tokyo);
+		g_timeout_add (10, (GSourceFunc)update_text, tokyo);
 	}
 
 	gtk_widget_show_all(GTK_WIDGET(window));
 }
 
 void fonction_facile2(GtkWidget *table99, gpointer user_data){
-	GtkWidget *image;
+	GtkWidget *image,*button;
 
 	int i=rand()%3,k;
 	int  tab_intier[3];
-	PasDeDoublon(3,tab_intier);
 	char buffer[500];
 	char s0[500],s1[500],s2[500];
+	PasDeDoublon(3,tab_intier);
 	char *tab_button[3]={strcpy(s0,getPays(tab_intier[0])),strcpy(s1,getPays(tab_intier[1])),strcpy(s2,getPays(tab_intier[2]))};
+	char wikipython[500];
+	sprintf(wikipython,"python wiki.py %s",tab_button[0]);
 
-	printf("\nfonction facile tableau de bouton :%s-%s-%s\n",tab_button[0],tab_button[1],tab_button[2]);
+	printf("\nfonction facile2 tableau de bouton :%s-%s-%s\n",tab_button[0],tab_button[1],tab_button[2]);
 
 	GtkWidget *table = gtk_table_new ( 2, 2, TRUE);
 	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-facile");
+	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-facile mode 2");
 	gtk_window_set_default_size (GTK_WINDOW (window), L_FENETRE, H_FENETRE);
 	gtk_container_set_border_width (GTK_CONTAINER (window), 100);
 	gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER_ALWAYS);
@@ -914,8 +968,8 @@ void fonction_facile2(GtkWidget *table99, gpointer user_data){
 	gtk_table_set_col_spacings(GTK_TABLE(table), 20);
 	gtk_container_add (GTK_CONTAINER (window), table);
 
-	GtkWidget *button =gtk_label_new(tab_button[0]);
-	gtk_table_attach_defaults (GTK_TABLE (table), button, 1, 2, 0, 1);
+	GtkWidget *button0 =gtk_label_new(tab_button[0]);
+	gtk_table_attach_defaults (GTK_TABLE (table), button0, 1, 2, 0, 1);
 
 	nom_nombre *london=malloc(sizeof(*london));
 	london->nom=malloc(sizeof(char*)*100);
@@ -970,6 +1024,13 @@ void fonction_facile2(GtkWidget *table99, gpointer user_data){
 			}
 		g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_destroy), window);
 	}
+
+	if (!system("ping -c 1 8.8.8.8 > /dev/null")){
+		struc *tokyo=malloc(sizeof(struc));
+		tokyo->wid=button0;
+		system(wikipython);
+		g_timeout_add (10, (GSourceFunc)update_textsolo, tokyo);
+	}
 	gtk_widget_show_all(GTK_WIDGET(window));
 
 	}
@@ -981,6 +1042,7 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 	PasDeDoublon(6,tab_intier);
 	char buffer[500]="";
 	char wikipython[50];
+	char niveau[50];
 	GtkWidget* bouton[6];
 	char nom_dans_lordre[6][500];
 	char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
@@ -991,7 +1053,7 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 
 	GtkWidget *table = gtk_table_new (6, 3, TRUE);
 	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-medium");
+	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-moyen");
 	gtk_window_set_default_size (GTK_WINDOW (window), L_FENETRE, H_FENETRE);
 	gtk_container_set_border_width (GTK_CONTAINER (window), 100);
 	gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER_ALWAYS);
@@ -1010,22 +1072,20 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 	london->nombre++;
 	int nbr_niveau_restant=london->nombre;
 
+	sprintf(niveau,"%d/%d",nbr_niveau_restant,NBR_LVL_M);
+	GtkWidget *label1 = gtk_label_new(niveau);
+		gtk_table_attach_defaults (GTK_TABLE (table), label1, 1, 2, 6, 7);
 
-	stru *haribo=malloc(sizeof(*haribo));
-	haribo->nom_bonne=malloc(sizeof(char*)*100);
-	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+	haribo->nom_bonne=malloc(sizeof(char)*100);
+	haribo->nom_utilisateur=malloc(sizeof(char)*100);
+	haribo->nom_mauvaise=malloc(sizeof(char)*100);
 	strcpy(haribo->nom_bonne,tab_button[0]);
 	strcpy(haribo->nom_utilisateur,london->nom);
 	haribo->wid=window;
-	stru *haribo2=copie(haribo);
-	stru *haribo3=copie(haribo);
-	stru *haribo4=copie(haribo);
-	stru *haribo5=copie(haribo);
+	stru *haribo2=copie(haribo);stru *haribo3=copie(haribo);
+	stru *haribo4=copie(haribo);stru *haribo5=copie(haribo);
 	stru *haribo6=copie(haribo);
-
-
-	struc *tokyo=malloc(sizeof(*tokyo));
 
 
 	for(k=0;k<3;k++){
@@ -1103,17 +1163,15 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 		}
 		g_signal_connect_swapped(G_OBJECT(bouton[k+3]), "clicked",G_CALLBACK( gtk_widget_destroy), window);
 	}
-	tokyo->wid=bouton[0];
-	tokyo->wid2=bouton[1];
-	tokyo->wid3=bouton[2];
-	tokyo->wid4=bouton[3];
-	tokyo->wid5=bouton[4];
-	tokyo->wid6=bouton[5];
 
-	sprintf(wikipython,"python wiki.py %s %s %s %s %s %s",nom_dans_lordre[0],nom_dans_lordre[1],nom_dans_lordre[2],nom_dans_lordre[3],nom_dans_lordre[4],nom_dans_lordre[5]);
-	system(wikipython);
-
-	g_timeout_add (1, (GSourceFunc)update_text2, tokyo);
+	if (!system("ping -c 1 8.8.8.8 > /dev/null")){
+		struc *tokyo=malloc(sizeof(struc));
+		tokyo->wid=bouton[0];tokyo->wid2=bouton[1];tokyo->wid3=bouton[2];
+		tokyo->wid4=bouton[3];tokyo->wid5=bouton[4];tokyo->wid6=bouton[5];
+		sprintf(wikipython,"python wiki.py %s %s %s %s %s %s",nom_dans_lordre[0],nom_dans_lordre[1],nom_dans_lordre[2],nom_dans_lordre[3],nom_dans_lordre[4],nom_dans_lordre[5]);
+		system(wikipython);
+		g_timeout_add (10, (GSourceFunc)update_text2, tokyo);
+	}
 
 	gtk_widget_show_all(GTK_WIDGET(window));
 }
@@ -1131,7 +1189,7 @@ void fonction_moyen2(GtkWidget *table99,gpointer user_data){
 
 	GtkWidget *table = gtk_table_new (3, 3, TRUE);
 	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-medium");
+	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-moyen mode 2");
 	gtk_window_set_default_size (GTK_WINDOW (window), L_FENETRE, H_FENETRE);
 	gtk_container_set_border_width (GTK_CONTAINER (window), 100);
 	gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER_ALWAYS);
@@ -1158,10 +1216,8 @@ void fonction_moyen2(GtkWidget *table99,gpointer user_data){
 	strcpy(haribo->nom_utilisateur,london->nom);
 	haribo->wid=window;
 
-	stru *haribo2=copie(haribo);
-	stru *haribo3=copie(haribo);
-	stru *haribo4=copie(haribo);
-	stru *haribo5=copie(haribo);
+	stru *haribo2=copie(haribo);stru *haribo3=copie(haribo);
+	stru *haribo4=copie(haribo);stru *haribo5=copie(haribo);
 	stru *haribo6=copie(haribo);
 
 	for(k=0;k<3;k++){
@@ -1253,31 +1309,38 @@ void fonction_moyen2(GtkWidget *table99,gpointer user_data){
 }
 
 void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
+printf("ENTREE DANS MOYEN IA \n");
 	int i=rand()%6,k;
 	int  tab_intier[6];
 	char buffer[500]="";
-	char wikipython[50];
+	char wikipython[50], niveau[10];
 	GtkWidget* bouton[6];
 	char nom_dans_lordre[6][500];
 	char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
 
-	nom_nombre *london=malloc(sizeof(*london));
-		london->nom=malloc(sizeof(char*)*100);
+	nom_nombre *london=malloc(sizeof(nom_nombre));
+		london->nom=malloc(sizeof(char)*100);
 		london=user_data;
+		float temp[NBR_PAYS][NBR_PAYS];
+		copie_matrice(london->mat_similitude,temp);
+		affiche(london->mat_similitude);
+		printf("\nslt\n");
 		london->nombre++;
 		int nbr_niveau_restant=london->nombre;
 
 	int numero_drapeau = rand()%NBR_PAYS;
-	moyen(london->mat_similitude,numero_drapeau,tab_intier);
+	printf("Drapeau numéro %d \n",numero_drapeau);
+	moyen(temp,numero_drapeau,tab_intier);
+	affiche_ligne_int(tab_intier);
 
 	char *tab_button[6]={strcpy(s0,getPays(tab_intier[0])),strcpy(s1,getPays(tab_intier[1])),strcpy(s2,getPays(tab_intier[2])),strcpy(s3,getPays(tab_intier[3])),strcpy(s4,getPays(tab_intier[4])),strcpy(s5,getPays(tab_intier[5]))};
 	g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
 
-	printf("\nfonction moyenne tableau de bouton :%s  %s  %s  %s  %s  %s\n",tab_button[0],tab_button[1],tab_button[2],tab_button[3],tab_button[4],tab_button[5]);
+	printf("\nfonction moyenneIA tableau de bouton :%s  %s  %s  %s  %s  %s\n",tab_button[0],tab_button[1],tab_button[2],tab_button[3],tab_button[4],tab_button[5]);
 
 	GtkWidget *table = gtk_table_new (6, 3, TRUE);
 	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-medium");
+	gtk_window_set_title (GTK_WINDOW (window), "QCM drapeau-moyenIA");
 	gtk_window_set_default_size (GTK_WINDOW (window), L_FENETRE, H_FENETRE);
 	gtk_container_set_border_width (GTK_CONTAINER (window), 100);
 	gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER_ALWAYS);
@@ -1286,28 +1349,25 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 	gtk_table_set_row_spacings(GTK_TABLE(table), 20);
 	gtk_container_add (GTK_CONTAINER (window), table);
 
-
 	bouton[0] = gtk_image_new_from_file(buffer);
 		gtk_table_attach_defaults (GTK_TABLE (table), bouton[0] , 0, 3, 0, 3);
 
 
-
-
 	stru *haribo=malloc(sizeof(*haribo));
-	haribo->nom_bonne=malloc(sizeof(char*)*100);
-	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
-	strcpy(haribo->nom_bonne,tab_button[0]);
-	strcpy(haribo->nom_utilisateur,london->nom);
-	haribo->wid=window;
-	stru *haribo2=copie(haribo);
-	stru *haribo3=copie(haribo);
-	stru *haribo4=copie(haribo);
-	stru *haribo5=copie(haribo);
+		haribo->nom_bonne=malloc(sizeof(char*)*100);
+		haribo->nom_utilisateur=malloc(sizeof(char*)*100);
+		haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+		strcpy(haribo->nom_bonne,tab_button[0]);
+		strcpy(haribo->nom_utilisateur,london->nom);
+		haribo->wid=window;
+
+	stru *haribo2=copie(haribo);stru *haribo3=copie(haribo);
+	stru *haribo4=copie(haribo);stru *haribo5=copie(haribo);
 	stru *haribo6=copie(haribo);
 
-
-	struc *tokyo=malloc(sizeof(*tokyo));
+	sprintf(niveau,"%d/%d",nbr_niveau_restant,NBR_LVL_M);
+	GtkWidget *label1 = gtk_label_new(niveau);
+		gtk_table_attach_defaults (GTK_TABLE (table), label1, 1, 2, 6, 7);
 
 
 	for(k=0;k<3;k++){
@@ -1385,21 +1445,18 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 		}
 		g_signal_connect_swapped(G_OBJECT(bouton[k+3]), "clicked",G_CALLBACK( gtk_widget_destroy), window);
 	}
-	tokyo->wid=bouton[0];
-	tokyo->wid2=bouton[1];
-	tokyo->wid3=bouton[2];
-	tokyo->wid4=bouton[3];
-	tokyo->wid5=bouton[4];
-	tokyo->wid6=bouton[5];
-
-	sprintf(wikipython,"python wiki.py %s %s %s %s %s %s",nom_dans_lordre[0],nom_dans_lordre[1],nom_dans_lordre[2],nom_dans_lordre[3],nom_dans_lordre[4],nom_dans_lordre[5]);
-	system(wikipython);
-
-	g_timeout_add (800, (GSourceFunc)update_text2, tokyo);
+	if (!system("ping -c 1 8.8.8.8 > /dev/null")){
+		struc *tokyo=malloc(sizeof(*tokyo));
+		tokyo->wid=bouton[0];tokyo->wid2=bouton[1];tokyo->wid3=bouton[2];
+		tokyo->wid4=bouton[3];tokyo->wid5=bouton[4];tokyo->wid6=bouton[5];
+		sprintf(wikipython,"python wiki.py %s %s %s %s %s %s",nom_dans_lordre[0],nom_dans_lordre[1],nom_dans_lordre[2],nom_dans_lordre[3],nom_dans_lordre[4],nom_dans_lordre[5]);
+		system(wikipython);
+		g_timeout_add (800, (GSourceFunc)update_text2, tokyo);
+	}
 
 	gtk_widget_show_all(GTK_WIDGET(window));
 }
-void fonction_intermediaire2(GtkWidget *table99,gpointer user_data){
+void fonction_moyenIA2(GtkWidget *table99,gpointer user_data){
 	int i=rand()%6,k;
 	GtkWidget *image;
 	int  tab_intier[6];
@@ -1736,7 +1793,7 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 		gtk_table_set_row_spacings(GTK_TABLE(table0), 50);
 		gtk_table_set_col_spacings(GTK_TABLE(table0), 20);
 
-	GtkWidget *button = gtk_button_new_with_label ("niveau facile");
+	GtkWidget *button = gtk_button_new_with_label ("  niveau facile ");
 		gtk_table_attach_defaults (GTK_TABLE (table0), button, 2, 3, 1, 2);
 		g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(Choix_niveaux), london);
 		g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_hide), window0);
@@ -1747,30 +1804,36 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 		if(nbr_matrice>=NBR_IA){
 			liste_matrice *mat_moy=lirematrice(nom_fichier);
 			float mat_similitude[NBR_PAYS][NBR_PAYS];
-			//matrice_moyenne(mat_moy,mat_similitude);
+			matrice_moyenne(mat_moy,mat_similitude);
 			similitude(mat_similitude);
-			tagada->mat_similitude=mat_similitude;
+			printf("\n");
+			copie_matrice(mat_similitude,tagada->mat_similitude);
+			affiche(tagada->mat_similitude);
+			//tagada->mat_similitude=mat_similitude;
+			printf("\n");
+			printf("TEST ENTREE IA \n");
 			button1 = gtk_button_new_with_label ("niv moyen IA");
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
+			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyenIA), tagada);
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
+			gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
 		}else{
 			button1 = gtk_button_new_with_label ("niveau moyen");
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
+			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyen), tagada);
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
+			gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
 		}
-		gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
-		g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
-		g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
-
-		g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
 
 	GtkWidget *button2;
 		if(nbr_matrice>=NBR_IA){
 			button2 = gtk_button_new_with_label ("niv difficile IA");
 			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(fonction_difficile), tagada);
 			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(xml), tagada->nom);
-		}else{
-			button2 = gtk_button_new_with_label ("niveau difficile");
-			}
-		gtk_table_attach_defaults (GTK_TABLE (table0), button2, 2, 3, 3, 4);
+			gtk_table_attach_defaults (GTK_TABLE (table0), button2, 2, 3, 3, 4);
+		}
 
 
 	GtkWidget *button3=gtk_button_new_with_label ("retour");
@@ -1877,11 +1940,19 @@ void Choix_niveaux2(GtkWidget *table,gpointer user_data){
 	gtk_widget_show_all(GTK_WIDGET(window0));
 }
 
-void Afficher_Statistique(char* name){
+void Afficher_Statistique(char* name,char* pseudo){
 	char buffer[500];
 	char buffer2[500];
 	sprintf(buffer, "drapeau/%s.png", name);
-	sprintf(buffer2, "\t%s\n vous le confondez souvent avec :\n ", name);
+	int indice_pays = strtoint(name);
+	sprintf(buffer2, "bonjour, %s\n\t%s numero %d\n vous le confondez souvent avec :\n ", pseudo, name,indice_pays);
+
+	char nom_fichier[100];
+	sprintf(nom_fichier,"%s.xml", pseudo);
+	liste_matrice *mat_moy=lirematrice(nom_fichier);
+	float mat_similitude[NBR_PAYS][NBR_PAYS];
+	matrice_moyenne(mat_moy,mat_similitude);
+	similitude(mat_similitude);
 
 	GtkWidget *table = gtk_table_new (5, 3, TRUE);
 	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -1903,8 +1974,9 @@ void Statistique(GtkWidget *table,gpointer user_data){
 		gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
 		gtk_window_set_title(GTK_WINDOW(window), "Statistique ");
 		gtk_window_set_default_size (GTK_WINDOW (window), L_FENETRE, H_FENETRE);
+		printf("statistique\nle pseudo entré est: %s\n-------\n",user_data);
 
-	GtkWidget *view = create_view_and_model();
+	GtkWidget *view = create_view_and_model(user_data);
 	GtkWidget *scrolled_window = gtk_scrolled_window_new (NULL, NULL);
 		gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(scrolled_window), GTK_POLICY_ALWAYS, GTK_POLICY_NEVER);
 		gtk_container_add (GTK_CONTAINER(scrolled_window), view);
@@ -2021,7 +2093,7 @@ void Menu_principal(GtkWidget *table,gpointer user_data){
 
 	GtkWidget *button1 = gtk_button_new_with_label ("statistique");
 		gtk_table_attach_defaults (GTK_TABLE (table0), button1,  2, 3, 2, 3);
-		g_signal_connect(G_OBJECT(button1),"clicked",G_CALLBACK(Statistique),NULL);
+		g_signal_connect(G_OBJECT(button1),"clicked",G_CALLBACK(Statistique),haribo->nom_bonne);
 
 	GtkWidget *button2 = gtk_button_new_with_label ("    A propos    ");
 		gtk_table_attach_defaults (GTK_TABLE (table0), button2,  2, 3, 3, 4);
