@@ -620,7 +620,7 @@ GtkTreeModel *create_and_fill_model(void) {
 
 	gtk_tree_store_append(treestore, &toplevel, NULL);
 	gtk_tree_store_set(treestore, &toplevel,COLUMN, "Amerique",-1);
-	for(i=0;i<32;i++){
+	for(i=0;i<33;i++){
 		gtk_tree_store_append(treestore, &child, &toplevel);
 		gtk_tree_store_set(treestore, &child,COLUMN, getPaysContinant(1,i),-1);
 	}
@@ -634,7 +634,7 @@ GtkTreeModel *create_and_fill_model(void) {
 
 	gtk_tree_store_append(treestore, &toplevel, NULL);
 	gtk_tree_store_set(treestore, &toplevel, COLUMN, "Europe",-1);
-	for(i=0;i<45;i++){
+	for(i=0;i<44;i++){
 		gtk_tree_store_append(treestore, &child, &toplevel);
 		gtk_tree_store_set(treestore, &child,COLUMN, getPaysContinant(3,i), -1);
 	}
@@ -1847,7 +1847,7 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 
 
 	GtkWidget *button1;
-		if(nbr_matrice>=NBR_IA){
+	/*	if(nbr_matrice>=NBR_IA){
 			liste_matrice *mat_moy=lirematrice(nom_fichier);
 			float mat_similitude[NBR_PAYS][NBR_PAYS];
 			matrice_moyenne(mat_moy,mat_similitude);
@@ -1859,21 +1859,23 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 			printf("\n");
 			printf("TEST ENTREE IA \n");
 			button1 = gtk_button_new_with_label ("niv moyen IA");
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
 			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyenIA), tagada);
-			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
+
 			gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
-		}else{
+		}else{*/
 			button1 = gtk_button_new_with_label ("niveau moyen");
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
 			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyen), tagada);
 			gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
-		}
+		//}
 
 		if(nbr_matrice>=NBR_IA){
+
 			GtkWidget *button2 = gtk_button_new_with_label ("niv difficile IA");
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
@@ -2002,7 +2004,7 @@ void Afficher_Statistique(char* name,char* pseudo){
 	char buffer3[500];
 	sprintf(buffer, "drapeau/%s.png", name);
 	int indice_pays = strtoint(name);
-	sprintf(buffer2, "bonjour, %s\n\t%s numero %d\n vous le confondez souvent avec :\n ", pseudo, name,indice_pays);
+	sprintf(buffer2, "il s'agit de %s, vous le confondez avec : ",  name);
 
 	char nom_fichier[100];
 	sprintf(nom_fichier,"%s.xml", pseudo);
@@ -2022,13 +2024,28 @@ void Afficher_Statistique(char* name,char* pseudo){
 		gtk_container_add (GTK_CONTAINER (window), table);
 
 	GtkWidget *button = gtk_image_new_from_file(buffer);
-		gtk_table_attach_defaults (GTK_TABLE (table), button, 0, 3, 0, 2);
+		gtk_table_attach_defaults (GTK_TABLE (table), button, 0, 3, 1, 2);
 	GtkWidget *label1 = gtk_label_new(buffer2);
 		gtk_table_attach_defaults (GTK_TABLE (table), label1, 0, 3, 2, 3);
 
-		sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[0]));
+	sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[0]));
 	GtkWidget *button2 = gtk_image_new_from_file(buffer);
 			gtk_table_attach_defaults (GTK_TABLE (table), button2, 0, 1, 3, 4);
+label1 = gtk_label_new(getPays(tab_intier[0]));
+			gtk_table_attach_defaults (GTK_TABLE (table), label1, 0, 1, 4, 5);
+
+	sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[1]));
+	button2 = gtk_image_new_from_file(buffer);
+			gtk_table_attach_defaults (GTK_TABLE (table), button2, 1, 2, 3, 4);
+			label1 = gtk_label_new(getPays(tab_intier[1]));
+						gtk_table_attach_defaults (GTK_TABLE (table), label1, 1, 2, 4, 5);
+
+	sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[2]));
+	button2 = gtk_image_new_from_file(buffer);
+			gtk_table_attach_defaults (GTK_TABLE (table), button2, 2, 3, 3, 4);
+
+		label1 = gtk_label_new(getPays(tab_intier[2]));
+									gtk_table_attach_defaults (GTK_TABLE (table), label1, 2, 3, 4, 5);
 
 	gtk_widget_show_all(GTK_WIDGET(window));
 }
@@ -2038,6 +2055,7 @@ void Statistique(GtkWidget *table,gpointer user_data){
 		gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
 		gtk_window_set_title(GTK_WINDOW(window), "Statistique ");
 		gtk_window_set_default_size (GTK_WINDOW (window), L_FENETRE, H_FENETRE);
+		gtk_window_set_icon(GTK_WINDOW(window), gdk_pixbuf_new_from_file("battery.png",NULL));
 		printf("statistique\nle pseudo entré est: %s\n-------\n",user_data);
 
 	GtkWidget *view = create_view_and_model(user_data);
@@ -2088,6 +2106,7 @@ void Choix_orientation(GtkWidget *table,gpointer user_data){
 		gtk_window_set_default_size (GTK_WINDOW (window0), L_FENETRE, H_FENETRE);
 		gtk_container_set_border_width (GTK_CONTAINER (window0), 5);
 		gtk_window_set_position(GTK_WINDOW(window0), GTK_WIN_POS_CENTER_ALWAYS);
+		gtk_window_set_icon(GTK_WINDOW(window0), gdk_pixbuf_new_from_file("battery.png",NULL));
 		london->wid=window0;
 
 	GtkWidget *layout = gtk_layout_new(NULL, NULL);
@@ -2138,6 +2157,7 @@ void Menu_principal(GtkWidget *table,gpointer user_data){
 		gtk_window_set_default_size (GTK_WINDOW (window0), L_FENETRE, H_FENETRE);
 		gtk_container_set_border_width (GTK_CONTAINER (window0), 5);
 		gtk_window_set_position(GTK_WINDOW(window0), GTK_WIN_POS_CENTER_ALWAYS);
+		gtk_window_set_icon(GTK_WINDOW(window0), gdk_pixbuf_new_from_file("battery.png",NULL));
 
 	GtkWidget *layout = gtk_layout_new(NULL, NULL);
 		gtk_container_add(GTK_CONTAINER (window0), layout);
@@ -2176,10 +2196,16 @@ void Menu_principal(GtkWidget *table,gpointer user_data){
 int main (int argc,char *argv[]){
 	srand(time(NULL));
 	gtk_init (&argc, &argv);
+	GtkWidget *window = NULL;
+	   GtkWidget *container = NULL;
+	   GdkPixbuf *pixbuf = NULL;
+	   gint width  = gdk_screen_width();
+	   gint height = gdk_screen_height();
+	   printf("%d %d",width,height);
 
 	GtkWidget *window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 		gtk_window_set_title (GTK_WINDOW (window0), "QCM entrez votre nom");
-		gtk_window_set_default_size (GTK_WINDOW (window0), L_FENETRE, H_FENETRE);
+		gtk_window_set_default_size (GTK_WINDOW (window0), width*0.35, H_FENETRE);
 		gtk_container_set_border_width (GTK_CONTAINER (window0), 5);
 		gtk_window_set_position(GTK_WINDOW(window0), GTK_WIN_POS_CENTER_ALWAYS);
 
@@ -2187,8 +2213,15 @@ int main (int argc,char *argv[]){
 		gtk_container_add(GTK_CONTAINER (window0), layout);
 		gtk_widget_show(layout);
 
-	GtkWidget *image = gtk_image_new_from_file("onu resize.png");
-		gtk_layout_put(GTK_LAYOUT(layout), image, 0, 0);
+	GtkWidget *image = gtk_image_new_from_file("ONU.svg");
+	 pixbuf = gdk_pixbuf_new_from_file ("ONU.svg", NULL);
+	   if (pixbuf == NULL) {
+	      g_printerr("Failed to resize image\n");
+	      return 1;
+	   }
+	   GdkPixbuf *pxbscaled = gdk_pixbuf_scale_simple(pixbuf, 700, 450, GDK_INTERP_BILINEAR);
+	   gtk_image_set_from_pixbuf(GTK_IMAGE(image), pxbscaled);
+		gtk_layout_put(GTK_LAYOUT(layout), image , 0, 0);
 
 	GtkWidget *label1 = gtk_label_new(" Entrez votre nom svp :");
 		gtk_layout_put(GTK_LAYOUT(layout), label1, 270, 50);
@@ -2209,7 +2242,7 @@ int main (int argc,char *argv[]){
 
 
 	gtk_widget_show_all (window0);
-	gtk_window_set_resizable (GTK_WINDOW(window0), FALSE);
+	//gtk_window_set_resizable (GTK_WINDOW(window0), FALSE);
 	gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
 	gtk_main ();
 
