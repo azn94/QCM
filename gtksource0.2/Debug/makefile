@@ -23,19 +23,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: gtksource
+all: QCM-Drapeaux
 
 # Tool invocations
-gtksource: $(OBJS) $(USER_OBJS)
+QCM-Drapeaux: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc -L/usr/lib -o "gtksource" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc -L/usr/lib -o "QCM-Drapeaux" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) gtksource
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) QCM-Drapeaux
 	-@echo ' '
 
 .PHONY: all clean dependents
