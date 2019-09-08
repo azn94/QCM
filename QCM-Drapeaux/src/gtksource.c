@@ -1389,15 +1389,29 @@ printf("ENTREE DANS MOYEN IA \n");
 		london->nom=malloc(sizeof(char)*100);
 		london=user_data;
 		float temp[NBR_PAYS][NBR_PAYS];
-		copie_matrice(london->mat_similitude,temp);
-		affiche(london->mat_similitude);
-		printf("\nslt\n");
 		london->nombre++;
 		int nbr_niveau_restant=london->nombre;
 
+	if(nbr_niveau_restant==1){
+		char nom_fichier[100];
+		sprintf(nom_fichier,"%s.xml",london->nom);
+		printf("nom du fichier %s \n",nom_fichier);
+
+		liste_matrice *mat_moy=lirematrice(nom_fichier);
+		float mat_similitude[NBR_PAYS][NBR_PAYS];
+		matrice_moyenne(mat_moy,mat_similitude);
+		similitude(mat_similitude);
+		printf("\n");
+		copie_matrice(mat_similitude,london->mat_similitude);
+		affiche(london->mat_similitude);
+		//tagada->mat_similitude=mat_similitude;
+		printf("\n");
+		printf("TEST ENTREE IA \n");
+		}
+
 	int numero_drapeau = rand()%NBR_PAYS;
 	printf("Drapeau numéro %d \n",numero_drapeau);
-	moyen(temp,numero_drapeau,tab_intier);
+	moyen(london->mat_similitude,numero_drapeau,tab_intier);
 	affiche_ligne_int(tab_intier);
 
 	char *tab_button[6]={strcpy(s0,getPays(tab_intier[0])),strcpy(s1,getPays(tab_intier[1])),strcpy(s2,getPays(tab_intier[2])),strcpy(s3,getPays(tab_intier[3])),strcpy(s4,getPays(tab_intier[4])),strcpy(s5,getPays(tab_intier[5]))};
@@ -1891,7 +1905,7 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 
 	GtkWidget *button1;
 		if(nbr_matrice>=NBR_IA){
-			liste_matrice *mat_moy=lirematrice(nom_fichier);
+		/*	liste_matrice *mat_moy=lirematrice(nom_fichier);
 			float mat_similitude[NBR_PAYS][NBR_PAYS];
 			matrice_moyenne(mat_moy,mat_similitude);
 			similitude(mat_similitude);
@@ -1900,7 +1914,7 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 			affiche(tagada->mat_similitude);
 			//tagada->mat_similitude=mat_similitude;
 			printf("\n");
-			printf("TEST ENTREE IA \n");
+			printf("TEST ENTREE IA \n");*/
 			button1 = gtk_button_new_with_label ("niv moyen IA");
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
@@ -1919,8 +1933,8 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 		if(nbr_matrice>=NBR_IA){
 
 			GtkWidget *button2 = gtk_button_new_with_label ("niv difficile IA");
-			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
-			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
+			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(xml), tagada->nom);
+			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(Choix_niveaux), london);
 			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(fonction_difficileIA), tagada);
 			gtk_table_attach_defaults (GTK_TABLE (table0), button2, 2, 3, 3, 4);
@@ -1938,7 +1952,6 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 	gtk_window_set_resizable (GTK_WINDOW(window0), FALSE);
 	gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
 	gtk_widget_show_all(GTK_WIDGET(window0));
-
 
 }
 
