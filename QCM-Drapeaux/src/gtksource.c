@@ -21,8 +21,8 @@
 #define NBR_LVL_M 10
 #define L_FENETRE 700
 #define H_FENETRE 450
-#define NBR_PAYS 10
-#define NBR_IA 3
+#define NBR_PAYS 6
+#define NBR_IA 0
 
 
 
@@ -114,75 +114,6 @@ void copie_matrice(float ancien[NBR_PAYS][NBR_PAYS], float new[NBR_PAYS][NBR_PAY
 			new[i][j]= ancien[i][j];
 	}
 }
-liste_matrice* lirematrice(char* User_name){
-        xmlDocPtr doc;
-        xmlNodePtr cur,save;
-        int cpt= 1;
-        int i, j;
-        //char nom[256];
-        //snprintf(nom,256, "%s%s",User_name,".xml");
-        doc = xmlParseFile(User_name);
-        cur = xmlDocGetRootElement(doc);
-        if (cur == NULL) {
-                fprintf(stderr,"empty document\n");
-                xmlFreeDoc(doc);
-        }
-        //printf("TEST 2");
-        liste_matrice *liste_debut= malloc (sizeof(liste_matrice));
-        liste_debut->id=0;
-        liste_matrice *tmp1= liste_debut;
-        cur=cur->children;
-        cur=cur->next;
-        //printf("Nom actuel : %s \n",cur->name);
-        xmlChar *reponse;
-	//printf("Test\n");
-        while(cur!=NULL){
-                cur= cur->children;
-                cur= cur->next;
-                //printf("Nom actuel : %s \n",cur->name);
-                i = 0;
-                j = 0;
-                while(cur!=NULL){
-                        cur=cur->children;
-                        cur=cur->next;
-                        while(cur!=NULL){
-                                reponse =xmlNodeGetContent(cur);
-                                //printf("%s ",reponse);
-                                char*tmp_char =(char*)(reponse);
-                                tmp1->matrice[i][j] = atol(tmp_char);
-                                //printf("%d j = %d i = %d\n",tmp2->matrice[i][j],j,i);
-                                save=cur;
-                                cur=cur->next;
-                                cur=cur->next;
-                                j++;
-                        }
-                        //printf("test\n");
-                        cur=save->parent;
-                        save=cur;
-                        cur=cur->next;
-                        cur=cur->next;
-                        //printf("\n");
-                        i++;
-                        j = 0;
-                }
-                printf("YE SUIS LA 2\n");
-                //printf("%d \n",tmp1->id);
-                cur=save->parent;
-                cur=cur->next;
-                cur=cur->next;
-                //printf("\n");
-		liste_matrice *tmp2= malloc (sizeof(liste_matrice));
-		tmp2->suivant=NULL;
-		(liste_debut->id)+=1;
-        tmp1->id =liste_debut->id;;
-		tmp1->suivant= tmp2;
-		tmp1=tmp2;
-        }
-        cpt=liste_debut->id;
-        printf("%d\n",cpt);
-        return liste_debut;
-}
-
 int no_doublons(int tab[6]){
 	printf("ENTREE DANS NO DOUBLONS \n");
 	int i,j;
@@ -759,6 +690,78 @@ void difficile(float similarite[NBR_PAYS],int drapeau, int tabindice[6]){
 
 }
 
+liste_matrice* lirematrice(char* User_name){
+	printf("debut de lirematrice\n");
+	xmlDocPtr doc;
+	xmlNodePtr cur,save;
+	LIBXML_TEST_VERSION;
+	int cpt= 1;
+	int i, j;
+	doc = xmlParseFile(User_name);
+	cur = xmlDocGetRootElement(doc);
+	if (cur == NULL) {
+		printf("empty document\n");
+		xmlFreeDoc(doc);
+		return NULL;
+	}
+	liste_matrice *liste_debut= malloc (sizeof(liste_matrice));
+	liste_debut->id=0;
+	liste_matrice *tmp1= liste_debut;
+	printf("Nom du fichier: %s \n",cur->name);
+	cur=cur->children;
+	printf("Nom de la 1er matrice : %s \n",cur->name);
+	xmlChar *reponse;
+	while(cur!=NULL){// bloucle toute les matrices
+		cur= cur->children;
+		printf("\tNom du fils: %s \n",cur->name);
+		i = 0;
+		j = 0;
+		while(cur!=NULL){
+			cur=cur->children;
+			while(cur!=NULL){
+				printf("\t\tpays : %s ",cur->name);
+				reponse =xmlNodeGetContent(cur);
+				printf("%s ",reponse);
+				char*tmp_char =(char*)(reponse);
+				tmp1->matrice[i][j] = atol(tmp_char);
+				printf("%d\n",tmp1->matrice[i][j]);
+				save=cur;
+				cur=cur->next;
+				j++;
+			}
+			cur=save->parent;
+			save=cur;
+			cur=cur->next;
+			if(cur!=NULL)
+			printf("\tnom du prochaine fils: %s \n",cur->name);
+			i++;
+			j = 0;
+		}
+		printf("changement de matrice =\n");
+		//printf("%d \n",tmp1->id);
+		cur=save->parent;
+		if(cur!=NULL)
+			printf("remonte au parent: %s \n",cur->name);
+		cur=cur->next;
+		if(cur!=NULL)
+			printf("avancer a la matrice suivante : %s \n",cur->name);
+		//printf("\n");
+		liste_matrice *tmp2= malloc (sizeof(liste_matrice));
+		tmp2->suivant=NULL;
+		(liste_debut->id)+=1;
+		tmp1->id =liste_debut->id;;
+		tmp1->suivant= tmp2;
+		tmp1=tmp2;
+		printf("changement de matrice fini\n\n");
+	}
+	printf("fin de la lecture\n");
+	cpt=liste_debut->id;
+	printf("nombre de matrice :%d\n",cpt);
+	printf("fin de lirematrice\n");
+	return liste_debut;
+
+}
+
 void xml(GtkWidget *table99, gpointer user_data){
 	gchar buff[1024];
 	xmlTextReaderPtr reader;
@@ -773,7 +776,7 @@ void xml(GtkWidget *table99, gpointer user_data){
 	reader = xmlReaderForFile(buff, NULL, 0);
 	if(reader != NULL){
 		xmlKeepBlanksDefault(0);
-		fprintf(stderr, "le fichier existe deja ");
+		printf( "le fichier existe deja ");
 	    xmlDoc *doc = xmlParseFile(buff);
 		xmlNodePtr  node_matrice = NULL, node = NULL, node1 = NULL;/* node pointers */
 		xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
@@ -1111,6 +1114,13 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 	GtkWidget* bouton[6];
 	char nom_dans_lordre[6][500];
 	char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
+
+	nom_nombre *london=malloc(sizeof(*london));
+		london->nom=malloc(sizeof(char*)*100);
+		london=user_data;
+		london->nombre++;
+		int nbr_niveau_restant=london->nombre;
+
 	char *tab_button[6]={strcpy(s0,getPays(tab_intier[0])),strcpy(s1,getPays(tab_intier[1])),strcpy(s2,getPays(tab_intier[2])),strcpy(s3,getPays(tab_intier[3])),strcpy(s4,getPays(tab_intier[4])),strcpy(s5,getPays(tab_intier[5]))};
 	g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
 
@@ -1132,11 +1142,6 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 	bouton[0] = gtk_image_new_from_file(buffer);
 		gtk_table_attach_defaults (GTK_TABLE (table), bouton[0] , 0, 3, 0, 3);
 
-	nom_nombre *london=malloc(sizeof(*london));
-	london->nom=malloc(sizeof(char*)*100);
-	london=user_data;
-	london->nombre++;
-	int nbr_niveau_restant=london->nombre;
 
 	sprintf(niveau,"%d/%d",nbr_niveau_restant,NBR_LVL_M);
 	GtkWidget *label1 = gtk_label_new(niveau);
@@ -1376,7 +1381,6 @@ void fonction_moyen2(GtkWidget *table99,gpointer user_data){
 }
 
 void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
-printf("ENTREE DANS MOYEN IA \n");
 	int i=rand()%6,k;
 	int  tab_intier[6];
 	char buffer[500]="";
@@ -1393,10 +1397,11 @@ printf("ENTREE DANS MOYEN IA \n");
 		int nbr_niveau_restant=london->nombre;
 
 	if(nbr_niveau_restant==1){
+		printf("1er tour calcul lirematrice\n");
 		char nom_fichier[100];
 		sprintf(nom_fichier,"%s.xml",london->nom);
 		printf("nom du fichier %s \n",nom_fichier);
-
+		xml(bouton,london->nom);
 		liste_matrice *mat_moy=lirematrice(nom_fichier);
 		float mat_similitude[NBR_PAYS][NBR_PAYS];
 		matrice_moyenne(mat_moy,mat_similitude);
@@ -1405,9 +1410,7 @@ printf("ENTREE DANS MOYEN IA \n");
 		copie_matrice(mat_similitude,london->mat_similitude);
 		affiche(london->mat_similitude);
 		//tagada->mat_similitude=mat_similitude;
-		printf("\n");
-		printf("TEST ENTREE IA \n");
-		}
+	}
 
 	int numero_drapeau = rand()%NBR_PAYS;
 	printf("Drapeau numéro %d \n",numero_drapeau);
@@ -1540,14 +1543,45 @@ printf("ENTREE DANS MOYEN IA \n");
 }
 void fonction_moyenIA2(GtkWidget *table99,gpointer user_data){
 	int i=rand()%6,k;
-	GtkWidget *image;
-	int  tab_intier[6];
-	PasDeDoublon(6,tab_intier);
-	char buffer[500]="";
-	char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
-	char *tab_button[6]={strcpy(s0,getPays(tab_intier[0])),strcpy(s1,getPays(tab_intier[1])),strcpy(s2,getPays(tab_intier[2])),strcpy(s3,getPays(tab_intier[3])),strcpy(s4,getPays(tab_intier[4])),strcpy(s5,getPays(tab_intier[5]))};
-	g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
-	printf("\nfonction facile tableau de bouton :%s  %s  %s  %s  %s  %s\n",tab_button[0],tab_button[1],tab_button[2],tab_button[3],tab_button[4],tab_button[5]);
+		int  tab_intier[6];
+		char buffer[500]="";
+		char wikipython[50], niveau[10];
+		GtkWidget* bouton[6];
+		GtkWidget *image ;
+		char nom_dans_lordre[6][500];
+		char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
+
+		nom_nombre *london=malloc(sizeof(nom_nombre));
+			london->nom=malloc(sizeof(char)*100);
+			london=user_data;
+			float temp[NBR_PAYS][NBR_PAYS];
+			london->nombre++;
+			int nbr_niveau_restant=london->nombre;
+
+		if(nbr_niveau_restant==1){
+			printf("1er tour calcul lirematrice\n");
+			char nom_fichier[100];
+			sprintf(nom_fichier,"%s.xml",london->nom);
+			printf("nom du fichier %s \n",nom_fichier);
+			xml(bouton,london->nom);
+			liste_matrice *mat_moy=lirematrice(nom_fichier);
+			float mat_similitude[NBR_PAYS][NBR_PAYS];
+			matrice_moyenne(mat_moy,mat_similitude);
+			similitude(mat_similitude);
+			printf("\n");
+			copie_matrice(mat_similitude,london->mat_similitude);
+			affiche(london->mat_similitude);
+			//tagada->mat_similitude=mat_similitude;
+		}
+
+		int numero_drapeau = rand()%NBR_PAYS;
+		printf("Drapeau numéro %d \n",numero_drapeau);
+		moyen(london->mat_similitude,numero_drapeau,tab_intier);
+		affiche_ligne_int(tab_intier);
+
+		char *tab_button[6]={strcpy(s0,getPays(tab_intier[0])),strcpy(s1,getPays(tab_intier[1])),strcpy(s2,getPays(tab_intier[2])),strcpy(s3,getPays(tab_intier[3])),strcpy(s4,getPays(tab_intier[4])),strcpy(s5,getPays(tab_intier[5]))};
+		g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
+	printf("\nfonction moyenIA 2 tableau de bouton :%s  %s  %s  %s  %s  %s\n",tab_button[0],tab_button[1],tab_button[2],tab_button[3],tab_button[4],tab_button[5]);
 
 	GtkWidget *table = gtk_table_new (3, 3, TRUE);
 	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -1564,12 +1598,6 @@ void fonction_moyenIA2(GtkWidget *table99,gpointer user_data){
 	GtkWidget *button = gtk_label_new(tab_button[0]);
 	gtk_table_attach_defaults (GTK_TABLE (table), button, 1, 2, 0, 1);
 
-	nom_nombre *london=malloc(sizeof(*london));
-	london->nom=malloc(sizeof(char*)*100);
-	london=user_data;
-	london->nombre++;
-	int nbr_niveau_restant=london->nombre;
-
 	stru *haribo=malloc(sizeof(*haribo));
 	haribo->nom_bonne=malloc(sizeof(char*)*100);
 	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
@@ -1578,10 +1606,8 @@ void fonction_moyenIA2(GtkWidget *table99,gpointer user_data){
 	strcpy(haribo->nom_utilisateur,london->nom);
 	haribo->wid=window;
 
-	stru *haribo2=copie(haribo);
-	stru *haribo3=copie(haribo);
-	stru *haribo4=copie(haribo);
-	stru *haribo5=copie(haribo);
+	stru *haribo2=copie(haribo);stru *haribo3=copie(haribo);
+	stru *haribo4=copie(haribo);stru *haribo5=copie(haribo);
 	stru *haribo6=copie(haribo);
 
 	for(k=0;k<3;k++){
@@ -1691,8 +1717,10 @@ void fonction_difficileIA(GtkWidget *table99,gpointer user_data){
 		char nom_fichier[100];
 		sprintf(nom_fichier,"%s.xml",london->nom);
 		printf("nom du fichier %s \n",nom_fichier);
+		xml(bouton,london->nom);
 
 		liste_matrice *mat_moy=lirematrice(nom_fichier);
+
 		float mat_similitude[NBR_PAYS][NBR_PAYS];
 		matrice_moyenne(mat_moy,mat_similitude);
 		similitude(mat_similitude);
@@ -1708,6 +1736,7 @@ void fonction_difficileIA(GtkWidget *table99,gpointer user_data){
 	printf("Drapeau numéro %d \n",numero_drapeau);
 	difficile(london->mat_similitude[numero_drapeau],numero_drapeau,tab_intier);
 	affiche_ligne_int(tab_intier);
+
 
 	char *tab_button[6]={strcpy(s0,getPays(tab_intier[0])),strcpy(s1,getPays(tab_intier[1])),strcpy(s2,getPays(tab_intier[2])),strcpy(s3,getPays(tab_intier[3])),strcpy(s4,getPays(tab_intier[4])),strcpy(s5,getPays(tab_intier[5]))};
 	g_snprintf(buffer,500,"drapeau/%s.png",tab_button[0]);
@@ -1905,18 +1934,7 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 
 	GtkWidget *button1;
 		if(nbr_matrice>=NBR_IA){
-		/*	liste_matrice *mat_moy=lirematrice(nom_fichier);
-			float mat_similitude[NBR_PAYS][NBR_PAYS];
-			matrice_moyenne(mat_moy,mat_similitude);
-			similitude(mat_similitude);
-			printf("\n");
-			copie_matrice(mat_similitude,tagada->mat_similitude);
-			affiche(tagada->mat_similitude);
-			//tagada->mat_similitude=mat_similitude;
-			printf("\n");
-			printf("TEST ENTREE IA \n");*/
 			button1 = gtk_button_new_with_label ("niv moyen IA");
-			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
 			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyenIA), tagada);
@@ -1933,7 +1951,7 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 		if(nbr_matrice>=NBR_IA){
 
 			GtkWidget *button2 = gtk_button_new_with_label ("niv difficile IA");
-			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(xml), tagada->nom);
+
 			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(Choix_niveaux), london);
 			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(fonction_difficileIA), tagada);
@@ -1955,104 +1973,93 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 
 }
 
-
 void Choix_niveaux2(GtkWidget *table,gpointer user_data){
 	stru *london=malloc(sizeof(*london));
-		london=user_data;
-		nom_nombre *tagada=malloc(sizeof(*tagada));
-		tagada->nom=malloc(sizeof(char*)*100);
-		strcpy(tagada->nom,london->nom_bonne);
-		tagada->nombre=0;
-		tagada->wid=london->wid;
+	london=user_data;
+	nom_nombre *tagada=malloc(sizeof(*tagada));
+	tagada->nom=malloc(sizeof(char*)*100);
+	strcpy(tagada->nom,london->nom_bonne);
+	tagada->nombre=0;
+	tagada->wid=london->wid;
 
-		int nbr_matrice=0;
-		char nom_fichier[100];
-		sprintf(nom_fichier,"%s.xml",tagada->nom);
-		xmlTextReaderPtr reader = xmlReaderForFile(nom_fichier, NULL, 0);
+	int nbr_matrice=0;
+	char nom_fichier[100];
+	sprintf(nom_fichier,"%s.xml",tagada->nom);
+	xmlTextReaderPtr reader = xmlReaderForFile(nom_fichier, NULL, 0);
 
-		if(reader!=NULL){
-			char adresse[100];
-			sprintf(adresse,"/%s/matrice",tagada->nom);
-			xmlDoc *doc = xmlParseFile(nom_fichier);
-			xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
-			xmlXPathObject * xpathObj =xmlXPathEvalExpression( (xmlChar*)adresse, xpathCtx );
-			nbr_matrice= xmlXPathNodeSetGetLength(xpathObj->nodesetval);
-			printf("le nombre de matrice est %d \n",nbr_matrice);
+	if(reader!=NULL){
+		char adresse[100];
+		sprintf(adresse,"/%s/matrice",tagada->nom);
+		xmlDoc *doc = xmlParseFile(nom_fichier);
+		xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
+		xmlXPathObject * xpathObj =xmlXPathEvalExpression( (xmlChar*)adresse, xpathCtx );
+		nbr_matrice= xmlXPathNodeSetGetLength(xpathObj->nodesetval);
+		printf("le nombre de matrice est %d \n",nbr_matrice);
+	}
+	printf("choix niveau\nle pseudo entré est: %s\n-------\n",(char*)(tagada->nom));
+
+	GtkWidget *window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+		gtk_window_set_title (GTK_WINDOW (window0), "QCM drapeau-choix de la difficulté");
+		gtk_window_set_default_size (GTK_WINDOW (window0), L_FENETRE, H_FENETRE);
+		gtk_container_set_border_width (GTK_CONTAINER (window0), 5);
+		gtk_window_set_position(GTK_WINDOW(window0), GTK_WIN_POS_CENTER_ALWAYS);
+
+	GtkWidget *layout = gtk_layout_new(NULL, NULL);
+		gtk_container_add(GTK_CONTAINER (window0), layout);
+
+	GtkWidget *image = gtk_image_new_from_file("onu resize.png");
+		gtk_layout_put(GTK_LAYOUT(layout), image, 0, 0);
+
+	GtkWidget *table0 = gtk_table_new (70, 50, TRUE);
+		gtk_table_set_row_spacings(GTK_TABLE(table0), 50);
+		gtk_table_set_col_spacings(GTK_TABLE(table0), 20);
+
+	GtkWidget *button = gtk_button_new_with_label ("  niveau facile ");
+		gtk_table_attach_defaults (GTK_TABLE (table0), button, 2, 3, 1, 2);
+		g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(xml), tagada->nom);
+		g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(Choix_niveaux2), london);
+		g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_hide), window0);
+		g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(fonction_facile2), tagada);
+
+
+	GtkWidget *button1;
+		if(nbr_matrice>=NBR_IA){
+			button1 = gtk_button_new_with_label ("niv moyen IA");
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux2), london);
+			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyenIA2), tagada);
+			gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
+		}else{
+			button1 = gtk_button_new_with_label ("niveau moyen");
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux2), london);
+			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
+			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyen2), tagada);
+			gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
 		}
-		printf("choix niveau\nle pseudo entré est: %s\n-------\n",(char*)(tagada->nom));
 
-		GtkWidget *window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-			gtk_window_set_title (GTK_WINDOW (window0), "QCM drapeau-choix de la difficulté mode 2");
-			gtk_window_set_default_size (GTK_WINDOW (window0), L_FENETRE, H_FENETRE);
-			gtk_container_set_border_width (GTK_CONTAINER (window0), 5);
-			gtk_window_set_position(GTK_WINDOW(window0), GTK_WIN_POS_CENTER_ALWAYS);
+		if(nbr_matrice>=NBR_IA){
 
-		GtkWidget *layout = gtk_layout_new(NULL, NULL);
-			gtk_container_add(GTK_CONTAINER (window0), layout);
-
-		GtkWidget *image = gtk_image_new_from_file("onu resize.png");
-			gtk_layout_put(GTK_LAYOUT(layout), image, 0, 0);
-
-		GtkWidget *table0 = gtk_table_new (70, 50, TRUE);
-			gtk_table_set_row_spacings(GTK_TABLE(table0), 50);
-			gtk_table_set_col_spacings(GTK_TABLE(table0), 20);
-
-		GtkWidget *button = gtk_button_new_with_label ("  niveau facile ");
-			gtk_table_attach_defaults (GTK_TABLE (table0), button, 2, 3, 1, 2);
-			g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(xml), tagada->nom);
-			g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(Choix_niveaux2), london);
-			g_signal_connect_swapped(G_OBJECT(button), "clicked",G_CALLBACK( gtk_widget_hide), window0);
-			g_signal_connect(G_OBJECT(button), "clicked",G_CALLBACK(fonction_facile2), tagada);
+			GtkWidget *button2 = gtk_button_new_with_label ("niv difficile IA");
+			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(Choix_niveaux2), london);
+			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
+			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(fonction_difficileIA), tagada);
+			gtk_table_attach_defaults (GTK_TABLE (table0), button2, 2, 3, 3, 4);
+		}
 
 
-		GtkWidget *button1;
-			if(nbr_matrice>=NBR_IA){
-				liste_matrice *mat_moy=lirematrice(nom_fichier);
-				float mat_similitude[NBR_PAYS][NBR_PAYS];
-				matrice_moyenne(mat_moy,mat_similitude);
-				similitude(mat_similitude);
-				printf("\n");
-				copie_matrice(mat_similitude,tagada->mat_similitude);
-				affiche(tagada->mat_similitude);
-				//tagada->mat_similitude=mat_similitude;
-				printf("\n");
-				printf("TEST ENTREE IA \n");
-				button1 = gtk_button_new_with_label ("niv moyen IA");
-				g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux2), london);
-				g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
-				g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyenIA2), tagada);
-				g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
-				gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
-			}else{
-				button1 = gtk_button_new_with_label ("niveau moyen");
-				g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
-				g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux2), london);
-				g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
-				g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyen2), tagada);
-				gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
-			}
+	GtkWidget *button3=gtk_button_new_with_label ("retour");
+		gtk_table_attach_defaults (GTK_TABLE (table0), button3,  1, 4, 4, 5);
+		g_signal_connect_swapped(G_OBJECT(button3), "clicked",G_CALLBACK( gtk_widget_show), tagada->wid);
+		g_signal_connect_swapped(G_OBJECT(button3), "clicked",G_CALLBACK( gtk_widget_destroy), window0);
 
-		GtkWidget *button2;
-			if(nbr_matrice>=NBR_IA){
-				g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
-				g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux2), london);
-				g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
-				g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_difficileIA), tagada);
-				gtk_table_attach_defaults (GTK_TABLE (table0), button2, 2, 3, 3, 4);
-			}
+	g_signal_connect(window0, "destroy",G_CALLBACK( gtk_widget_destroy), window0);
 
+	gtk_container_add (GTK_CONTAINER (layout), table0);
+	gtk_window_set_resizable (GTK_WINDOW(window0), FALSE);
+	gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
+	gtk_widget_show_all(GTK_WIDGET(window0));
 
-		GtkWidget *button3=gtk_button_new_with_label ("retour");
-				gtk_table_attach_defaults (GTK_TABLE (table0), button3,  1, 4, 4, 5);
-				g_signal_connect_swapped(G_OBJECT(button3), "clicked",G_CALLBACK( gtk_widget_show), tagada->wid);
-				g_signal_connect_swapped(G_OBJECT(button3), "clicked",G_CALLBACK( gtk_widget_destroy), window0);
-
-		g_signal_connect(window0, "destroy",G_CALLBACK( gtk_widget_destroy), window0);
-
-		gtk_container_add (GTK_CONTAINER (layout), table0);
-		gtk_window_set_resizable (GTK_WINDOW(window0), FALSE);
-		gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
-		gtk_widget_show_all(GTK_WIDGET(window0));
 }
 
 void Afficher_Statistique(char* name,char* pseudo){
@@ -2221,22 +2228,15 @@ void Menu_principal(GtkWidget *table,gpointer user_data){
 	GtkWidget *window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 		gtk_window_set_title (GTK_WINDOW (window0), "QCM Menu principal");
 
-		gtk_window_set_default_size (GTK_WINDOW (window0), width*0.36, height*0.41);
+		gtk_window_set_default_size (GTK_WINDOW (window0), L_FENETRE, H_FENETRE);
 		gtk_container_set_border_width (GTK_CONTAINER (window0), 5);
 		gtk_window_set_position(GTK_WINDOW(window0), GTK_WIN_POS_CENTER);
 		gtk_window_set_icon(GTK_WINDOW(window0), gdk_pixbuf_new_from_file("battery.png",NULL));
 
 	GtkWidget *layout = gtk_layout_new(NULL, NULL);
 		gtk_container_add(GTK_CONTAINER (window0), layout);
+		GtkWidget *image = gtk_image_new_from_file("onu resize.png");
 
-		GtkWidget *image = gtk_image_new_from_file("ONU.svg");
-		GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file ("ONU.svg", NULL);
-			   if (pixbuf == NULL) {
-			      g_printerr("Failed to resize image\n");
-			      return;
-			   }
-			   GdkPixbuf *pxbscaled = gdk_pixbuf_scale_simple(pixbuf, width*0.36, height*0.41, GDK_INTERP_BILINEAR);
-			   gtk_image_set_from_pixbuf(GTK_IMAGE(image), pxbscaled);
 				gtk_layout_put(GTK_LAYOUT(layout), image , 0, 0);
 
 	GtkWidget *table0 = gtk_table_new (7, 5, TRUE);
@@ -2262,7 +2262,7 @@ void Menu_principal(GtkWidget *table,gpointer user_data){
 	g_signal_connect(window0, "destroy",G_CALLBACK(gtk_main_quit), NULL);
 	gtk_container_add (GTK_CONTAINER (layout), table0);
 	gtk_window_set_resizable (GTK_WINDOW(window0), FALSE);
-	//gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
+	gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
 	gtk_widget_show_all(window0);
 
 }
@@ -2277,6 +2277,12 @@ int main (int argc,char *argv[]){
 	   gint width  = gdk_screen_width();
 	   gint height = gdk_screen_height();
 	   printf("%d %d",width,height);
+	GtkWidget *bob;
+	//  lirematrice("BB.xml");
+	  // xml(bob,"ds");
+	  // lirematrice("ds.xml");
+	  // xml(bob,"ds");
+		//   lirematrice("ds.xml");
 
 	GtkWidget *window0 = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 		gtk_window_set_title (GTK_WINDOW (window0), "QCM entrez votre nom");
@@ -2288,8 +2294,8 @@ int main (int argc,char *argv[]){
 		gtk_container_add(GTK_CONTAINER (window0), layout);
 		gtk_widget_show(layout);
 
-	GtkWidget *image = gtk_image_new_from_file("ONU.svg");
-	 pixbuf = gdk_pixbuf_new_from_file ("ONU.svg", NULL);
+	GtkWidget *image = gtk_image_new_from_file("onu resize.png");
+	 pixbuf = gdk_pixbuf_new_from_file ("onu resize.png", NULL);
 	   if (pixbuf == NULL) {
 	      g_printerr("Failed to resize image\n");
 	      return 1;
