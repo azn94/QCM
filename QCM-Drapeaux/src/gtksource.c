@@ -317,7 +317,7 @@ void changer_matrice(char* nom_fichier,char* adresse){
 
 void bonne_reponse(GtkWidget *widget, gpointer haribo) {
 	GtkWidget *dialog;
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=haribo;
 
 	printf("\n---------\nbonne réponse l'adresse à remplir est : %s/%s/%s\n---------\n",london->nom_utilisateur,london->nom_bonne,london->nom_bonne);
@@ -340,7 +340,7 @@ static void mauvaise_reponse2 (GtkButton *button99, gpointer haribo){
   GtkWidget *content_area;
   GtkWidget *label;
 
-  stru *london=malloc(sizeof(*london));
+  stru *london=malloc(sizeof(stru));
   london=haribo;
   GtkWindow *window = london->wid;
   char nom_fichier[500];
@@ -372,7 +372,7 @@ static void mauvaise_reponse2 (GtkButton *button99, gpointer haribo){
 }
 void mauvaise_reponse(GtkWidget *widget, gpointer haribo) {
 	GtkWidget *dialog;
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=haribo;
 
 	printf("\n---------\nmauvaise réponse l'adresse à remplir est : %s/%s/%s\n---------\n",london->nom_utilisateur,london->nom_bonne,london->nom_mauvaise);
@@ -829,7 +829,7 @@ stru* copie(stru *haribo){
 	stru *haribo2=malloc(sizeof(stru));
 			haribo2->nom_bonne=malloc(sizeof(char)*100);
 			haribo2->nom_utilisateur=malloc(sizeof(char)*100);
-			haribo2->nom_mauvaise=malloc(sizeof(char*)*100);
+			haribo2->nom_mauvaise=malloc(sizeof(char)*100);
 			strcpy(haribo2->nom_bonne,haribo->nom_bonne);
 			strcpy(haribo2->nom_utilisateur,haribo->nom_utilisateur);
 			haribo2->wid=haribo->wid;
@@ -865,7 +865,7 @@ void PasDeDoublon(int nb,int *num_array){
 static gboolean
 update_text (gpointer tokyo)
 {
-	struc *seoul=malloc(sizeof(*seoul));
+	struc *seoul=malloc(sizeof(struc));
 	seoul=tokyo;
 	/*printf("\npython wiki.py %s %s %s",seoul->nom1,seoul->nom2,seoul->nom3);
 	char wikipython[500];
@@ -885,7 +885,7 @@ update_text (gpointer tokyo)
 
 }
 static gboolean update_text2 (gpointer tokyo){
-	struc *seoul=malloc(sizeof(*seoul));
+	struc *seoul=malloc(sizeof(struc));
 	seoul=tokyo;
 	/*char wikipython[5000];
 	sprintf(wikipython,"python wiki.py %s %s %s %s %s %s", seoul->nom1,seoul->nom2,seoul->nom3, seoul->nom4, seoul->nom5, seoul->nom6);
@@ -904,7 +904,7 @@ static gboolean update_text2 (gpointer tokyo){
 static gboolean
 update_textsolo (gpointer tokyo)
 {
-	struc *seoul=malloc(sizeof(*seoul));
+	struc *seoul=malloc(sizeof(struc));
 	seoul=tokyo;
 	gtk_widget_set_tooltip_markup(seoul->wid, liretext(0));
 
@@ -940,8 +940,8 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 	bouton[1]= gtk_image_new_from_file(drapeau_png);
 		gtk_table_attach_defaults (GTK_TABLE (table), bouton[1], 0, 3, 0, 3);
 
-	nom_nombre *london=malloc(sizeof(*london));
-		london->nom=malloc(sizeof(char*)*100);
+	nom_nombre *london=malloc(sizeof(nom_nombre));
+		london->nom=malloc(sizeof(char)*100);
 		london=user_data;
 		london->nombre++;
 	int nbr_niveau_restant=london->nombre;
@@ -1039,16 +1039,16 @@ void fonction_facile2(GtkWidget *table99, gpointer user_data){
 	GtkWidget *button0 =gtk_label_new(tab_button[0]);
 	gtk_table_attach_defaults (GTK_TABLE (table), button0, 1, 2, 0, 1);
 
-	nom_nombre *london=malloc(sizeof(*london));
-	london->nom=malloc(sizeof(char*)*100);
+	nom_nombre *london=malloc(sizeof(nom_nombre));
+	london->nom=malloc(sizeof(char)*100);
 	london=user_data;
 	london->nombre++;
 	int nbr_niveau_restant=london->nombre;
 
-	stru *haribo=malloc(sizeof(*haribo));
-	haribo->nom_bonne=malloc(sizeof(char*)*100);
-	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+	haribo->nom_bonne=malloc(sizeof(char)*100);
+	haribo->nom_utilisateur=malloc(sizeof(char)*100);
+	haribo->nom_mauvaise=malloc(sizeof(char)*100);
 	strcpy(haribo->nom_bonne,tab_button[0]);
 	strcpy(haribo->nom_utilisateur,london->nom);
 	haribo->wid=window;
@@ -1115,8 +1115,8 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 	char nom_dans_lordre[6][500];
 	char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
 
-	nom_nombre *london=malloc(sizeof(*london));
-		london->nom=malloc(sizeof(char*)*100);
+	nom_nombre *london=malloc(sizeof(nom_nombre));
+		london->nom=malloc(sizeof(char)*100);
 		london=user_data;
 		london->nombre++;
 		int nbr_niveau_restant=london->nombre;
@@ -1274,16 +1274,16 @@ void fonction_moyen2(GtkWidget *table99,gpointer user_data){
 	GtkWidget *button = gtk_label_new(tab_button[0]);
 	gtk_table_attach_defaults (GTK_TABLE (table), button, 1, 2, 0, 1);
 
-	nom_nombre *london=malloc(sizeof(*london));
-	london->nom=malloc(sizeof(char*)*100);
+	nom_nombre *london=malloc(sizeof(nom_nombre));
+	london->nom=malloc(sizeof(char)*100);
 	london=user_data;
 	london->nombre++;
 	int nbr_niveau_restant=london->nombre;
 
-	stru *haribo=malloc(sizeof(*haribo));
-	haribo->nom_bonne=malloc(sizeof(char*)*100);
-	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+	haribo->nom_bonne=malloc(sizeof(char)*100);
+	haribo->nom_utilisateur=malloc(sizeof(char)*100);
+	haribo->nom_mauvaise=malloc(sizeof(char)*100);
 	strcpy(haribo->nom_bonne,tab_button[0]);
 	strcpy(haribo->nom_utilisateur,london->nom);
 	haribo->wid=window;
@@ -1438,10 +1438,10 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 		gtk_table_attach_defaults (GTK_TABLE (table), bouton[0] , 0, 3, 0, 3);
 
 
-	stru *haribo=malloc(sizeof(*haribo));
-		haribo->nom_bonne=malloc(sizeof(char*)*100);
-		haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-		haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+		haribo->nom_bonne=malloc(sizeof(char)*100);
+		haribo->nom_utilisateur=malloc(sizeof(char)*100);
+		haribo->nom_mauvaise=malloc(sizeof(char)*100);
 		strcpy(haribo->nom_bonne,tab_button[0]);
 		strcpy(haribo->nom_utilisateur,london->nom);
 		haribo->wid=window;
@@ -1531,7 +1531,7 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 		g_signal_connect_swapped(G_OBJECT(bouton[k+3]), "clicked",G_CALLBACK( gtk_widget_destroy), window);
 	}
 	if (!system("ping -c 1 8.8.8.8 > /dev/null")){
-		struc *tokyo=malloc(sizeof(*tokyo));
+		struc *tokyo=malloc(sizeof(struc));
 		tokyo->wid=bouton[0];tokyo->wid2=bouton[1];tokyo->wid3=bouton[2];
 		tokyo->wid4=bouton[3];tokyo->wid5=bouton[4];tokyo->wid6=bouton[5];
 		sprintf(wikipython,"python wiki.py %s %s %s %s %s %s",nom_dans_lordre[0],nom_dans_lordre[1],nom_dans_lordre[2],nom_dans_lordre[3],nom_dans_lordre[4],nom_dans_lordre[5]);
@@ -1598,10 +1598,10 @@ void fonction_moyenIA2(GtkWidget *table99,gpointer user_data){
 	GtkWidget *button = gtk_label_new(tab_button[0]);
 	gtk_table_attach_defaults (GTK_TABLE (table), button, 1, 2, 0, 1);
 
-	stru *haribo=malloc(sizeof(*haribo));
-	haribo->nom_bonne=malloc(sizeof(char*)*100);
-	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+	haribo->nom_bonne=malloc(sizeof(char)*100);
+	haribo->nom_utilisateur=malloc(sizeof(char)*100);
+	haribo->nom_mauvaise=malloc(sizeof(char)*100);
 	strcpy(haribo->nom_bonne,tab_button[0]);
 	strcpy(haribo->nom_utilisateur,london->nom);
 	haribo->wid=window;
@@ -1884,10 +1884,10 @@ int compte_matrices(char*pseudo){
 }
 
 void Choix_niveaux(GtkWidget *table,gpointer user_data){
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=user_data;
-	nom_nombre *tagada=malloc(sizeof(*tagada));
-	tagada->nom=malloc(sizeof(char*)*100);
+	nom_nombre *tagada=malloc(sizeof(nom_nombre));
+	tagada->nom=malloc(sizeof(char)*100);
 	strcpy(tagada->nom,london->nom_bonne);
 	tagada->nombre=0;
 	tagada->wid=london->wid;
@@ -1974,10 +1974,10 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 }
 
 void Choix_niveaux2(GtkWidget *table,gpointer user_data){
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=user_data;
-	nom_nombre *tagada=malloc(sizeof(*tagada));
-	tagada->nom=malloc(sizeof(char*)*100);
+	nom_nombre *tagada=malloc(sizeof(nom_nombre));
+	tagada->nom=malloc(sizeof(char)*100);
 	strcpy(tagada->nom,london->nom_bonne);
 	tagada->nombre=0;
 	tagada->wid=london->wid;
@@ -2155,10 +2155,10 @@ void Menu_principal2(GtkWidget *table,gpointer user_data){
 
 void Choix_orientation(GtkWidget *table,gpointer user_data){
 
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=user_data;
-	nom_nombre *tagada=malloc(sizeof(*tagada));
-		tagada->nom=malloc(sizeof(char*)*100);
+	nom_nombre *tagada=malloc(sizeof(nom_nombre));
+		tagada->nom=malloc(sizeof(char)*100);
 		strcpy(tagada->nom,london->nom_bonne);
 		tagada->nombre=0;
 		tagada->wid=london->wid;
@@ -2220,8 +2220,8 @@ void Menu_principal(GtkWidget *table,gpointer user_data){
 
 	printf("Menu_principal\nle pseudo entré est: %s\n-------\n",user_data);
 
-	stru *haribo=malloc(sizeof(*haribo));
-		haribo->nom_bonne=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+		haribo->nom_bonne=malloc(sizeof(char)*100);
 		strcpy(haribo->nom_bonne,user_data);
 
 
