@@ -1658,7 +1658,7 @@ void fonction_moyenIA2(GtkWidget *table99,gpointer user_data){
 	gtk_widget_show_all(GTK_WIDGET(window));
 }
 void fonction_difficileIA(GtkWidget *table99,gpointer user_data){
-	/*printf("ENTREE DANS DIFFICIKE IA \n");
+	printf("ENTREE DANS DIFFICIKE IA \n");
 	int i=rand()%6,k;
 	int  tab_intier[6];
 	char buffer[500]="";
@@ -1672,34 +1672,24 @@ void fonction_difficileIA(GtkWidget *table99,gpointer user_data){
 		london=user_data;
 		london->nombre++;
 		int nbr_niveau_restant=london->nombre;
-*/
-//	if(nbr_niveau_restant==1){
+
+	if(nbr_niveau_restant==1){
 		char nom_fichier[100];
-		//sprintf(nom_fichier,"%s.xml",london->nom);
-		//printf("nom du fichier %s \n",nom_fichier);
+		sprintf(nom_fichier,"%s.xml",london->nom);
+		printf("nom du fichier %s \n",nom_fichier);
 
-	//	liste_matrice *mat_moyger=lirematrice("gregrerver.xml");
-		//float mat_similitude[NBR_PAYS][NBR_PAYS];
-		//matrice_moyenne(mat_moy,mat_similitude);
-		//similitude(mat_similitude);
-		printf("\n");
-		//copie_matrice(mat_similitude,london->mat_similitude);
-		//affiche(london->mat_similitude);
-		//tagada->mat_similitude=mat_similitude;
-		printf("\n");
-		printf("TEST ENTREE IA \n");
-	//}
-		nom_nombre *tagada=malloc(sizeof(*tagada));
-		tagada->nom=malloc(sizeof(char*)*100);
-
-		liste_matrice *mat_moy=lirematrice("gregrerver.xml");
+		liste_matrice *mat_moy=lirematrice(nom_fichier);
 		float mat_similitude[NBR_PAYS][NBR_PAYS];
 		matrice_moyenne(mat_moy,mat_similitude);
 		similitude(mat_similitude);
 		printf("\n");
-		copie_matrice(mat_similitude,tagada->mat_similitude);
-		affiche(tagada->mat_similitude);
-/*
+		copie_matrice(mat_similitude,london->mat_similitude);
+		affiche(london->mat_similitude);
+		//tagada->mat_similitude=mat_similitude;
+		printf("\n");
+		printf("TEST ENTREE IA \n");
+	}
+
 	int numero_drapeau = rand()%NBR_PAYS;
 	printf("Drapeau numéro %d \n",numero_drapeau);
 	difficile(london->mat_similitude[numero_drapeau],numero_drapeau,tab_intier);
@@ -1825,7 +1815,7 @@ void fonction_difficileIA(GtkWidget *table99,gpointer user_data){
 		g_timeout_add (10, (GSourceFunc)update_text2, tokyo);
 	}
 
-	gtk_widget_show_all(GTK_WIDGET(window));*/
+	gtk_widget_show_all(GTK_WIDGET(window));
 }
 
 int compte_matrices(char*pseudo){
@@ -2259,7 +2249,7 @@ void Menu_principal(GtkWidget *table,gpointer user_data){
 	g_signal_connect(window0, "destroy",G_CALLBACK(gtk_main_quit), NULL);
 	gtk_container_add (GTK_CONTAINER (layout), table0);
 	gtk_window_set_resizable (GTK_WINDOW(window0), FALSE);
-	gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
+	//gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
 	gtk_widget_show_all(window0);
 
 }
@@ -2314,7 +2304,7 @@ int main (int argc,char *argv[]){
 
 	gtk_widget_show_all (window0);
 	//gtk_window_set_resizable (GTK_WINDOW(window0), FALSE);
-	gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
+	//gtk_widget_set_size_request (window0, L_FENETRE, H_FENETRE);
 	gtk_main ();
 
 	return 0;
