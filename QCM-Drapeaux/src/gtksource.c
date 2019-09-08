@@ -1890,7 +1890,7 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 
 
 	GtkWidget *button1;
-	/*	if(nbr_matrice>=NBR_IA){
+		if(nbr_matrice>=NBR_IA){
 			liste_matrice *mat_moy=lirematrice(nom_fichier);
 			float mat_similitude[NBR_PAYS][NBR_PAYS];
 			matrice_moyenne(mat_moy,mat_similitude);
@@ -1907,14 +1907,14 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyenIA), tagada);
 			gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
-		}else{*/
+		}else{
 			button1 = gtk_button_new_with_label ("niveau moyen");
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(xml), tagada->nom);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(Choix_niveaux), london);
 			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button1), "clicked",G_CALLBACK(fonction_moyen), tagada);
 			gtk_table_attach_defaults (GTK_TABLE (table0), button1, 2, 3, 2, 3);
-		//}
+		}
 
 		if(nbr_matrice>=NBR_IA){
 
