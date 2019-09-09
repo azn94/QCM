@@ -2201,7 +2201,7 @@ void Afficher_Statistique(char* name,char* pseudo){
 		//affiche_ligne_int(mat_similitude[indice_pays]);
 		//affiche_int(mat_similitude);
 		affiche_int(mat_moy);
-		affiche_int(temp);
+
 
 		sprintf(buffer2, "il s'agit de %s, vous le confondez avec : ",  name);
 		label1 = gtk_label_new(buffer2);
