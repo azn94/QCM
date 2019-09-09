@@ -2203,6 +2203,7 @@ void Afficher_Statistique(char* name,char* pseudo){
 		affiche_int(mat_moy);
 		affiche_int(temp);
 
+
 		sprintf(buffer2, "il s'agit de %s, vous le confondez avec : ",  name);
 		label1 = gtk_label_new(buffer2);
 			gtk_table_attach_defaults (GTK_TABLE (table), label1, 0, 3, 2, 3);
