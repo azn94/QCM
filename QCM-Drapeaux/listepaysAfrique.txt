@@ -12,6 +12,7 @@ Côte-dIvoire
 Djibouti
 Égypte
 Érythrée
+Eswatini
 Éthiopie
 Gabon
 Gambie
@@ -47,7 +48,6 @@ Sierra-Leone
 Somalie
 Soudan
 Soudan-du-Sud
-Swaziland
 Tanzanie
 Tchad
 Togo

@@ -55,6 +55,7 @@ Dominique
 Érythrée
 Espagne
 Estonie
+Eswatini
 États-Unis
 Éthiopie
 Fidji
@@ -148,7 +149,7 @@ Roumanie
 Royaume-Uni
 Russie
 Rwanda
-Saint-Kitts-et-Nevis
+Saint-Christophe-et-Niévès
 Saint-Vincent-et-les-Grenadines
 Sainte-Lucie
 Saint-Marin
@@ -169,7 +170,6 @@ Sri-Lanka
 Suède
 Suisse
 Suriname
-Swaziland
 Syrie
 Taïwan
 Tadjikistan

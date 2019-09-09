@@ -317,7 +317,7 @@ void changer_matrice(char* nom_fichier,char* adresse){
 
 void bonne_reponse(GtkWidget *widget, gpointer haribo) {
 	GtkWidget *dialog;
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=haribo;
 
 	printf("\n---------\nbonne réponse l'adresse à remplir est : %s/%s/%s\n---------\n",london->nom_utilisateur,london->nom_bonne,london->nom_bonne);
@@ -340,7 +340,7 @@ static void mauvaise_reponse2 (GtkButton *button99, gpointer haribo){
   GtkWidget *content_area;
   GtkWidget *label;
 
-  stru *london=malloc(sizeof(*london));
+  stru *london=malloc(sizeof(stru));
   london=haribo;
   GtkWindow *window = london->wid;
   char nom_fichier[500];
@@ -372,7 +372,7 @@ static void mauvaise_reponse2 (GtkButton *button99, gpointer haribo){
 }
 void mauvaise_reponse(GtkWidget *widget, gpointer haribo) {
 	GtkWidget *dialog;
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=haribo;
 
 	printf("\n---------\nmauvaise réponse l'adresse à remplir est : %s/%s/%s\n---------\n",london->nom_utilisateur,london->nom_bonne,london->nom_mauvaise);
@@ -689,6 +689,77 @@ void difficile(float similarite[NBR_PAYS],int drapeau, int tabindice[6]){
      }
 
 }
+liste_matrice* lirematrice2(char* User_name){
+        xmlDocPtr doc;
+        xmlNodePtr cur,save;
+        int cpt= 1;
+        int i, j;
+        //char nom[256];
+        //snprintf(nom,256, "%s%s",User_name,".xml");
+        doc = xmlParseFile(User_name);
+        cur = xmlDocGetRootElement(doc);
+        if (cur == NULL) {
+                fprintf(stderr,"empty document\n");
+                xmlFreeDoc(doc);
+        }
+        //printf("TEST 2");
+        liste_matrice *liste_debut= malloc (sizeof(liste_matrice));
+        liste_debut->id=0;
+        liste_matrice *tmp1= liste_debut;
+        cur=cur->children;
+        cur=cur->next;
+        //printf("Nom actuel : %s \n",cur->name);
+        xmlChar *reponse;
+	//printf("Test\n");
+        while(cur!=NULL){
+                cur= cur->children;
+                cur= cur->next;
+                //printf("Nom actuel : %s \n",cur->name);
+                i = 0;
+                j = 0;
+                while(cur!=NULL){
+                        cur=cur->children;
+                        cur=cur->next;
+                        while(cur!=NULL){
+                                reponse =xmlNodeGetContent(cur);
+                                //printf("%s ",reponse);
+                                char*tmp_char =(char*)(reponse);
+                                tmp1->matrice[i][j] = atol(tmp_char);
+                                //printf("%d j = %d i = %d\n",tmp2->matrice[i][j],j,i);
+                                save=cur;
+                                cur=cur->next;
+                                cur=cur->next;
+                                j++;
+                        }
+                        //printf("test\n");
+                        cur=save->parent;
+                        save=cur;
+                        cur=cur->next;
+                        cur=cur->next;
+                        //printf("\n");
+                        i++;
+                        j = 0;
+                }
+                printf("YE SUIS LA 2\n");
+                //printf("%d \n",tmp1->id);
+                cur=save->parent;
+                cur=cur->next;
+                cur=cur->next;
+                //printf("\n");
+		liste_matrice *tmp2= malloc (sizeof(liste_matrice));
+		tmp2->suivant=NULL;
+		(liste_debut->id)+=1;
+        tmp1->id =liste_debut->id;;
+		tmp1->suivant= tmp2;
+		tmp1=tmp2;
+        }
+        cpt=liste_debut->id;
+        printf("%d\n",cpt);
+        return liste_debut;
+}
+
+
+
 
 liste_matrice* lirematrice(char* User_name){
 	printf("debut de lirematrice\n");
@@ -697,6 +768,7 @@ liste_matrice* lirematrice(char* User_name){
 	LIBXML_TEST_VERSION;
 	int cpt= 1;
 	int i, j;
+	xmlTextReaderPtr reader = xmlReaderForFile(User_name, NULL, 0);
 	doc = xmlParseFile(User_name);
 	cur = xmlDocGetRootElement(doc);
 	if (cur == NULL) {
@@ -704,27 +776,29 @@ liste_matrice* lirematrice(char* User_name){
 		xmlFreeDoc(doc);
 		return NULL;
 	}
+	xmlKeepBlanksDefault(0);
+	xmlSaveFormatFileEnc( User_name, doc, "utf-8", 1 );
 	liste_matrice *liste_debut= malloc (sizeof(liste_matrice));
 	liste_debut->id=0;
 	liste_matrice *tmp1= liste_debut;
-	printf("Nom du fichier: %s \n",cur->name);
+	//printf("Nom du fichier: %s \n",cur->name);
 	cur=cur->children;
-	printf("Nom de la 1er matrice : %s \n",cur->name);
+	//printf("Nom de la 1er matrice : %s \n",cur->name);
 	xmlChar *reponse;
 	while(cur!=NULL){// bloucle toute les matrices
 		cur= cur->children;
-		printf("\tNom du fils: %s \n",cur->name);
+		//printf("\tNom du fils: %s \n",cur->name);
 		i = 0;
 		j = 0;
 		while(cur!=NULL){
 			cur=cur->children;
 			while(cur!=NULL){
-				printf("\t\tpays : %s ",cur->name);
+				//printf("\t\tpays : %s ",cur->name);
 				reponse =xmlNodeGetContent(cur);
-				printf("%s ",reponse);
+				//printf("%s ",reponse);
 				char*tmp_char =(char*)(reponse);
 				tmp1->matrice[i][j] = atol(tmp_char);
-				printf("%d\n",tmp1->matrice[i][j]);
+				//printf("%d\n",tmp1->matrice[i][j]);
 				save=cur;
 				cur=cur->next;
 				j++;
@@ -732,35 +806,34 @@ liste_matrice* lirematrice(char* User_name){
 			cur=save->parent;
 			save=cur;
 			cur=cur->next;
-			if(cur!=NULL)
-			printf("\tnom du prochaine fils: %s \n",cur->name);
+			//if(cur!=NULL)
+			//printf("\tnom du prochaine fils: %s \n",cur->name);
 			i++;
 			j = 0;
 		}
-		printf("changement de matrice =\n");
-		//printf("%d \n",tmp1->id);
+		//printf("changement de matrice =\n");
 		cur=save->parent;
-		if(cur!=NULL)
-			printf("remonte au parent: %s \n",cur->name);
+		//if(cur!=NULL)
+			//printf("remonte au parent: %s \n",cur->name);
 		cur=cur->next;
-		if(cur!=NULL)
-			printf("avancer a la matrice suivante : %s \n",cur->name);
-		//printf("\n");
+		//if(cur!=NULL)
+		//	printf("avancer a la matrice suivante : %s \n",cur->name);
 		liste_matrice *tmp2= malloc (sizeof(liste_matrice));
 		tmp2->suivant=NULL;
 		(liste_debut->id)+=1;
 		tmp1->id =liste_debut->id;;
 		tmp1->suivant= tmp2;
 		tmp1=tmp2;
-		printf("changement de matrice fini\n\n");
+		//printf("changement de matrice fini\n\n");
 	}
-	printf("fin de la lecture\n");
+	//printf("fin de la lecture\n");
 	cpt=liste_debut->id;
-	printf("nombre de matrice :%d\n",cpt);
-	printf("fin de lirematrice\n");
+	//printf("nombre de matrice :%d\n",cpt);
+	//printf("fin de lirematrice\n");
 	return liste_debut;
 
 }
+
 
 void xml(GtkWidget *table99, gpointer user_data){
 	gchar buff[1024];
@@ -825,11 +898,41 @@ void xml(GtkWidget *table99, gpointer user_data){
     xmlCleanupParser();
 	}
 }
+void xmlnul( gpointer user_data){
+	gchar buff[1024];
+	xmlTextReaderPtr reader;
+	gchar nom[1024];
+	gchar nom2[1024];
+	sprintf(nom,"%s",user_data);
+	sprintf(buff,"%s.xml",nom);
+	LIBXML_TEST_VERSION;
+
+	reader = xmlReaderForFile(buff, NULL, 0);
+	if(reader != NULL){
+		xmlKeepBlanksDefault(0);
+	    xmlDoc *doc = xmlParseFile(buff);
+		xmlNodePtr  node_matrice = NULL, node = NULL, node1 = NULL;/* node pointers */
+		xmlXPathContext *xpathCtx = xmlXPathNewContext( doc );
+		g_snprintf(nom2,1024,"/%s",nom);
+		xmlXPathObject * xpathObj =xmlXPathEvalExpression((xmlChar*)nom2, xpathCtx );
+		xmlNode *root_node = xpathObj->nodesetval->nodeTab[0];
+		int i, j;
+		LIBXML_TEST_VERSION;
+
+		node_matrice = xmlNewChild(root_node, NULL, BAD_CAST NULL, NULL);
+
+		xmlSaveFormatFileEnc( buff, doc, "utf-8", 1 );
+		xmlFreeDoc(doc);
+		//xmlCleanupParser();
+	}
+}
+
+
 stru* copie(stru *haribo){
 	stru *haribo2=malloc(sizeof(stru));
 			haribo2->nom_bonne=malloc(sizeof(char)*100);
 			haribo2->nom_utilisateur=malloc(sizeof(char)*100);
-			haribo2->nom_mauvaise=malloc(sizeof(char*)*100);
+			haribo2->nom_mauvaise=malloc(sizeof(char)*100);
 			strcpy(haribo2->nom_bonne,haribo->nom_bonne);
 			strcpy(haribo2->nom_utilisateur,haribo->nom_utilisateur);
 			haribo2->wid=haribo->wid;
@@ -865,7 +968,7 @@ void PasDeDoublon(int nb,int *num_array){
 static gboolean
 update_text (gpointer tokyo)
 {
-	struc *seoul=malloc(sizeof(*seoul));
+	struc *seoul=malloc(sizeof(struc));
 	seoul=tokyo;
 	/*printf("\npython wiki.py %s %s %s",seoul->nom1,seoul->nom2,seoul->nom3);
 	char wikipython[500];
@@ -885,7 +988,7 @@ update_text (gpointer tokyo)
 
 }
 static gboolean update_text2 (gpointer tokyo){
-	struc *seoul=malloc(sizeof(*seoul));
+	struc *seoul=malloc(sizeof(struc));
 	seoul=tokyo;
 	/*char wikipython[5000];
 	sprintf(wikipython,"python wiki.py %s %s %s %s %s %s", seoul->nom1,seoul->nom2,seoul->nom3, seoul->nom4, seoul->nom5, seoul->nom6);
@@ -904,7 +1007,7 @@ static gboolean update_text2 (gpointer tokyo){
 static gboolean
 update_textsolo (gpointer tokyo)
 {
-	struc *seoul=malloc(sizeof(*seoul));
+	struc *seoul=malloc(sizeof(struc));
 	seoul=tokyo;
 	gtk_widget_set_tooltip_markup(seoul->wid, liretext(0));
 
@@ -940,8 +1043,8 @@ void fonction_facile(GtkWidget *table99, gpointer user_data){
 	bouton[1]= gtk_image_new_from_file(drapeau_png);
 		gtk_table_attach_defaults (GTK_TABLE (table), bouton[1], 0, 3, 0, 3);
 
-	nom_nombre *london=malloc(sizeof(*london));
-		london->nom=malloc(sizeof(char*)*100);
+	nom_nombre *london=malloc(sizeof(nom_nombre));
+		london->nom=malloc(sizeof(char)*100);
 		london=user_data;
 		london->nombre++;
 	int nbr_niveau_restant=london->nombre;
@@ -1039,16 +1142,16 @@ void fonction_facile2(GtkWidget *table99, gpointer user_data){
 	GtkWidget *button0 =gtk_label_new(tab_button[0]);
 	gtk_table_attach_defaults (GTK_TABLE (table), button0, 1, 2, 0, 1);
 
-	nom_nombre *london=malloc(sizeof(*london));
-	london->nom=malloc(sizeof(char*)*100);
+	nom_nombre *london=malloc(sizeof(nom_nombre));
+	london->nom=malloc(sizeof(char)*100);
 	london=user_data;
 	london->nombre++;
 	int nbr_niveau_restant=london->nombre;
 
-	stru *haribo=malloc(sizeof(*haribo));
-	haribo->nom_bonne=malloc(sizeof(char*)*100);
-	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+	haribo->nom_bonne=malloc(sizeof(char)*100);
+	haribo->nom_utilisateur=malloc(sizeof(char)*100);
+	haribo->nom_mauvaise=malloc(sizeof(char)*100);
 	strcpy(haribo->nom_bonne,tab_button[0]);
 	strcpy(haribo->nom_utilisateur,london->nom);
 	haribo->wid=window;
@@ -1115,8 +1218,8 @@ void fonction_moyen(GtkWidget *table99,gpointer user_data){
 	char nom_dans_lordre[6][500];
 	char s0[500],s1[500],s2[500],s3[500],s4[500],s5[500];
 
-	nom_nombre *london=malloc(sizeof(*london));
-		london->nom=malloc(sizeof(char*)*100);
+	nom_nombre *london=malloc(sizeof(nom_nombre));
+		london->nom=malloc(sizeof(char)*100);
 		london=user_data;
 		london->nombre++;
 		int nbr_niveau_restant=london->nombre;
@@ -1274,16 +1377,16 @@ void fonction_moyen2(GtkWidget *table99,gpointer user_data){
 	GtkWidget *button = gtk_label_new(tab_button[0]);
 	gtk_table_attach_defaults (GTK_TABLE (table), button, 1, 2, 0, 1);
 
-	nom_nombre *london=malloc(sizeof(*london));
-	london->nom=malloc(sizeof(char*)*100);
+	nom_nombre *london=malloc(sizeof(nom_nombre));
+	london->nom=malloc(sizeof(char)*100);
 	london=user_data;
 	london->nombre++;
 	int nbr_niveau_restant=london->nombre;
 
-	stru *haribo=malloc(sizeof(*haribo));
-	haribo->nom_bonne=malloc(sizeof(char*)*100);
-	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+	haribo->nom_bonne=malloc(sizeof(char)*100);
+	haribo->nom_utilisateur=malloc(sizeof(char)*100);
+	haribo->nom_mauvaise=malloc(sizeof(char)*100);
 	strcpy(haribo->nom_bonne,tab_button[0]);
 	strcpy(haribo->nom_utilisateur,london->nom);
 	haribo->wid=window;
@@ -1438,10 +1541,10 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 		gtk_table_attach_defaults (GTK_TABLE (table), bouton[0] , 0, 3, 0, 3);
 
 
-	stru *haribo=malloc(sizeof(*haribo));
-		haribo->nom_bonne=malloc(sizeof(char*)*100);
-		haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-		haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+		haribo->nom_bonne=malloc(sizeof(char)*100);
+		haribo->nom_utilisateur=malloc(sizeof(char)*100);
+		haribo->nom_mauvaise=malloc(sizeof(char)*100);
 		strcpy(haribo->nom_bonne,tab_button[0]);
 		strcpy(haribo->nom_utilisateur,london->nom);
 		haribo->wid=window;
@@ -1531,7 +1634,7 @@ void fonction_moyenIA(GtkWidget *table99,gpointer user_data){
 		g_signal_connect_swapped(G_OBJECT(bouton[k+3]), "clicked",G_CALLBACK( gtk_widget_destroy), window);
 	}
 	if (!system("ping -c 1 8.8.8.8 > /dev/null")){
-		struc *tokyo=malloc(sizeof(*tokyo));
+		struc *tokyo=malloc(sizeof(struc));
 		tokyo->wid=bouton[0];tokyo->wid2=bouton[1];tokyo->wid3=bouton[2];
 		tokyo->wid4=bouton[3];tokyo->wid5=bouton[4];tokyo->wid6=bouton[5];
 		sprintf(wikipython,"python wiki.py %s %s %s %s %s %s",nom_dans_lordre[0],nom_dans_lordre[1],nom_dans_lordre[2],nom_dans_lordre[3],nom_dans_lordre[4],nom_dans_lordre[5]);
@@ -1598,10 +1701,10 @@ void fonction_moyenIA2(GtkWidget *table99,gpointer user_data){
 	GtkWidget *button = gtk_label_new(tab_button[0]);
 	gtk_table_attach_defaults (GTK_TABLE (table), button, 1, 2, 0, 1);
 
-	stru *haribo=malloc(sizeof(*haribo));
-	haribo->nom_bonne=malloc(sizeof(char*)*100);
-	haribo->nom_utilisateur=malloc(sizeof(char*)*100);
-	haribo->nom_mauvaise=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+	haribo->nom_bonne=malloc(sizeof(char)*100);
+	haribo->nom_utilisateur=malloc(sizeof(char)*100);
+	haribo->nom_mauvaise=malloc(sizeof(char)*100);
 	strcpy(haribo->nom_bonne,tab_button[0]);
 	strcpy(haribo->nom_utilisateur,london->nom);
 	haribo->wid=window;
@@ -1884,10 +1987,10 @@ int compte_matrices(char*pseudo){
 }
 
 void Choix_niveaux(GtkWidget *table,gpointer user_data){
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=user_data;
-	nom_nombre *tagada=malloc(sizeof(*tagada));
-	tagada->nom=malloc(sizeof(char*)*100);
+	nom_nombre *tagada=malloc(sizeof(nom_nombre));
+	tagada->nom=malloc(sizeof(char)*100);
 	strcpy(tagada->nom,london->nom_bonne);
 	tagada->nombre=0;
 	tagada->wid=london->wid;
@@ -1953,7 +2056,7 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 			GtkWidget *button2 = gtk_button_new_with_label ("niv difficile IA");
 
 			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(Choix_niveaux), london);
-			g_signal_connect_swapped(G_OBJECT(button1), "clicked",G_CALLBACK( gtk_widget_hide), window0);
+			g_signal_connect_swapped(G_OBJECT(button2), "clicked",G_CALLBACK( gtk_widget_hide), window0);
 			g_signal_connect(G_OBJECT(button2), "clicked",G_CALLBACK(fonction_difficileIA), tagada);
 			gtk_table_attach_defaults (GTK_TABLE (table0), button2, 2, 3, 3, 4);
 		}
@@ -1974,10 +2077,10 @@ void Choix_niveaux(GtkWidget *table,gpointer user_data){
 }
 
 void Choix_niveaux2(GtkWidget *table,gpointer user_data){
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=user_data;
-	nom_nombre *tagada=malloc(sizeof(*tagada));
-	tagada->nom=malloc(sizeof(char*)*100);
+	nom_nombre *tagada=malloc(sizeof(nom_nombre));
+	tagada->nom=malloc(sizeof(char)*100);
 	strcpy(tagada->nom,london->nom_bonne);
 	tagada->nombre=0;
 	tagada->wid=london->wid;
@@ -2068,18 +2171,11 @@ void Afficher_Statistique(char* name,char* pseudo){
 	char buffer3[500];
 	sprintf(buffer, "drapeau/%s.png", name);
 	int indice_pays = strtoint(name);
-	sprintf(buffer2, "il s'agit de %s, vous le confondez avec : ",  name);
-
-	char nom_fichier[100];
-	sprintf(nom_fichier,"%s.xml", pseudo);
-	liste_matrice *mat_moy=lirematrice(nom_fichier);
-	float mat_similitude[NBR_PAYS][NBR_PAYS];
-	matrice_moyenne(mat_moy,mat_similitude);
-	similitude(mat_similitude);
-	int  tab_intier[6];float temp[NBR_PAYS][NBR_PAYS];
-	difficile(temp[indice_pays],indice_pays,tab_intier);
-	affiche_ligne_int(tab_intier);
-
+	char buff[400];
+	sprintf(buff,"%s.xml",pseudo);
+	LIBXML_TEST_VERSION;
+	GtkWidget *label1;
+	xmlTextReaderPtr reader = xmlReaderForFile(buff, NULL, 0);
 	GtkWidget *table = gtk_table_new (5, 3, TRUE);
 	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 		gtk_window_set_title (GTK_WINDOW (window), "QCM afficher_statistique");
@@ -2089,28 +2185,57 @@ void Afficher_Statistique(char* name,char* pseudo){
 
 	GtkWidget *button = gtk_image_new_from_file(buffer);
 		gtk_table_attach_defaults (GTK_TABLE (table), button, 0, 3, 1, 2);
-	GtkWidget *label1 = gtk_label_new(buffer2);
-		gtk_table_attach_defaults (GTK_TABLE (table), label1, 0, 3, 2, 3);
 
-	sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[0]));
-	GtkWidget *button2 = gtk_image_new_from_file(buffer);
-			gtk_table_attach_defaults (GTK_TABLE (table), button2, 0, 1, 3, 4);
-label1 = gtk_label_new(getPays(tab_intier[0]));
-			gtk_table_attach_defaults (GTK_TABLE (table), label1, 0, 1, 4, 5);
+	if(reader != NULL){
+		char nom_fichier[100];
+		sprintf(nom_fichier,"%s.xml", pseudo);
+		xmlnul(pseudo);
+		liste_matrice *mat_moy=lirematrice(nom_fichier);
+		float mat_similitude[NBR_PAYS][NBR_PAYS];
+		matrice_moyenne(mat_moy,mat_similitude);
+		similitude(mat_similitude);
+		int  tab_intier[6]={0,0,0,0,0,0};
+		float temp[NBR_PAYS][NBR_PAYS];
+		difficile(mat_similitude[indice_pays],indice_pays,tab_intier);
+		//affiche_ligne_int(tab_intier);
+		//affiche_ligne_int(mat_similitude[indice_pays]);
+		//affiche_int(mat_similitude);
+		affiche_int(mat_moy);
+		affiche_int(temp);
 
-	sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[1]));
-	button2 = gtk_image_new_from_file(buffer);
-			gtk_table_attach_defaults (GTK_TABLE (table), button2, 1, 2, 3, 4);
+		sprintf(buffer2, "il s'agit de %s, vous le confondez avec : ",  name);
+		label1 = gtk_label_new(buffer2);
+			gtk_table_attach_defaults (GTK_TABLE (table), label1, 0, 3, 2, 3);
+
+		if(mat_similitude[indice_pays][tab_intier[1]]>0.5){
+			sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[1]));
+			GtkWidget *button2 = gtk_image_new_from_file(buffer);
+				gtk_table_attach_defaults (GTK_TABLE (table), button2, 0, 1, 3, 4);
+			label1 = gtk_label_new(getPays(tab_intier[0]));
+				gtk_table_attach_defaults (GTK_TABLE (table), label1, 0, 1, 4, 5);
+		}
+
+		if(mat_similitude[indice_pays][tab_intier[2]]>0.5){
+			sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[2]));
+			GtkWidget *button2 = gtk_image_new_from_file(buffer);
+				gtk_table_attach_defaults (GTK_TABLE (table), button2, 1, 2, 3, 4);
 			label1 = gtk_label_new(getPays(tab_intier[1]));
-						gtk_table_attach_defaults (GTK_TABLE (table), label1, 1, 2, 4, 5);
+				gtk_table_attach_defaults (GTK_TABLE (table), label1, 1, 2, 4, 5);
+		}
 
-	sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[2]));
-	button2 = gtk_image_new_from_file(buffer);
-			gtk_table_attach_defaults (GTK_TABLE (table), button2, 2, 3, 3, 4);
-
-		label1 = gtk_label_new(getPays(tab_intier[2]));
-									gtk_table_attach_defaults (GTK_TABLE (table), label1, 2, 3, 4, 5);
-
+		if(mat_similitude[indice_pays][tab_intier[3]]>0.5){
+			sprintf(buffer, "drapeau/%s.png", getPays(tab_intier[3]));
+			GtkWidget *button2 = gtk_image_new_from_file(buffer);
+				gtk_table_attach_defaults (GTK_TABLE (table), button2, 2, 3, 3, 4);
+			label1 = gtk_label_new(getPays(tab_intier[2]));
+				gtk_table_attach_defaults (GTK_TABLE (table), label1, 2, 3, 4, 5);
+		}
+	}
+	else{
+		sprintf(buffer2, "\t\t\t %s\n vous n'avez pas encore repondu a assez de question ",  name);
+		label1 = gtk_label_new(buffer2);
+			gtk_table_attach_defaults (GTK_TABLE (table), label1, 0, 3, 2, 3);
+	}
 	gtk_widget_show_all(GTK_WIDGET(window));
 }
 
@@ -2155,10 +2280,10 @@ void Menu_principal2(GtkWidget *table,gpointer user_data){
 
 void Choix_orientation(GtkWidget *table,gpointer user_data){
 
-	stru *london=malloc(sizeof(*london));
+	stru *london=malloc(sizeof(stru));
 	london=user_data;
-	nom_nombre *tagada=malloc(sizeof(*tagada));
-		tagada->nom=malloc(sizeof(char*)*100);
+	nom_nombre *tagada=malloc(sizeof(nom_nombre));
+		tagada->nom=malloc(sizeof(char)*100);
 		strcpy(tagada->nom,london->nom_bonne);
 		tagada->nombre=0;
 		tagada->wid=london->wid;
@@ -2220,8 +2345,8 @@ void Menu_principal(GtkWidget *table,gpointer user_data){
 
 	printf("Menu_principal\nle pseudo entré est: %s\n-------\n",user_data);
 
-	stru *haribo=malloc(sizeof(*haribo));
-		haribo->nom_bonne=malloc(sizeof(char*)*100);
+	stru *haribo=malloc(sizeof(stru));
+		haribo->nom_bonne=malloc(sizeof(char)*100);
 		strcpy(haribo->nom_bonne,user_data);
 
 
@@ -2329,4 +2454,3 @@ int main (int argc,char *argv[]){
 	return 0;
 
 }
-
