@@ -4,4 +4,4 @@ L’objectif premier de ce projet est de créer un logiciel avec une interface g
 
 ![alt text](https://i.imgur.com/2SDfw1k.png)
 ![alt text](https://i.imgur.com/aFKHlgV.png)
-![alt text](https://i.imgur.com/Uyfzvrw.png)
+![alt text](https://i.imgur.com/jcUOkWQ.png)
