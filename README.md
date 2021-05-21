@@ -1,6 +1,7 @@
 # QCM-Drapeaux
-L’objectif premier de ce projet est de créer un logiciel avec une interface graphique plaisante, permettant d’aider l’utilisateur à apprendre des drapeaux nationaux par le biais de questions à choix multiples (QCMs).
-    L’utilisateur de ce logiciel doit avoir la possibilité de choisir la difficulté des questions, le type de question (drapeau vers pays ou pays vers drapeau) ainsi que voir ses statistiques. De même, selon la difficulté choisie, les questions posées ne doivent pas être choisies au hasard. À la place, il convient de tenir compte de ses réponses aux précédents QCMs pour pouvoir se concentrer sur ses erreurs. Il est important de souligner que les algorithmes doivent être réalisés de manière efficace pour limiter le temps d’attente de l’utilisateur
+The main objective of this project is to create a software with a pleasant graphical interface, allowing to help the user to learn national flags through multiple choice questions (MCQs). The user of this software should have the possibility to choose the difficulty of the questions, the type of question (flag to country or country to flag) as well as to see its statistics. Also, depending on the chosen difficulty, the questions asked should not be chosen randomly. Instead, it take into account your answers to previous MCQs in order to focus on your mistakes. 
+
+Translated with www.DeepL.com/Translator (free version)
 
 ![alt text](https://i.imgur.com/2SDfw1k.png)
 ![alt text](https://i.imgur.com/aFKHlgV.png)
